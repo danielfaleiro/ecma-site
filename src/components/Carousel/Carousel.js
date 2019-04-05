@@ -9,7 +9,7 @@ const Carousel = () => {
         <div className='carousel'>
             <div class='carousel-container'>
                 <div className='max-width center flex-column flex-nowrap'>
-                    <p className='title hpa white roboto'>
+                    <p className='title mb0 hpa white roboto'>
                         Fisioterapia, Pilates e Personal Trainer em um único lugar
                     </p>
                     <p className='subtitle hpa white lato'>

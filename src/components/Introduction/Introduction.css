@@ -1,0 +1,21 @@
+.intro-container {
+    max-height: 500px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.intro-title {
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.intro-text-container {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.intro-text {
+    color: #413E3E;
+    font-size: 1em;
+}

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
 body, html {
   margin:0;
@@ -7,6 +8,10 @@ body, html {
 
 .App {
   text-align: center;
+}
+
+.title {
+  font-size: 5em;
 }
 
 .center {
@@ -34,4 +39,16 @@ body, html {
 
 .lato {
   font-family: 'Lato', 'Haleway', serif; 
+}
+
+.overpass-mono {
+  font-family: 'Overpass Mono', monospace;
+}
+
+.color-ecma-gold {
+  color: #957E51;
+}
+
+.color-ecma-blue {
+  color: #192835;
 }
