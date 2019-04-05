@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Carousel from './components/Carousel/Carousel';
 import Introduction from './components/Introduction/Introduction';
+import Services from './components/Services/Services';
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <NavBar />
         <Carousel />
         <Introduction />
+        <Services />
       </div>
     );
   }

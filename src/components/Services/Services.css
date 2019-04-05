@@ -1,0 +1,43 @@
+.services-container {
+    background-color: #EAE6E6;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.services-title {
+    color: rgba(61, 86, 107, 0.6);
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.services-bt {
+    width: 300px;
+    height: 300px;
+    border: 0px;
+    border-radius: 100%;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-position: center;
+    background-blend-mode: overlay;
+    font-size: 2em;
+}
+
+#pilates-bt {
+    background-image: url(./pilates.jpg);
+    background-size: 450px 300px;
+}
+
+#treinamento-bt {
+    background-image: url(./treinamento.jpg);
+    background-size: 300px 400px;
+}
+
+#fisioterapia-bt {
+    background-image: url(./fisioterapia.jpg);
+    background-size: 450px 300px;
+}
+
+#osteopatia-bt {
+    background-image: url(./osteopatia.jpg);
+    background-size: 614px 300px;
+}
