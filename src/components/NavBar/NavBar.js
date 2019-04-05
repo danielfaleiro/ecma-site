@@ -13,22 +13,22 @@ const NavBar = () => {
     </div>
     <div className='menuItems'>
       <span>
-        <p id='active' nameClass='lato'>Home</p>
+        <p id='active' className='lato'>Home</p>
       </span>
       <span>
-        <p nameClass='lato'>A Clínica</p>
+        <p className='lato'>A Clínica</p>
       </span>
       <span>
-        <p nameClass='lato'>Nossa Confessionalidade</p>
+        <p className='lato'>Nossa Confessionalidade</p>
       </span>
       <span>
-        <p nameClass='lato'>Equipe</p>
+        <p className='lato'>Equipe</p>
       </span>
       <span>
-        <p nameClass='lato'>Serviços</p>
+        <p className='lato'>Serviços</p>
       </span>
       <span>
-        <p nameClass='lato'>Contato</p>
+        <p className='lato'>Contato</p>
       </span>
     </div>  
     </nav>
