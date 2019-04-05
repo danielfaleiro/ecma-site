@@ -3,9 +3,10 @@ import './FirstButton.css';
 
 const FirstButton = () => {
     return (
-        <div className='button hma'>
-         <p className='text white lato'>Conheça Nossas Especialidades</p>
-        </div>
+        <a href='/' className='button cursor no-underline text white lato hma'>
+            Conheça Nossas Especialidades
+        </a>
+         
     );
 }
 
