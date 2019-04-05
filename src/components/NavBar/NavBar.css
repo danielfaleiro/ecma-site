@@ -1,0 +1,38 @@
+.navigation {
+    padding: 1vh 2vh 1vh 2vh;
+}
+
+.logoContainer {
+    float: left;
+}
+
+.headerLogo {
+    height: 10vh;
+}
+
+.menuItems {
+    height: 10vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.menuItems span {
+    padding-left: 40px;
+}
+
+.menuItems p {
+    font-size: 20px;
+    cursor: pointer;
+    color: #192835;
+}
+
+.menuItems p:hover {
+    color: #957E51;
+}
+
+#active {
+    border-bottom: 2px #957E51 dashed;
+}
