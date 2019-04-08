@@ -14,6 +14,10 @@ body, html {
   font-size: 5em;
 }
 
+.section-ma {
+  margin-bottom: 180px;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -51,4 +55,8 @@ body, html {
 
 .color-ecma-blue {
   color: #192835;
+}
+
+.color-default {
+  color: #413E3E;
 }
