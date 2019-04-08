@@ -23,6 +23,11 @@ body, html {
   justify-content: center;
 }
 
+.start {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hpa {
   padding-left: 30px;
   padding-right: 30px;
@@ -55,6 +60,10 @@ body, html {
 
 .color-ecma-blue {
   color: #192835;
+}
+
+.bg-ecma-blue {
+  background-color: #192835;
 }
 
 .color-default {

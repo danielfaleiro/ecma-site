@@ -5,6 +5,7 @@ import Carousel from './components/Carousel/Carousel';
 import Introduction from './components/Introduction/Introduction';
 import Services from './components/Services/Services';
 import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <Introduction />
         <Services />
         <Testimonials />
+        <Footer />
       </div>
     );
   }
