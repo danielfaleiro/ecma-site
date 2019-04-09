@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
+:root {
+  --ecma-gold: #957E51; 
+  --ecma-blue: #192835;
+}
+
 body, html {
   margin:0;
 }
@@ -55,15 +60,15 @@ body, html {
 }
 
 .color-ecma-gold {
-  color: #957E51;
+  color: var(--ecma-gold);
 }
 
 .color-ecma-blue {
-  color: #192835;
+  color: var(--ecma-blue);
 }
 
 .bg-ecma-blue {
-  background-color: #192835;
+  background-color: var(--ecma-blue);
 }
 
 .color-default {
