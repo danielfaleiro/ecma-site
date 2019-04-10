@@ -1,14 +1,8 @@
-.intro-container {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
 .intro-title-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-content: start;
+    align-content: flex-start;
 }
 
 .intro-title {

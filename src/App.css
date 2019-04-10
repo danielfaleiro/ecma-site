@@ -27,7 +27,12 @@ body, html {
 }
 
 .section-ma {
-  margin-bottom: 180px;
+  margin-bottom: 10vh;
+}
+
+.section-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .center {

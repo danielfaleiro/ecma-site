@@ -1,7 +1,5 @@
 .services-container {
     background-color: #EAE6E6;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .services-title {
@@ -9,15 +7,15 @@
 }
 
 .services-bt {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 0px;
     border-radius: 100%;
     margin: 30px;
     background-color: rgba(0, 0, 0, 0.35);
     background-position: center;
     background-blend-mode: overlay;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #pilates-bt {

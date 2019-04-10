@@ -3,9 +3,9 @@ import './Services.css';
 
 const Services = () => {
     return (
-        <div className='services-container'>
-            <span className='max-width center flex-column tc'>
-                <p className='hma title section-ma services-title'>
+        <div className='section-container services-container'>
+            <div className='max-width center flex-column tc'>
+                <p className='hma title services-title lato'>
                     Nossos Serviços
                 </p>
                 <div className='center flex-row flex-wrap'>
@@ -22,7 +22,7 @@ const Services = () => {
                         TREINAMENTO FÍSICO
                     </button>
                 </div>
-            </span>
+            </div>
         </div>
     );
 }
