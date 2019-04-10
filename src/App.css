@@ -4,6 +4,7 @@
 
 :root {
   --ecma-gold: #957E51; 
+  --ecma-dark-gold: rgb(112, 93, 54);
   --ecma-blue: #192835;
 }
 
@@ -16,7 +17,13 @@ body, html {
 }
 
 .title {
-  font-size: 5em;
+  font-size: 10vh;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 10vw;
+  }
 }
 
 .section-ma {

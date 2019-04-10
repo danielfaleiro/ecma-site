@@ -3,7 +3,7 @@ import './FirstButton.css';
 
 const FirstButton = () => {
     return (
-        <a href='/' className='button cursor no-underline text white lato hma'>
+        <a href='/' className='button cursor no-underline white lato hma'>
             Conheça Nossas Especialidades
         </a>
          
