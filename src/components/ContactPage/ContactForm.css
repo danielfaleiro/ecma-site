@@ -1,0 +1,28 @@
+form input, form textarea, .input-mask {
+    min-width: 200px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form textarea {
+    height: 200px;
+}
+
+form label {
+    color: red;
+}
+
+.form-error {
+    border-color: red;
+}
+
+.success-message {
+    color: green;
+    
+}

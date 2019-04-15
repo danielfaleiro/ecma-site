@@ -86,3 +86,27 @@ body, html {
 .color-default {
   color: #413E3E;
 }
+
+.button {
+  display: inline-block;
+  max-width: 16em;
+  padding: 0.35em 1.2em;
+  border-radius: 2em;
+  background-color: var(--ecma-gold);
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  transition: all 0.2s;
+  margin-top: 1em;
+}
+
+.button:hover {
+  background-color: var(--ecma-dark-gold);
+}
+
+#map {
+  height: 40vh;
+  width: 100%;
+}

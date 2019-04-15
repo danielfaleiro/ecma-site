@@ -4,7 +4,7 @@ import logo from './headerlogo.png';
 import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
 
 
-const NavBar = () => {
+const NavBar = ({onRouteChange}) => {
     const menu = {
       home: "Home",
       clinica: "Clínica",
@@ -32,13 +32,13 @@ const NavBar = () => {
     <>
     <nav className='navigation'>
       <div className='logoContainer'>
-        <a href='/'>
+        <a href='/' onClick={() => onRouteChange('/')}>
           <img  className='headerLogo' src={logo} alt='Logo' />
         </a>
       </div>
       <div className='menuItems'>
         <span>
-          <p id='active' className='lato'>{menu.home}</p>
+          <p onClick={() => onRouteChange('/')} id='active' className='lato'>{menu.home}</p>
         </span>
         <span>
           <p className='lato'>{menu.clinica}</p>
@@ -62,7 +62,7 @@ const NavBar = () => {
         </div>
         </span>
         <span>
-          <p className='lato'>{menu.contato}</p>
+          <p onClick={() => onRouteChange('contact')} className='lato'>{menu.contato}</p>
         </span>
         <MdMenu onClick={showMobileMenu} className='menu-icon pointer' size='30' />
       </div>  
@@ -70,7 +70,7 @@ const NavBar = () => {
     <nav>
       <div id='mobileMenu' className='menu-mobile hma'>
           <span>
-            <p id='active' className='lato'>{menu.home}</p>
+            <p onClick={() => onRouteChange('/')} id='active' className='lato'>{menu.home}</p>
           </span>
           <span>
             <p className='lato'>{menu.clinica}</p>
@@ -94,7 +94,7 @@ const NavBar = () => {
             </div>
           </span>
           <span>
-            <p className='lato'>Contato</p>
+            <p onClick={() => onRouteChange('contact')} className='lato'>Contato</p>
           </span>
         </div>
     </nav>
