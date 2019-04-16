@@ -43,7 +43,7 @@ class App extends Component {
     } else if (route === 'contact') {
       displayContent = <ContactPage />;
     } else if (route === 'services') {
-      displayContent = <ServicesPage />;
+      displayContent = <ServicesPage onRouteChange={this.onRouteChange}/>;
     } else if (route === 'fisioterapia') {
       const others = {
         services: ['Osteopatia', 'Pilates', 'Treinamento Físico'],
