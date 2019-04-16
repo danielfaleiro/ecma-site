@@ -13,7 +13,7 @@ const Carousel = () => {
                         Fisioterapia, Pilates e Personal Trainer em um único lugar
                     </p>
                     <p className='subtitle hpa white lato'>
-                        Temos a soluãço completa para sua saúde e bem-estar.
+                        Temos a solução completa para sua saúde e bem-estar.
                     </p>
                     <FirstButton />
                 </div>
