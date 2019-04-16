@@ -12,6 +12,15 @@ body, html {
   margin:0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--ecma-blue);
+}
+
+a:hover {
+  color: var(--ecma-gold);
+}
+
 .App {
   text-align: center;
 }
@@ -31,7 +40,6 @@ body, html {
 }
 
 .section-container {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 

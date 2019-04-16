@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import ContactPage from './components/ContactPage/ContactPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
 import Service from './components/Services/Service';
+import Team from './components/Team/Team';
 
 
 class App extends Component {
@@ -42,6 +43,8 @@ class App extends Component {
                        </>;
     } else if (route === 'contact') {
       displayContent = <ContactPage />;
+    } else if (route === 'equipe') {
+      displayContent = <Team />;
     } else if (route === 'services') {
       displayContent = <ServicesPage onRouteChange={this.onRouteChange}/>;
     } else if (route === 'fisioterapia') {

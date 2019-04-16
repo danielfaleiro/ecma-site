@@ -3,7 +3,7 @@ import './Introduction.css';
 
 const Introduction = () => {
     return (
-        <div className='max-width section-container center flex-row flex-wrap'>
+        <div style={{paddingTop: '60px'}} className='max-width section-container center flex-row flex-wrap'>
             <div className='center intro-title-container'>
                 <p className='hma color-ecma-gold roboto intro-title'>
                     <span className='overpass-mono'>+</span> Resultados
