@@ -16,6 +16,7 @@
     background-position: center;
     background-blend-mode: overlay;
     font-size: 1.8em;
+    cursor: pointer;
 }
 
 #pilates-bt {

@@ -50,15 +50,16 @@
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content p {
     float: none;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    cursor: pointer;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
     color: var(--ecma-gold);
 }
 

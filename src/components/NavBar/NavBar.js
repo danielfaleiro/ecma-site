@@ -55,10 +55,10 @@ const NavBar = ({onRouteChange}) => {
             <MdArrowDropDown className='self-center' size='25' />
         </p>
         <div className='dropdown-content color-ecma-blue lato'>
-          <a href='/'>{menu.servicos.fisioterapia}</a>
-          <a href='/'>{menu.servicos.osteopatia}</a>
-          <a href='/'>{menu.servicos.pilates}</a>
-          <a href='/'>{menu.servicos.treinamento}</a>
+          <p onClick={() => onRouteChange('fisioterapia')}>{menu.servicos.fisioterapia}</p>
+          <p onClick={() => onRouteChange('osteopatia')}>{menu.servicos.osteopatia}</p>
+          <p onClick={() => onRouteChange('pilates')}>{menu.servicos.pilates}</p>
+          <p onClick={() => onRouteChange('treinamento')}>{menu.servicos.treinamento}</p>
         </div>
         </span>
         <span>
@@ -87,10 +87,10 @@ const NavBar = ({onRouteChange}) => {
               <MdArrowDropDown className='self-center' size='25' />
             </p>
             <div className='dropdown-content color-ecma-blue lato'>
-              <a href='/'>{menu.servicos.fisioterapia}</a>
-              <a href='/'>{menu.servicos.osteopatia}</a>
-              <a href='/'>{menu.servicos.pilates}</a>
-              <a href='/'>{menu.servicos.treinamento}</a>
+              <p onClick={() => onRouteChange('fisioterapia')}>{menu.servicos.fisioterapia}</p>
+              <p onClick={() => onRouteChange('osteopatia')}>{menu.servicos.osteopatia}</p>
+              <p onClick={() => onRouteChange('pilates')}>{menu.servicos.pilates}</p>
+              <p onClick={() => onRouteChange('treinamento')}>{menu.servicos.treinamento}</p>
             </div>
           </span>
           <span>
