@@ -50,7 +50,7 @@ const NavBar = ({onRouteChange}) => {
           <p className='lato'>{menu.equipe}</p>
         </span>
         <span className='dropdown'>
-        <p className='lato flex'>
+        <p onClick={() => onRouteChange('services')} className='lato flex'>
             {menu.servicos.self}
             <MdArrowDropDown className='self-center' size='25' />
         </p>
@@ -82,7 +82,7 @@ const NavBar = ({onRouteChange}) => {
             <p className='lato'>{menu.equipe}</p>
           </span>
           <span className='dropdown'>
-            <p className='lato flex'>
+            <p onClick={() => onRouteChange('services')} className='lato flex'>
               {menu.servicos.self}
               <MdArrowDropDown className='self-center' size='25' />
             </p>

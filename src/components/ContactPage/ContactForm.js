@@ -134,7 +134,7 @@ class ContactForm extends Component {
                 <div className='flex justify-between items-baseline flex-row flex-wrap'>
                     <div className='success-message roboto'>{this.state.successMessage}</div>
                     <div
-                        className='button pointer no-underline white lato'
+                        className='button no-underline white lato'
                         onClick={this.submitForm}
                     >
                         Enviar

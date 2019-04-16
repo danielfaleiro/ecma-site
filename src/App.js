@@ -7,6 +7,7 @@ import Services from './components/Services/Services';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import ContactPage from './components/ContactPage/ContactPage';
+import ServicesPage from './components/ServicesPage/ServicesPage';
 
 
 class App extends Component {
@@ -36,6 +37,8 @@ class App extends Component {
         </>
     } else if (route === 'contact') {
       displayContent = <ContactPage />;
+    } else if (route === 'services') {
+         displayContent = <ServicesPage />;
     }
     return (
       <>
