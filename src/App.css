@@ -43,6 +43,11 @@ a:hover {
   padding-bottom: 60px;
 }
 
+.section-vpa {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -67,12 +72,21 @@ a:hover {
   max-width: 1080px;
 }
 
+.min-width {
+  min-width: 300px;
+}
+
 .roboto {
   font-family: 'Roboto', 'Haleway', serif; 
 }
 
-.lato {
+.lato, .text {
   font-family: 'Lato', 'Haleway', serif; 
+}
+
+.text {
+  line-height: 2em;
+  font-size: 1.2em;
 }
 
 .overpass-mono {

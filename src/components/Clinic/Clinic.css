@@ -1,0 +1,28 @@
+.clinic-subtitle {
+    font-size: 1.5em;
+}
+
+.clinic-panel {
+    width: 55%;
+    height: 47em;
+    padding: 1em 2em 1em 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.clinic-img {
+    width: 45%;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 900px) {
+    .clinic-panel {
+        width: 100%;
+        height: auto;
+    }
+
+    .clinic-img {
+        height: 20em;
+    }
+
+}

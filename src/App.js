@@ -14,6 +14,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
 import Service from './components/Services/Service';
 import Team from './components/Team/Team';
+import Clinic from './components/Clinic/Clinic';
 
 
 class App extends Component {
@@ -41,6 +42,8 @@ class App extends Component {
                         <ServicesList onRouteChange={this.onRouteChange}/>
                         <Testimonials />
                        </>;
+    } else if (route === 'clinica') {
+      displayContent = <Clinic />;
     } else if (route === 'contact') {
       displayContent = <ContactPage />;
     } else if (route === 'equipe') {
@@ -97,11 +100,11 @@ class App extends Component {
       />;
     }
     return (
-      <>
+      <div>
         <NavBar onRouteChange={this.onRouteChange} />
         {displayContent}
         <Footer />
-      </>
+      </div>
     );
   }
 }
