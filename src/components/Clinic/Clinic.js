@@ -10,7 +10,7 @@ const Clinic = () => {
         <div className='hma'>
             <div className='center min-width max-width clinic-container center flex-column color-default lato'>
                 <div className='tc title color-ecma-gold'>Bem-vindo ao ECMA</div>
-                <p className='clinic-subtitle tc'>
+                <p className='section-subtitle tc'>
                     Pensando em você, nosso cliente, buscamos um meio de oferecer serviços de saúde 
                     através da medicina alternativa, mas com um contexto voltado para o ser humano. 
                     Assim nasce uma idéia e o ECMA – Espaço Clínico Raydel Marques busca não somente 

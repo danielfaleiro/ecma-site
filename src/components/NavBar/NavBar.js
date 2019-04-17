@@ -44,7 +44,7 @@ const NavBar = ({onRouteChange}) => {
           <p onClick={() => onRouteChange('clinica')} className='lato'>{menu.clinica}</p>
         </span>
         <span>
-          <p className='lato'>{menu.confessionalidade}</p>
+          <p onClick={() => onRouteChange('confessionalidade')} className='lato'>{menu.confessionalidade}</p>
         </span>
         <span>
           <p onClick={() => onRouteChange('equipe')} className='lato'>{menu.equipe}</p>
@@ -76,7 +76,7 @@ const NavBar = ({onRouteChange}) => {
             <p onClick={() => onRouteChange('clinica')} className='lato'>{menu.clinica}</p>
           </span>
           <span>
-            <p className='lato'>{menu.confessionalidade}</p>
+            <p onClick={() => onRouteChange('confessionalidade')} className='lato'>{menu.confessionalidade}</p>
           </span>
           <span>
             <p onClick={() => onRouteChange('equipe')} className='lato'>{menu.equipe}</p>

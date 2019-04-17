@@ -15,6 +15,7 @@ import ServicesPage from './components/ServicesPage/ServicesPage';
 import Service from './components/Services/Service';
 import Team from './components/Team/Team';
 import Clinic from './components/Clinic/Clinic';
+import Faith from './components/Faith/Faith';
 
 
 class App extends Component {
@@ -44,6 +45,8 @@ class App extends Component {
                        </>;
     } else if (route === 'clinica') {
       displayContent = <Clinic />;
+    } else if (route === 'confessionalidade') {
+      displayContent = <Faith />;
     } else if (route === 'contact') {
       displayContent = <ContactPage />;
     } else if (route === 'equipe') {
