@@ -6,7 +6,7 @@ import './Carousel.css';
 
 const Carousel = () => {
     return (
-        <div className='carousel'>
+        <div id='carousel' className='carousel top-page'>
             <div className='carousel-container'>
                 <div className='min-max-width center flex-column flex-nowrap'>
                     <h1 className='carousel-title mb0 hpa white roboto'>

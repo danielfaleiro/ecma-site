@@ -4,7 +4,7 @@ import './Faith.css';
 
 const Faith = () => {
     return (
-        <div className='hma lato'>
+        <div className='hma lato top-page'>
             <div className='min-max-width faith-section center flex-column container-vpa'>
                 <div className='title lato color-ecma-gold'>Nossa Confessionalidade</div>
                 <p className='text'>

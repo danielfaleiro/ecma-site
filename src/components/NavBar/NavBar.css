@@ -1,5 +1,18 @@
 .navigation {
     padding: 1vh 2vh 1vh 2vh;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.mobile-navigation {
+    box-shadow: 0 4px 2px -2px rgba( 0, 0, 0, 0.2 );
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: none;
 }
 
 .logoContainer {
@@ -27,6 +40,14 @@
     font-size: 20px;
     cursor: pointer;
     color: #192835;
+}
+
+.menu-mobile p {
+    font-size: 20px;
+}
+
+.dropdown-content p {
+    font-size: 16px;
 }
 
 .menuItems p:hover, .menu-icon:hover, .menu-mobile p:hover {
@@ -64,7 +85,7 @@
 }
 
 .menu-mobile {
-    display: none;
+    padding: 15px 0 15px 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -80,9 +101,8 @@
         width: 100%;
     }
 
-    .show-mobile-menu .dropdown-content {
+    .dropdown-content {
         position: relative;
-        background-color: white;
         box-shadow: none;
     }
 }

@@ -7,7 +7,7 @@ const Clinic = () => {
     const mission = vision;
     const values = vision;
     return (
-        <div className='hma'>
+        <div id='clinicPage' className='hma top-page container-tpa'>
             <div className='center min-max-width clinic-container center flex-column lato'>
                 <div className='tc title color-ecma-gold'>Bem-vindo ao ECMA</div>
                 <p className='section-subtitle tc'>

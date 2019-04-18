@@ -7,7 +7,7 @@ import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
 const NavBar = ({onRouteChange}) => {
     const menu = {
       home: "Home",
-      clinica: "Clínica",
+      clinica: "A Clínica",
       confessionalidade: "Nossa Confessionalidade",
       equipe: "Equipe",
       servicos: {
@@ -15,22 +15,28 @@ const NavBar = ({onRouteChange}) => {
         fisioterapia: "Fisioterapia",
         osteopatia: "Osteopatia",
         pilates: "Pilates",
-        treinamento: "Treinamento",
+        treinamento: "Treinamento Físico",
       },
       contato: "Contato",
     }
 
     const showMobileMenu = () => {
-      const mobileMenu = document.getElementById('mobileMenu');
-      if (mobileMenu.className.includes(" show-mobile-menu"))
-        mobileMenu.className = mobileMenu.className.replace(" show-mobile-menu", "");
-      else
-        mobileMenu.className += " show-mobile-menu";
+      const mobileNavigation = document.getElementById('mobileNavigation');
+      const navigation = document.getElementById('navigation');
+
+      if (mobileNavigation.classList.contains('show-mobile-menu')) { // hide mobile menu
+        mobileNavigation.classList.remove('show-mobile-menu');
+        navigation.classList.add('shadow-1');
+      } else { // show mobile menu
+        mobileNavigation.classList.add('show-mobile-menu');
+        navigation.classList.remove('shadow-1');
+      
+      }
     }
 
     return (
     <>
-    <nav className='navigation'>
+    <nav id='navigation' className='navigation shadow-1'>
       <div className='logoContainer'>
         <a href='/' onClick={() => onRouteChange('/')}>
           <img  className='headerLogo' src={logo} alt='Logo' />
@@ -67,7 +73,7 @@ const NavBar = ({onRouteChange}) => {
         <MdMenu onClick={showMobileMenu} className='menu-icon pointer' size='30' />
       </div>  
     </nav>
-    <nav>
+    <nav id='mobileNavigation' className='mobile-navigation'>
       <div id='mobileMenu' className='menu-mobile hma'>
           <span>
             <p onClick={() => onRouteChange('/')} id='active' className='lato'>{menu.home}</p>

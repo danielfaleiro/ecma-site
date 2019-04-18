@@ -22,7 +22,7 @@ const Service = ({name, image, others, onRouteChange}) => {
     };
 
     return (
-        <div className='hma'>
+        <div className='hma top-page'>
             <div className='min-max-width center flex-column section-container lato'>
                 <div className='service-title' style={{backgroundImage: `url(${image})`}}>
                     <p className='title white roboto tc'>{name}</p>

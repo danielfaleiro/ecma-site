@@ -53,9 +53,17 @@ a:hover {
   padding-top: 60px;
 }
 
+.container-tpa {
+  padding-top: 60px;
+}
+
 .center {
   display: flex;
   justify-content: center;
+}
+
+.top-page {
+  margin-top: 12vh;
 }
 
 .start {
