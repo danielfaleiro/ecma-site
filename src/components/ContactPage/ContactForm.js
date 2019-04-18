@@ -20,11 +20,15 @@ class ContactForm extends Component {
     }
 
     validateEmail = () => {
+        const email = this.state.email.toLowerCase();
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const isValid = re.test(this.state.email.toLowerCase());
+        const isValid = re.test(email);
         const field = document.getElementById("FormEmail");
-
-        if (isValid) {
+        console.log(email);
+        if (email.length === 0) {
+            this.setState({emailError: 'E-mail é um campo obrigatório.'});
+            field.className = 'form-error';
+        } else if (isValid) {
             this.setState({emailError: ''});
             field.className = '';
         } else {
@@ -71,8 +75,16 @@ class ContactForm extends Component {
         return !isEmpty && !isShort;
     }
 
+    validateForm = () => {
+        const isMessageValid = this.validateMessage();
+        const isNameValid = this.validateName();
+        const isEmailValid = this.validateEmail();
+
+        return isNameValid && isEmailValid && isMessageValid;
+    }
+
     submitForm = () => {
-        const isValid = this.validateEmail() && this.validateMessage() && this.validateName();
+        const isValid = this.validateForm();
 
         if (isValid) {
             this.setState({successMessage: 'Sua mensagem foi enviada com sucesso!'});
