@@ -7,7 +7,7 @@ import ServiceCard from './ServiceCard';
 
 const ServicesPage = ({onRouteChange}) => {
     return (
-        <div className='center flex-nowrap flex-column hma section-container section-ma max-width lato color-default'>
+        <div className='center flex-nowrap flex-column hma section-container section-ma min-max-width lato'>
             <p className='tc title color-ecma-gold'>Nossos Serviços</p>
             <div className='center flex-row flex-wrap'>
                 <ServiceCard

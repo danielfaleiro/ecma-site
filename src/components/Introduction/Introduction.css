@@ -1,15 +1,8 @@
-.intro-title-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
 .intro-title {
     text-align: start;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 8vh;
+    font-size: 5em;
 }
 
 .intro-text-container {
@@ -21,15 +14,19 @@
 }
 
 @media screen and (max-width: 900px) {
-    .intro-container {
-        justify-content: flex-start;
-    } 
-
-    .intro-title {
-      font-size: 10vw;
-    }
-
     .intro-text-container {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro-title {
+        font-size: 12vw;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .intro-title {
+        font-size: 12vw;
     }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
@@ -26,13 +26,8 @@ a:hover {
 }
 
 .title {
-  font-size: 10vh;
-}
-
-@media screen and (max-width: 900px) {
-  .title {
-    font-size: 10vw;
-  }
+  font-size: 3em;
+  margin-bottom: 60px;
 }
 
 .section-subtitle {
@@ -49,6 +44,11 @@ a:hover {
 }
 
 .section-vpa {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.container-vpa {
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -72,12 +72,8 @@ a:hover {
   margin-left: 30px;
   margin-right: 30px;
 }
-
-.max-width {
+.min-max-width {
   max-width: 1080px;
-}
-
-.min-width {
   min-width: 300px;
 }
 

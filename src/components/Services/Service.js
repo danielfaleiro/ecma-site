@@ -23,7 +23,7 @@ const Service = ({name, image, others, onRouteChange}) => {
 
     return (
         <div className='hma'>
-            <div className='max-width center flex-column section-container color-default lato'>
+            <div className='min-max-width center flex-column section-container lato'>
                 <div className='service-title' style={{backgroundImage: `url(${image})`}}>
                     <p className='title white roboto tc'>{name}</p>
                 </div>
@@ -40,7 +40,7 @@ const Service = ({name, image, others, onRouteChange}) => {
                     </div>
                 </div>
             </div>
-            <div className='max-width other-services section-container center flex-column items-center'>
+            <div className='min-max-width other-services section-container center flex-column items-center'>
                 <p className='tc title lato color-ecma-gold'>Conheça Também</p>
                 <div className='center flex-row flex-wrap'>
                     {otherServices()}

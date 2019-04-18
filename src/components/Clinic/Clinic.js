@@ -8,7 +8,7 @@ const Clinic = () => {
     const values = vision;
     return (
         <div className='hma'>
-            <div className='center min-width max-width clinic-container center flex-column color-default lato'>
+            <div className='center min-max-width clinic-container center flex-column lato'>
                 <div className='tc title color-ecma-gold'>Bem-vindo ao ECMA</div>
                 <p className='section-subtitle tc'>
                     Pensando em você, nosso cliente, buscamos um meio de oferecer serviços de saúde 
@@ -17,7 +17,7 @@ const Clinic = () => {
                     oferecer serviços de saúde, qualidade de vida, mas também propor recursos em busca 
                     do reequilíbrio da saúde de forma humanizada.
                 </p>
-                <div className='center flex-row flex-wrap section-vpa'>
+                <div className='center flex-row flex-wrap container-vpa'>
                     <div className='clinic-panel clinic-img'>
                     </div>
                     <div className='clinic-panel'>
@@ -49,7 +49,7 @@ const Clinic = () => {
                     <div className='clinic-panel clinic-img'>
                     </div>
                 </div>
-                <div className='center flex-row flex-wrap section-vpa'>
+                <div className='center flex-row flex-wrap container-vpa'>
                     <IconCard icon='eye' size='4em' title='Visão' text={vision} />
                     <IconCard icon='star' size='4em' title='Missão' text={mission} />
                     <IconCard icon='heart' size='4em' title='Valores' text={values} />

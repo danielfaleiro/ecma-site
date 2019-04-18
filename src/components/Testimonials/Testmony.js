@@ -7,7 +7,7 @@ const Testmony = (props) => {
     return (
         <div className='testmony tl'>
             <h5 className='color-ecma-gold lato hma'>{data[id].name}</h5>
-            <p className='color-default roboto hma'>{data[id].testmony}</p>
+            <p className='roboto hma'>{data[id].testmony}</p>
         </div>
     );
 }

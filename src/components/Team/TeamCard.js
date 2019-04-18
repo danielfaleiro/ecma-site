@@ -3,7 +3,7 @@ import './TeamCard.css';
 
 const TeamCard = ({name, job, credentials, phone, email}) => {
     return (
-        <div className='member-container roboto color-default'>
+        <div className='member-container roboto'>
             <div className='member-photo'></div>
             <div className='mh3'>
                 <h3>{name}</h3>

@@ -3,11 +3,11 @@ import './ServicesList.css';
 
 const ServicesList = ({onRouteChange}) => {
     return (
-        <div className='section-container services-container'>
-            <div className='max-width center flex-column tc'>
-                <p className='hma title services-title lato'>
+        <div className='section-container section-vpa services-container'>
+            <div className='min-max-width center flex-column tc'>
+                <div className='hma title services-title lato'>
                     Nossos Serviços
-                </p>
+                </div>
                 <div className='center flex-row flex-wrap'>
                     <button 
                         onClick={() => onRouteChange('fisioterapia')}

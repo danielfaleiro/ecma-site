@@ -11,8 +11,8 @@ const Footer = () => {
     };
 
     return (
-        <div className='bg-ecma-blue pt4 pb4 footer-topma'>
-            <div className='max-width center flex-row flex-wrap-reverse'>
+        <div className='bg-ecma-blue pt4 pb4'>
+            <div className='min-max-width center flex-row flex-wrap-reverse'>
                 <img  className='footer-logo ml5' src={logo} alt='Logo' />
                 <div className='white roboto center flex-column footer-wrapper'>
                     <div className='start flex-row items-center'>

@@ -103,7 +103,7 @@ class App extends Component {
       />;
     }
     return (
-      <div>
+      <div className='color-default'>
         <NavBar onRouteChange={this.onRouteChange} />
         {displayContent}
         <Footer />
