@@ -1,9 +1,0 @@
-.testmony {
-    width: 30%;
-}
-
-@media screen and (max-width: 900px) {
-    .testmony {
-        width: 100%;
-    }
-}
