@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import InputMask from 'react-input-mask';
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 import './ContactForm.css';
 
 
 class ContactForm extends Component {
     constructor(props) {
         super(props);
+        this.addSuccessNotification = this.addSuccessNotification.bind(this);
+        this.notificationDOMRef = React.createRef();
         this.state = {
             name: '',
             phone: '',
@@ -15,8 +19,35 @@ class ContactForm extends Component {
             phoneError: '',
             emailError: '',
             messageError: '',
-            successMessage: '',
         };
+    }
+
+    addSuccessNotification() {
+        this.notificationDOMRef.current.addNotification({
+          title: "Sucesso!",
+          message: "Mensagem enviada.",
+          type: "success",
+          insert: "top",
+          container: "top-center",
+          animationIn: ["animated", "fadeIn"],
+          animationOut: ["animated", "fadeOut"],
+          dismiss: { duration: 5000 },
+          dismissable: { click: true }
+        });
+    }
+
+    addErrorNotification() {
+        this.notificationDOMRef.current.addNotification({
+          title: "Erro",
+          message: "Não foi possível enviar a mensagem.",
+          type: "danger",
+          insert: "top",
+          container: "top-center",
+          animationIn: ["animated", "fadeIn"],
+          animationOut: ["animated", "fadeOut"],
+          dismiss: { duration: 5000 },
+          dismissable: { click: true }
+        });
     }
 
     validateEmail = () => {
@@ -24,7 +55,7 @@ class ContactForm extends Component {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const isValid = re.test(email);
         const field = document.getElementById("FormEmail");
-        console.log(email);
+
         if (email.length === 0) {
             this.setState({emailError: 'E-mail é um campo obrigatório.'});
             field.className = 'form-error';
@@ -83,16 +114,40 @@ class ContactForm extends Component {
         return isNameValid && isEmailValid && isMessageValid;
     }
 
+    clearForm = () => {
+        this.setState({name: ''});
+        this.setState({phone: ''});
+        this.setState({email: ''});
+        this.setState({message: ''});
+        this.setState({nameError: ''});
+        this.setState({phoneError: ''});
+        this.setState({emailError: ''});
+        this.setState({messageError: ''});
+    }
+
     submitForm = () => {
         const isValid = this.validateForm();
 
         if (isValid) {
-            this.setState({successMessage: 'Sua mensagem foi enviada com sucesso!'});
-            setTimeout(() => {
-                this.setState({successMessage: ''});
-            }, 5000);
-        } else {
-            this.setState({successMessage: ''});
+            fetch('http://localhost:3001/sendmessage', {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    name: this.state.name,
+                    phone: this.state.phone,
+                    email: this.state.email,
+                    message: this.state.message
+                })
+            }).then(response => {
+                if (response.status >= 400) {
+                    this.addErrorNotification();
+                } else if (response.status >= 200) {
+                    this.addSuccessNotification();
+                    this.clearForm();
+                }
+            }).catch(() => {
+                this.addErrorNotification();
+            });
         }
     }
 
@@ -115,6 +170,7 @@ class ContactForm extends Component {
     render() {
         return (
             <form className='hma roboto'>
+                <ReactNotification ref={this.notificationDOMRef} />
                 <label>{this.state.nameError}</label>
                 <input
                     placeholder='Nome'
@@ -143,17 +199,13 @@ class ContactForm extends Component {
                     value={this.state.message}
                     onChange={this.setMessage}
                 />
-                <div className='flex justify-between items-baseline flex-row flex-wrap'>
-                    <div className='success-message roboto'>{this.state.successMessage}</div>
-                    <div
-                        className='button no-underline white lato'
-                        onClick={this.submitForm}
-                    >
-                        Enviar
-                    </div>
+                <div
+                    className='fr button no-underline white lato'
+                    onClick={this.submitForm}
+                >
+                    Enviar
                 </div>
             </form>
-
         );
     }
 }
