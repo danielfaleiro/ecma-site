@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/ecma-site/static/css/2.45ed5bd8.chunk.css"
   },
   {
-    "revision": "5e3b54106b9af0109c78063b4d98882b",
+    "revision": "cf306f9cd784449fcf88c1fa67ebe926",
     "url": "/ecma-site/index.html"
   }
 ];
