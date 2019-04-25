@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const Service = ({name, image, others, onRouteChange}) => {
     const otherServices = () => {
         const res = others.services.map( function(elem, index) {
-            console.log(others.route[index]);
             return (
                 <Link to={others.route[index]} key={index}>
                     <button

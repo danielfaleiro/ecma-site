@@ -18,9 +18,11 @@ const ContactPage = () => {
                 </div>
             </div>
             <Map />
-            <div className='hma center flex-nowrap flex-column section-container'>  
-                <p className='lato tc title color-ecma-gold'>Deixe sua mensagem</p>
-                <ContactForm />
+            <div className='center flex-nowrap flex-column'>
+                <div className='hma section-container'>
+                    <p className='lato tc title color-ecma-gold'>Deixe sua mensagem</p>
+                    <ContactForm />
+                </div>
             </div>
         </div>
     );

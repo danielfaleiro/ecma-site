@@ -8,9 +8,9 @@ import links from '../../links';
 
 const ServicesPage = ({onRouteChange}) => {
     return (
-        <div className='center top-page flex-nowrap flex-column hma section-container section-ma min-max-width lato'>
-            <p className='tc title color-ecma-gold'>Nossos Serviços</p>
-            <div className='center flex-row flex-wrap'>
+        <div className='top-page center flex-nowrap flex-column section-container section-ma min-max-width lato'>
+            <p className='tc title color-ecma-gold hma'>Nossos Serviços</p>
+            <div className='hma center flex-row flex-wrap'>
                 <ServiceCard
                     img={FisioImg}
                     title='Fisioterapia'
