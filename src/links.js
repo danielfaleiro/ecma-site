@@ -1,16 +1,16 @@
 const links = {
-    home: '/',
-    clinic: '/clinica',
-    faith: '/nossaconfessionalidade',
-    team: '/equipe',
+    home: '/ecma-site',
+    clinic: '/ecma-site/clinica',
+    faith: '/ecma-site/nossaconfessionalidade',
+    team: '/ecma-site/equipe',
     services: {
-        self: '/servicos',
-        fisio: '/servicos/fisioterapia',
-        osteo: '/servicos/osteopatia',
-        pilates: '/servicos/pilates',
-        training: '/servicos/treinamentofisico',
+        self: '/ecma-site/servicos',
+        fisio: '/ecma-site/servicos/fisioterapia',
+        osteo: '/ecma-site/servicos/osteopatia',
+        pilates: '/ecma-site/servicos/pilates',
+        training: '/ecma-site/servicos/treinamentofisico',
     },
-    contact: '/contato',
+    contact: '/ecma-site/contato',
 }
 
 export default links;
