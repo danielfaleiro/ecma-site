@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServiceCard.css';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({img, title, text, route, onRouteChange}) => {
     return (
@@ -8,7 +9,11 @@ const ServiceCard = ({img, title, text, route, onRouteChange}) => {
             <div className='card-info start flex-column flex-nowrap'>
                 <h3>{title}</h3>
                 <p style={{flexGrow: 1}}>{text}</p>
-                <div onClick={() => onRouteChange(route)} className='button white card-button self-end'>Saiba mais</div>
+                <Link to={route}>
+                    <div onClick={onRouteChange} className='button white card-button self-end'>
+                        Saiba mais
+                    </div>
+                </Link>
             </div>
         </div>
     );

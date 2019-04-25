@@ -4,6 +4,7 @@ import OsteoImg from '../Services/osteopatia.jpg';
 import PilatesImg from '../Services/pilates.jpg';
 import TreinoImg from '../Services/treinamento.jpg';
 import ServiceCard from './ServiceCard';
+import links from '../../links';
 
 const ServicesPage = ({onRouteChange}) => {
     return (
@@ -13,28 +14,28 @@ const ServicesPage = ({onRouteChange}) => {
                 <ServiceCard
                     img={FisioImg}
                     title='Fisioterapia'
-                    route='fisioterapia'
+                    route={links.services.fisio}
                     text='Texto'
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={OsteoImg}
                     title='Osteopatia'
-                    route='osteopatia'
+                    route={links.services.osteo}
                     text='Texto'
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={PilatesImg}
                     title='Pilates'
-                    route='pilates'
+                    route={links.services.pilates}
                     text='Texto'
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={TreinoImg}
                     title='Treinamento Físico'
-                    route='treinamento'
+                    route={links.services.training}
                     text='Texto'
                     onRouteChange={onRouteChange}
                 />

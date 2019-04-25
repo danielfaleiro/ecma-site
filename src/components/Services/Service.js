@@ -1,21 +1,23 @@
 import React from 'react';
 import './Service.css';
+import { Link } from 'react-router-dom';
 
 const Service = ({name, image, others, onRouteChange}) => {
     const otherServices = () => {
         const res = others.services.map( function(elem, index) {
             console.log(others.route[index]);
             return (
-                <button 
-                    key={index}
-                    onClick={() => onRouteChange(others.route[index])}
-                    className='services-bt white b lato' 
-                    style={{
-                        backgroundImage: `url(${others.images[index]})`,
-                        backgroundSize: '250px 250px'
-                    }}>
-                    {elem.toUpperCase()}
-                </button>
+                <Link to={others.route[index]} key={index}>
+                    <button
+                        onClick={onRouteChange}
+                        className='services-bt white b lato' 
+                        style={{
+                            backgroundImage: `url(${others.images[index]})`,
+                            backgroundSize: '250px 250px'
+                        }}>
+                        {elem.toUpperCase()}
+                    </button>
+                </Link>
             );
         });
         return res;

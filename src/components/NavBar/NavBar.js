@@ -2,6 +2,8 @@ import React from 'react';
 import './NavBar.css'
 import logo from './headerlogo.png';
 import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
+import links from '../../links';
+import { Link } from "react-router-dom";
 
 
 const NavBar = ({onRouteChange}) => {
@@ -38,37 +40,75 @@ const NavBar = ({onRouteChange}) => {
     <>
     <nav id='navigation' className='navigation shadow-1'>
       <div className='logoContainer'>
-        <a href='/' onClick={() => onRouteChange('/')}>
+        <Link to={links.home} onClick={onRouteChange}>
           <img  className='headerLogo' src={logo} alt='Logo' />
-        </a>
+        </Link>
       </div>
       <div className='menuItems'>
         <span>
-          <p onClick={() => onRouteChange('/')} id='active' className='lato'>{menu.home}</p>
+          <Link to={links.home}>
+            <p onClick={onRouteChange} id='active' className='lato'>
+              {menu.home}
+            </p>
+          </Link>
         </span>
         <span>
-          <p onClick={() => onRouteChange('clinica')} className='lato'>{menu.clinica}</p>
+          <Link to={links.clinic}>
+            <p onClick={onRouteChange} className='lato'>
+              {menu.clinica}
+            </p>
+          </Link>
         </span>
         <span>
-          <p onClick={() => onRouteChange('confessionalidade')} className='lato'>{menu.confessionalidade}</p>
+          <Link to={links.faith}>
+            <p onClick={onRouteChange} className='lato'>
+              {menu.confessionalidade}
+            </p>
+          </Link>
         </span>
         <span>
-          <p onClick={() => onRouteChange('equipe')} className='lato'>{menu.equipe}</p>
+          <Link to={links.team}>
+            <p onClick={onRouteChange} className='lato'>
+              {menu.equipe}
+            </p>
+          </Link>
         </span>
         <span className='dropdown'>
-        <p onClick={() => onRouteChange('services')} className='lato flex'>
-            {menu.servicos.self}
-            <MdArrowDropDown className='self-center' size='25' />
-        </p>
-        <div className='dropdown-content color-ecma-blue lato'>
-          <p onClick={() => onRouteChange('fisioterapia')}>{menu.servicos.fisioterapia}</p>
-          <p onClick={() => onRouteChange('osteopatia')}>{menu.servicos.osteopatia}</p>
-          <p onClick={() => onRouteChange('pilates')}>{menu.servicos.pilates}</p>
-          <p onClick={() => onRouteChange('treinamento')}>{menu.servicos.treinamento}</p>
-        </div>
+          <Link to={links.services.self}>
+            <p onClick={onRouteChange} className='lato flex'>
+              {menu.servicos.self}
+              <MdArrowDropDown className='self-center' size='25' />
+            </p>
+          </Link>
+          <div className='dropdown-content color-ecma-blue lato'>
+            <Link to={links.services.fisio}>
+              <p onClick={onRouteChange}>
+                {menu.servicos.fisioterapia}
+              </p>
+            </Link>
+            <Link to={links.services.osteo}>
+              <p onClick={onRouteChange}>
+                {menu.servicos.osteopatia}
+              </p>
+            </Link>
+            <Link to={links.services.pilates}>
+              <p onClick={onRouteChange}>
+                {menu.servicos.pilates}
+              </p>
+            </Link>
+            <Link to={links.services.training}>
+              <p onClick={onRouteChange}>
+                {menu.servicos.treinamento}
+              </p>
+            </Link>
+          </div>
         </span>
         <span>
-          <p onClick={() => onRouteChange('contact')} className='lato'>{menu.contato}</p>
+          <Link to={links.contact}>
+            <p onClick={onRouteChange} className='lato'>
+              {menu.contato}
+            </p>
+          </Link>
         </span>
         <MdMenu onClick={showMobileMenu} className='menu-icon pointer' size='30' />
       </div>  
@@ -76,31 +116,69 @@ const NavBar = ({onRouteChange}) => {
     <nav id='mobileNavigation' className='mobile-navigation'>
       <div id='mobileMenu' className='menu-mobile hma'>
           <span>
-            <p onClick={() => onRouteChange('/')} id='active' className='lato'>{menu.home}</p>
+            <Link to={links.home}>
+              <p onClick={onRouteChange} id='active' className='lato'>
+                {menu.home}
+              </p>
+            </Link>
           </span>
           <span>
-            <p onClick={() => onRouteChange('clinica')} className='lato'>{menu.clinica}</p>
+            <Link to={links.clinic}>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.clinica}
+              </p>
+            </Link>
           </span>
           <span>
-            <p onClick={() => onRouteChange('confessionalidade')} className='lato'>{menu.confessionalidade}</p>
+            <Link to={links.faith}>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.confessionalidade}
+              </p>
+            </Link>
           </span>
           <span>
-            <p onClick={() => onRouteChange('equipe')} className='lato'>{menu.equipe}</p>
+            <Link to={links.team}>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.equipe}
+              </p>
+            </Link>
           </span>
           <span className='dropdown'>
-            <p onClick={() => onRouteChange('services')} className='lato flex'>
-              {menu.servicos.self}
-              <MdArrowDropDown className='self-center' size='25' />
-            </p>
+            <Link to={links.services.self}>
+              <p onClick={onRouteChange} className='lato flex'>
+                {menu.servicos.self}
+                <MdArrowDropDown className='self-center' size='25' />
+              </p>
+            </Link>
             <div className='dropdown-content color-ecma-blue lato'>
-              <p onClick={() => onRouteChange('fisioterapia')}>{menu.servicos.fisioterapia}</p>
-              <p onClick={() => onRouteChange('osteopatia')}>{menu.servicos.osteopatia}</p>
-              <p onClick={() => onRouteChange('pilates')}>{menu.servicos.pilates}</p>
-              <p onClick={() => onRouteChange('treinamento')}>{menu.servicos.treinamento}</p>
+              <Link to={links.services.fisio}>
+                <p onClick={onRouteChange}>
+                  {menu.servicos.fisioterapia}
+                </p>
+              </Link>
+              <Link to={links.services.osteo}>
+                <p onClick={onRouteChange}>
+                  {menu.servicos.osteopatia}
+                </p>
+              </Link>
+              <Link to={links.services.pilates}>
+                <p onClick={onRouteChange}>
+                  {menu.servicos.pilates}
+                </p>
+              </Link>
+              <Link to={links.services.training}>
+                <p onClick={onRouteChange}>
+                  {menu.servicos.treinamento}
+                </p>
+              </Link>
             </div>
           </span>
           <span>
-            <p onClick={() => onRouteChange('contact')} className='lato'>Contato</p>
+            <Link to={links.contact}>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.contato}
+              </p>
+            </Link>
           </span>
         </div>
     </nav>
