@@ -8,35 +8,39 @@ import links from '../../links';
 
 const ServicesPage = ({onRouteChange}) => {
     return (
-        <div className='top-page center flex-nowrap flex-column section-container section-ma min-max-width lato'>
-            <p className='tc title color-ecma-gold hma'>Nossos Serviços</p>
-            <div className='hma center flex-row flex-wrap'>
+        <div className='top-page container-tpa center flex-nowrap flex-column section-container section-ma lato'>
+            <div className='min-max-width tc title color-ecma-gold hma'>Nossos Serviços</div>
+            <div className='center flex-row flex-wrap'>
                 <ServiceCard
                     img={FisioImg}
-                    title='Fisioterapia'
+                    title='FISIOTERAPIA'
                     route={links.services.fisio}
                     text='Texto'
+                    flip={false}
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={OsteoImg}
-                    title='Osteopatia'
+                    title='OSTEOPATIA'
                     route={links.services.osteo}
                     text='Texto'
+                    flip={true}
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={PilatesImg}
-                    title='Pilates'
+                    title='PILATES'
                     route={links.services.pilates}
                     text='Texto'
+                    flip={false}
                     onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={TreinoImg}
-                    title='Treinamento Físico'
+                    title='TREINAMENTO FÍSICO'
                     route={links.services.training}
                     text='Texto'
+                    flip={true}
                     onRouteChange={onRouteChange}
                 />
             </div>
