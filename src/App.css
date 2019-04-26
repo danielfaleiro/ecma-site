@@ -5,6 +5,7 @@
 :root {
   --ecma-gold: #957E51; 
   --ecma-dark-gold: rgb(112, 93, 54);
+  --ecma-light-gold: rgb(230, 198, 134);
   --ecma-blue: #192835;
 }
 
@@ -136,6 +137,11 @@ a:hover {
 
 .button:hover {
   background-color: var(--ecma-dark-gold);
+}
+
+.disabled, .disabled:hover, .disabled:active  {
+  background-color: var(--ecma-light-gold);
+  cursor: auto;
 }
 
 #map {

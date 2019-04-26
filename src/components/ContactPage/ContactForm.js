@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import InputMask from 'react-input-mask';
 import ReactNotification from "react-notifications-component";
+import Loader from 'react-loader-spinner';
 import "react-notifications-component/dist/theme.css";
 import './ContactForm.css';
 
@@ -19,6 +20,7 @@ class ContactForm extends Component {
             phoneError: '',
             emailError: '',
             messageError: '',
+            isSending: false,
         };
     }
 
@@ -126,10 +128,16 @@ class ContactForm extends Component {
     }
 
     submitForm = () => {
+        if (this.state.isSending)
+            return;
+
         const isValid = this.validateForm();
 
         if (isValid) {
-            fetch('http://localhost:3001/sendmessage', {
+            this.setState({isSending: true});
+            const button = document.getElementById("form-button");
+            button.classList.add("disabled");
+            fetch('https://serene-forest-13940.herokuapp.com/sendmessage', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -145,8 +153,12 @@ class ContactForm extends Component {
                     this.addSuccessNotification();
                     this.clearForm();
                 }
+                this.setState({isSending: false});
+                button.classList.remove("disabled");
             }).catch(() => {
                 this.addErrorNotification();
+                this.setState({isSending: false});
+                button.classList.remove("disabled");
             });
         }
     }
@@ -199,11 +211,18 @@ class ContactForm extends Component {
                     value={this.state.message}
                     onChange={this.setMessage}
                 />
-                <div
-                    className='fr button no-underline white lato'
-                    onClick={this.submitForm}
-                >
-                    Enviar
+                <div id='form-button' className='fr button no-underline white lato form-button' onClick={this.submitForm}>
+                    {this.state.isSending ?
+                        <Loader
+                            id='form-loader'
+                            type="ThreeDots"
+                            color="#FFFFFF"
+                            height="20"	
+                            width="20"
+                        />
+                        :
+                        "Enviar"
+                    }
                 </div>
             </form>
         );
