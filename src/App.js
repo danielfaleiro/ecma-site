@@ -22,8 +22,10 @@ class App extends Component {
     mobileNavigation.classList.remove('show-mobile-menu');
 
     const navigation = document.getElementById('navigation');
-    if (!navigation.classList.contains('shadow-1'))
+    if (!navigation.classList.contains('shadow-1')) {
       navigation.classList.add('shadow-1');
+    }
+
     window.scrollTo(0, 0);
   }
 
