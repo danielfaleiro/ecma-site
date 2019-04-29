@@ -9,7 +9,7 @@ const Clinic = () => {
     return (
         <div id='clinicPage' className='hma top-page container-tpa'>
             <div className='center min-max-width clinic-container center flex-column lato'>
-                <div className='tc title color-ecma-gold'>Bem-vindo ao ECMA</div>
+                <h1 className='tc color-ecma-gold'>Bem-vindo ao ECMA</h1>
                 <p className='section-subtitle tc'>
                 Pensando em você, nosso cliente, buscamos um meio de oferecer serviços de saúde e qualidade de vida, 
                 mas com um contexto voltado para a tríade do ser humano. Assim nasce o ECMA – <strong></strong>Espaço Clínico Raydel 
@@ -20,7 +20,7 @@ const Clinic = () => {
                     <div className='clinic-panel clinic-img'>
                     </div>
                     <div className='clinic-panel'>
-                        <h2 className='lato'>FILOSOFIA</h2>
+                        <h3 className='lato'>FILOSOFIA</h3>
                         <p className='text'>
                             Sua saúde estará nas mãos de ótimos profissionais. O que estes tem em comum 
                             é uma visão clássica de saúde.
@@ -36,7 +36,7 @@ const Clinic = () => {
                         </p>
                     </div>
                     <div className='clinic-panel'>
-                        <h2 className='lato'>METODOLOGIA DE TRABALHO</h2>
+                        <h3 className='lato'>METODOLOGIA DE TRABALHO</h3>
                         <p className='text'>
                             Somos um <strong>espaço de saúde clássica</strong>.  
                         </p>

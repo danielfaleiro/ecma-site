@@ -9,7 +9,7 @@ import links from '../../links';
 const ServicesPage = ({onRouteChange}) => {
     return (
         <div className='top-page container-tpa center flex-nowrap flex-column section-container section-ma lato'>
-            <div className='min-max-width tc title color-ecma-gold hma'>Nossos Serviços</div>
+            <h1 className='min-max-width tc color-ecma-gold hma'>Nossos Serviços</h1>
             <div className='center flex-row flex-wrap'>
                 <ServiceCard
                     img={FisioImg}

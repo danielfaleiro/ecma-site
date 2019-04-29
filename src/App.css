@@ -14,6 +14,10 @@ body, html {
   padding: 0;
 }
 
+h1 {
+  padding: 30px 0;
+}
+
 a {
   text-decoration: none;
   color: var(--ecma-blue);
@@ -25,11 +29,6 @@ a:hover {
 
 .App {
   text-align: center;
-}
-
-.title {
-  font-size: 3em;
-  margin-bottom: 60px;
 }
 
 .section-subtitle {
@@ -84,7 +83,7 @@ a:hover {
 }
 .min-max-width {
   max-width: 1080px;
-  min-width: 360px;
+  min-width: 300px;
 }
 
 .roboto {

@@ -9,7 +9,7 @@ const ContactPage = () => {
     return (
         <div className='center top-page flex-column flex-nowrap'>
             <div className='tc bg-moon-gray section-container'>
-                <p className='title lato color-ecma-gold'>Contato</p>
+                <h1 className='lato color-ecma-gold'>Contato</h1>
                 <p className='contact-subtitle lato'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
                     <IoIosTelephone id='icon1' size='30'/><div id='text1'>Telefone: (62) 99105-0615</div>
@@ -20,7 +20,7 @@ const ContactPage = () => {
             <Map />
             <div className='center flex-nowrap flex-column'>
                 <div className='hma section-container'>
-                    <p className='lato tc title color-ecma-gold'>Deixe sua mensagem</p>
+                    <h1 className='lato tc color-ecma-gold'>Deixe sua mensagem</h1>
                     <ContactForm />
                 </div>
             </div>

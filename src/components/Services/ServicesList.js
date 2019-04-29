@@ -7,9 +7,9 @@ const ServicesList = ({onRouteChange}) => {
     return (
         <div className='section-container section-vpa services-container'>
             <div className='min-max-width center flex-column tc'>
-                <div className='hma title services-title lato'>
+                <h1 className='hma services-title lato'>
                     Nossos Serviços
-                </div>
+                </h1>
                 <div className='center flex-row flex-wrap'>
                     <Link to={links.services.fisio}>
                         <button 

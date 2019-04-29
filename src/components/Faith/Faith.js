@@ -6,7 +6,7 @@ const Faith = () => {
     return (
         <div className='hma lato top-page'>
             <div className='min-max-width faith-section center flex-column container-vpa'>
-                <div className='title lato color-ecma-gold'>Nossa Confessionalidade</div>
+                <h1 className='tc lato color-ecma-gold'>Nossa Confessionalidade</h1>
                 <p className='text'>
                 Temos a <strong>Teologia Reformada</strong> como base de nossas vidas, que adere à fé, a prática 
                 e às definições doutrinárias exemplificadas especialmente pela Bíblia, pelos 
@@ -20,14 +20,14 @@ const Faith = () => {
                 </p>
             </div>
             <div className='min-max-width faith-section center flex-column container-vpa'>
-                <div className='title lato color-ecma-gold'>Nossa Confissão de Fé</div>
+                <h1 className='tc lato color-ecma-gold'>Nossa Confissão de Fé</h1>
                 <p className='text'>
                     Ser uma família cristã é ver o ser humano como uma criação Divina, onde as 
                     enfermidades é obra do mau e do mundo em que vivemos. Em nossa abordagem, Deus 
                     toma o lugar central, respeitando as individualidades e buscando o centro das 
                     necessidades de cada um a quem se dispõe a fazer parte do nosso trabalho. 
                 </p>
-                <a href={pdf} className='button white'>Leia Nossa Confissão de Fé</a>
+                <a href={pdf} className='button white center'>Leia Nossa Confissão de Fé</a>
             </div>
         </div>
     );

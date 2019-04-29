@@ -24,12 +24,14 @@ class TeamCard extends Component {
                 <div id={`memberInfo${index}`} className='member-info center flex-wrap'>
                     <div className='member-info-1'>
                         <h2>{name}</h2>
-                        <p className='member-text'>
-                            {job}
-                        </p>
-                        <p>
-                            {credentials}
-                        </p>
+                        <div>
+                            <p className='member-text'>
+                                {job}
+                            </p>
+                            <p>
+                                {credentials}
+                            </p>
+                        </div>
                     </div>
                     <div className='member-info-2 ts start flex-column'>
                         <span>

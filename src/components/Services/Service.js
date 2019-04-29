@@ -26,7 +26,7 @@ const Service = ({name, image, others, onRouteChange}) => {
         <div className='hma top-page'>
             <div className='min-max-width center flex-column section-container lato'>
                 <div className='service-title' style={{backgroundImage: `url(${image})`}}>
-                    <p className='title white roboto tc'>{name}</p>
+                    <h1 className='white roboto tc'>{name}</h1>
                 </div>
                 <div className='start flex-row flex-wrap'>
                     <div className='service-column-1'>
@@ -42,7 +42,7 @@ const Service = ({name, image, others, onRouteChange}) => {
                 </div>
             </div>
             <div className='min-max-width other-services section-container center flex-column items-center'>
-                <p className='tc title lato color-ecma-gold'>Conheça Também</p>
+                <h1 className='tc lato color-ecma-gold'>Conheça Também</h1>
                 <div className='center flex-row flex-wrap'>
                     {otherServices()}
                 </div>
