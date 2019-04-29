@@ -73,25 +73,17 @@ const NavBar = ({onRouteChange}) => {
             </p>
           </NavLink>
           <div className='dropdown-content color-ecma-blue lato'>
-            <NavLink to={links.services.fisio} activeClassName='dropdown-active'>
-              <p onClick={onRouteChange}>
+            <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.fisioterapia}
-              </p>
             </NavLink>
-            <NavLink to={links.services.osteo} activeClassName='dropdown-active'>
-              <p onClick={onRouteChange}>
+            <NavLink to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.osteopatia}
-              </p>
             </NavLink>
-            <NavLink to={links.services.pilates} activeClassName='dropdown-active'>
-              <p onClick={onRouteChange}>
+            <NavLink to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.pilates}
-              </p>
             </NavLink>
-            <NavLink to={links.services.training} activeClassName='dropdown-active'>
-              <p onClick={onRouteChange}>
+            <NavLink to={links.services.training} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.treinamento}
-              </p>
             </NavLink>
           </div>
         </div>
@@ -104,73 +96,55 @@ const NavBar = ({onRouteChange}) => {
       </div>  
     </nav>
     <nav id='mobileNavigation' className='mobile-navigation'>
-      <div id='mobileMenu' className='menu-mobile hma'>
-          <div>
-            <NavLink to={links.home}>
-              <p onClick={onRouteChange} id='active' className='lato'>
-                {menu.home}
-              </p>
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to={links.clinic}>
-              <p onClick={onRouteChange} className='lato'>
-                {menu.clinica}
-              </p>
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to={links.faith}>
-              <p onClick={onRouteChange} className='lato'>
-                {menu.confessionalidade}
-              </p>
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to={links.team}>
-              <p onClick={onRouteChange} className='lato'>
-                {menu.equipe}
-              </p>
-            </NavLink>
-          </div>
-          <div className='dropdown'>
-            <NavLink to={links.services.self}>
-              <p onClick={onRouteChange} className='lato flex'>
+      <div id='mobileMenu' className='menu-mobile'>
+        <div className='mobile-menu-item'>
+          <NavLink exact to={links.home} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.home}
+          </NavLink>
+        </div>
+        <div className='mobile-menu-item'>
+          <NavLink to={links.clinic} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.clinica}
+          </NavLink>
+        </div>
+        <div className='mobile-menu-item'>
+          <NavLink to={links.faith} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.confessionalidade}
+          </NavLink>
+        </div>
+        <div className='mobile-menu-item'>
+          <NavLink to={links.team} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.equipe}
+          </NavLink>
+        </div>
+        <div className='dropdown'>
+          <div className='mobile-menu-item'>
+            <NavLink exact to={links.services.self} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.self}
                 <MdArrowDropDown className='self-center' size='25' />
-              </p>
             </NavLink>
-            <div className='dropdown-content color-ecma-blue lato'>
-              <NavLink to={links.services.fisio}>
-                <p onClick={onRouteChange}>
-                  {menu.servicos.fisioterapia}
-                </p>
-              </NavLink>
-              <NavLink to={links.services.osteo}>
-                <p onClick={onRouteChange}>
-                  {menu.servicos.osteopatia}
-                </p>
-              </NavLink>
-              <NavLink to={links.services.pilates}>
-                <p onClick={onRouteChange}>
-                  {menu.servicos.pilates}
-                </p>
-              </NavLink>
-              <NavLink to={links.services.training}>
-                <p onClick={onRouteChange}>
-                  {menu.servicos.treinamento}
-                </p>
-              </NavLink>
-            </div>
           </div>
-          <div>
-            <NavLink to={links.contact}>
-              <p onClick={onRouteChange} className='lato'>
-                {menu.contato}
-              </p>
+          <div className='dropdown-content color-ecma-blue lato hma'>
+            <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.servicos.fisioterapia}
+            </NavLink>
+            <NavLink to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.servicos.osteopatia}
+            </NavLink>
+            <NavLink to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.servicos.pilates}
+            </NavLink>
+            <NavLink to={links.services.training} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.servicos.treinamento}
             </NavLink>
           </div>
         </div>
+        <div className='mobile-menu-item'>
+          <NavLink to={links.contact} onClick={onRouteChange} activeClassName='dropdown-active'>
+              {menu.contato}
+          </NavLink>
+        </div>
+      </div>
     </nav>
     </>
     );
