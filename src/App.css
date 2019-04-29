@@ -50,12 +50,16 @@ a:hover {
 }
 
 .container-vpa {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 60px;
 }
 
 .container-tpa {
-  padding-top: 60px;
+  padding-top: 30px;
+}
+
+.container-bpa {
+  padding-bottom: 60px;
 }
 
 .center {

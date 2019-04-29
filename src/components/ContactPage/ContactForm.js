@@ -181,7 +181,7 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <form className='hma roboto'>
+            <form className='roboto'>
                 <ReactNotification ref={this.notificationDOMRef} />
                 <label>{this.state.nameError}</label>
                 <input

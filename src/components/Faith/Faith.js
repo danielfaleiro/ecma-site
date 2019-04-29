@@ -1,11 +1,10 @@
 import React from 'react';
 import pdf from './DECLARAÇÃO DE FÉ ECMA.pdf';
-import './Faith.css';
 
 const Faith = () => {
     return (
         <div className='hma lato top-page'>
-            <div className='min-max-width faith-section center flex-column container-vpa'>
+            <div className='min-max-width center flex-column container-tpa'>
                 <h1 className='tc lato color-ecma-gold'>Nossa Confessionalidade</h1>
                 <p className='text'>
                 Temos a <strong>Teologia Reformada</strong> como base de nossas vidas, que adere à fé, a prática 
@@ -19,7 +18,7 @@ const Faith = () => {
                 respeitando suas tradições religiosas.  
                 </p>
             </div>
-            <div className='min-max-width faith-section center flex-column container-vpa'>
+            <div className='min-max-width center flex-column container-bpa'>
                 <h1 className='tc lato color-ecma-gold'>Nossa Confissão de Fé</h1>
                 <p className='text'>
                     Ser uma família cristã é ver o ser humano como uma criação Divina, onde as 
