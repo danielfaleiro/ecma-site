@@ -17,32 +17,20 @@ import Home from './components/Home/Home';
 import links from './links'
 
 class App extends Component {
-  onRouteChange = () => {
-    const mobileNavigation = document.getElementById('mobileNavigation');
-    mobileNavigation.classList.remove('show-mobile-menu');
-
-    const navigation = document.getElementById('navigation');
-    if (!navigation.classList.contains('shadow-1')) {
-      navigation.classList.add('shadow-1');
-    }
-
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <Router>
         <div className='color-default'>
-          <NavBar onRouteChange={this.onRouteChange} />
-          <Route exact path={links.home} component={Home} onRouteChange={this.onRouteChange} />
+          <NavBar/>
+          <Route exact path={links.home} component={Home}/>
           <Route path={links.clinic} component={Clinic} />
           <Route path={links.faith} component={Faith} />
           <Route path={links.team} component={Team} />
           <Route exact path={links.services.self} component={ServicesPage} />
-          <Route path={links.services.fisio} component={Fisio} onRouteChange={this.onRouteChange} />
-          <Route path={links.services.osteo} component={Osteo} onRouteChange={this.onRouteChange} />
-          <Route path={links.services.pilates} component={Pilates} onRouteChange={this.onRouteChange} />
-          <Route path={links.services.training} component={Training} onRouteChange={this.onRouteChange} />
+          <Route path={links.services.fisio} component={Fisio}/>
+          <Route path={links.services.osteo} component={Osteo}/>
+          <Route path={links.services.pilates} component={Pilates}/>
+          <Route path={links.services.training} component={Training}/>
           <Route path={links.contact} component={ContactPage} />
           <Footer />
         </div>
@@ -52,7 +40,7 @@ class App extends Component {
   }
 }
 
-const Fisio = ({onRouteChange}) => {
+const Fisio = () => {
   const others = {
     services: ['Osteopatia', 'Pilates', 'Treinamento Físico'],
     images: [osteoImg, pilatesImg, treinoImg],
@@ -63,12 +51,11 @@ const Fisio = ({onRouteChange}) => {
         name='Fisioterapia'
         image={fisioImg}
         others={others}
-        onRouteChange={onRouteChange}
     />
   );
 }
 
-const Osteo = ({onRouteChange}) => {
+const Osteo = () => {
   const others = {
       services: ['Fisioterapia', 'Pilates', 'Treinamento Físico'],
       images: [fisioImg, pilatesImg, treinoImg],
@@ -79,12 +66,11 @@ const Osteo = ({onRouteChange}) => {
           name='Osteopatia'
           image={osteoImg}
           others={others}
-          onRouteChange={onRouteChange}
       />
   );
 }
 
-const Pilates = ({onRouteChange}) => {
+const Pilates = () => {
   const others = {
       services: ['Fisioterapia', 'Osteopatia', 'Treinamento Físico'],
       images: [fisioImg, osteoImg, treinoImg],
@@ -95,12 +81,11 @@ const Pilates = ({onRouteChange}) => {
           name='Pilates'
           image={pilatesImg}
           others={others}
-          onRouteChange={onRouteChange}
       />
   );
 }
 
-const Training = ({onRouteChange}) => {
+const Training = () => {
   const others = {
       services: ['Fisioterapia', 'Osteopatia', 'Pilates'],
       images: [fisioImg, osteoImg, pilatesImg],
@@ -111,7 +96,6 @@ const Training = ({onRouteChange}) => {
           name='Treinamento Físico'
           image={treinoImg}
           others={others}
-          onRouteChange={onRouteChange}
       />
   );
 }

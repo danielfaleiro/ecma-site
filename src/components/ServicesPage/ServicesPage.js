@@ -6,7 +6,7 @@ import TreinoImg from '../Services/treinamento.jpg';
 import ServiceCard from './ServiceCard';
 import links from '../../links';
 
-const ServicesPage = ({onRouteChange}) => {
+const ServicesPage = () => {
     return (
         <div className='top-page container-tpa center flex-nowrap flex-column lato'>
             <h1 className='min-max-width tc color-ecma-gold hma'>Nossos Serviços</h1>
@@ -17,7 +17,6 @@ const ServicesPage = ({onRouteChange}) => {
                     route={links.services.fisio}
                     text='Texto'
                     flip={false}
-                    onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={OsteoImg}
@@ -25,7 +24,6 @@ const ServicesPage = ({onRouteChange}) => {
                     route={links.services.osteo}
                     text='Texto'
                     flip={true}
-                    onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={PilatesImg}
@@ -33,7 +31,6 @@ const ServicesPage = ({onRouteChange}) => {
                     route={links.services.pilates}
                     text='Texto'
                     flip={false}
-                    onRouteChange={onRouteChange}
                 />
                 <ServiceCard
                     img={TreinoImg}
@@ -41,7 +38,6 @@ const ServicesPage = ({onRouteChange}) => {
                     route={links.services.training}
                     text='Texto'
                     flip={true}
-                    onRouteChange={onRouteChange}
                 />
             </div>
         </div>

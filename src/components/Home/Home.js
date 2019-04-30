@@ -4,12 +4,12 @@ import Introduction from '../Introduction/Introduction';
 import ServicesList from '../Services/ServicesList';
 import Testimonials from '../Testimonials/Testimonials';
 
-const Home = ({ onRouteChange }) => {
+const Home = () => {
     return (
         <>
             <Carousel />
             <Introduction />
-            <ServicesList onRouteChange={onRouteChange}/>
+            <ServicesList/>
             <Testimonials />
         </>
     );

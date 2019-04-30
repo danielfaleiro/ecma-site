@@ -1,8 +1,9 @@
 import React from 'react';
 import './Service.css';
 import { Link } from 'react-router-dom';
+import onRouteChange from '../../events/onRouteChange';
 
-const Service = ({name, image, others, onRouteChange}) => {
+const Service = ({name, image, others}) => {
     const otherServices = () => {
         const res = others.services.map( function(elem, index) {
             return (

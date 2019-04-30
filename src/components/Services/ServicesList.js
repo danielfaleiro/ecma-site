@@ -2,8 +2,9 @@ import React from 'react';
 import './ServicesList.css';
 import links from '../../links';
 import { Link } from 'react-router-dom';
+import onRouteChange from '../../events/onRouteChange';
 
-const ServicesList = ({onRouteChange}) => {
+const ServicesList = () => {
     return (
         <div className='section-container section-vpa services-container'>
             <div className='min-max-width center flex-column tc'>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ServiceCard.css';
 import { Link } from 'react-router-dom';
+import onRouteChange from '../../events/onRouteChange';
 
 class ServiceCard extends Component {
     componentDidMount() {
@@ -17,7 +18,7 @@ class ServiceCard extends Component {
     }
 
     render() {
-        const { title, img, text, route, onRouteChange } = this.props;
+        const { title, img, text, route } = this.props;
         return (
             <div id={`cardOuter${title}`} className='card-container'>
                 <div id={`cardInner${title}`} className='card-inner center min-max-width'>

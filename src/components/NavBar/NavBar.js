@@ -4,9 +4,10 @@ import logo from './headerlogo.png';
 import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
 import links from '../../links';
 import { Link, NavLink } from "react-router-dom";
+import onRouteChange from '../../events/onRouteChange';
 
 
-const NavBar = ({onRouteChange}) => {
+const NavBar = () => {
     const menu = {
       home: "Home",
       clinica: "A Clínica",
