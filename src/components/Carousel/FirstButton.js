@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const FirstButton = () => {
+const FirstButton = ({ destination, text }) => {
     return (
-        <a href='/' className='button cursor no-underline white lato hma'>
-            Conheça Nossas Especialidades
-        </a>
+        <Link to={destination} className='button cursor no-underline white lato hma'>
+            {text}
+        </Link>
          
     );
 }

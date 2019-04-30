@@ -2,6 +2,7 @@ import React from 'react';
 import FirstButton from './FirstButton';
 import SlideButtons from './SlideButtons';
 import './Carousel.css';
+import links from '../../links';
 
 
 const Carousel = () => {
@@ -15,7 +16,7 @@ const Carousel = () => {
                     <p className='carousel-subtitle hpa white lato'>
                         Temos a solução completa para sua saúde e bem-estar.
                     </p>
-                    <FirstButton />
+                    <FirstButton destination={links.services.self} text={'Conheça Nossas Especialidades'}/>
                 </div>
                 <SlideButtons />
             </div>

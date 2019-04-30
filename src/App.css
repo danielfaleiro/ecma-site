@@ -5,6 +5,7 @@
 :root {
   --ecma-gold: #957E51; 
   --ecma-dark-gold: rgb(112, 93, 54);
+  --ecma-very-dark-gold: rgb(87, 69, 34);
   --ecma-light-gold: rgb(199, 176, 131);
   --ecma-blue: #192835;
 }
@@ -127,20 +128,25 @@ a:hover {
   display: inline-block;
   max-width: 16em;
   padding: 0.35em 1.2em;
-  border-radius: 2em;
   background-color: var(--ecma-gold);
   box-sizing: border-box;
   font-weight: 300;
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-  transition: all 0.2s;
+  transition: all 0.4s;
   margin-top: 1em;
   cursor: pointer;
+  color: white;
 }
 
 .button:hover {
   background-color: var(--ecma-dark-gold);
+  color: white;
+}
+
+.button:active {
+  background-color: var(--ecma-very-dark-gold);
 }
 
 .disabled, .disabled:hover, .disabled:active  {
