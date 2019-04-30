@@ -11,7 +11,7 @@ const ServicesList = () => {
                 <h1 className='hma services-title lato'>
                     Nossos Serviços
                 </h1>
-                <div className='center flex-row flex-wrap'>
+                <div className='hma center flex-row flex-wrap'>
                     <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hma services-bt white lato b'>
                         <span className='services-bt-text'>FISIOTERAPIA</span>
                     </Link>
