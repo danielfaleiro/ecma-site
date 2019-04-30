@@ -7,16 +7,19 @@ const Service = ({name, image, others}) => {
     const otherServices = () => {
         const res = others.services.map( function(elem, index) {
             return (
-                <Link to={others.route[index]} key={index}>
-                    <button
-                        onClick={onRouteChange}
-                        className='services-bt white b lato' 
-                        style={{
-                            backgroundImage: `url(${others.images[index]})`,
-                            backgroundSize: '250px 250px'
-                        }}>
+                <Link
+                    to={others.route[index]}
+                    key={index}
+                    onClick={onRouteChange}
+                    className='services-bt white b lato'
+                    style={{
+                        backgroundImage: `url(${others.images[index]})`,
+                        backgroundSize: '250px 250px'
+                    }}
+                >
+                    <span className='services-bt-text'>
                         {elem.toUpperCase()}
-                    </button>
+                    </span> 
                 </Link>
             );
         });

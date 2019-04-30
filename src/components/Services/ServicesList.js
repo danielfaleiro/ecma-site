@@ -12,37 +12,17 @@ const ServicesList = () => {
                     Nossos Serviços
                 </h1>
                 <div className='center flex-row flex-wrap'>
-                    <Link to={links.services.fisio}>
-                        <button 
-                            onClick={onRouteChange}
-                            id='fisioterapia-bt'
-                            className='hma services-bt white lato b'>
-                            FISIOTERAPIA
-                        </button>
+                    <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hma services-bt white lato b'>
+                        <span className='services-bt-text'>FISIOTERAPIA</span>
                     </Link>
-                    <Link to={links.services.osteo}>
-                        <button 
-                            onClick={onRouteChange}
-                            id='osteopatia-bt'
-                            className='hma services-bt white lato b'>
-                            OSTEOPATIA
-                        </button>
+                    <Link id='osteopatia-bt' to={links.services.osteo} onClick={onRouteChange} className='hma services-bt white lato b'>
+                        <span className='services-bt-text'>OSTEOPATIA</span>
                     </Link>
-                    <Link to={links.services.pilates}>
-                        <button 
-                            onClick={onRouteChange}
-                            id='pilates-bt'
-                            className='hma services-bt white lato b'>
-                            PILATES TRADICIONAL
-                        </button>
+                    <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hma services-bt white lato b'>
+                        <span className='services-bt-text'>PILATES</span>
                     </Link>
-                    <Link to={links.services.training}>
-                        <button 
-                            onClick={onRouteChange}
-                            id='treinamento-bt'
-                            className='hma services-bt white lato b'>
-                            TREINAMENTO FÍSICO
-                        </button>
+                    <Link id='treinamento-bt' to={links.services.training} onClick={onRouteChange} className='hma services-bt white lato b'>
+                        <span className='services-bt-text'>TREINAMENTO FÍSICO</span>
                     </Link>
                 </div>
             </div>

@@ -7,6 +7,7 @@
 }
 
 .services-bt {
+    display: table;
     width: 250px;
     height: 250px;
     border: 0px;
@@ -17,6 +18,16 @@
     background-blend-mode: overlay;
     font-size: 1.8em;
     cursor: pointer;
+}
+
+.services-bt-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.services-bt:hover {
+    color: white;
 }
 
 #pilates-bt {
