@@ -10,6 +10,7 @@ class ContactForm extends Component {
     constructor(props) {
         super(props);
         this.addSuccessNotification = this.addSuccessNotification.bind(this);
+        this.addErrorNotification = this.addErrorNotification.bind(this);
         this.notificationDOMRef = React.createRef();
         this.state = {
             name: '',
@@ -221,8 +222,7 @@ class ContactForm extends Component {
                             id='form-loader'
                             type="ThreeDots"
                             color="#FFFFFF"
-                            height="20"	
-                            width="20"
+                            height="15"	
                         />
                         :
                         "Enviar"
