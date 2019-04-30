@@ -189,6 +189,7 @@ class ContactForm extends Component {
                     id='FormName'
                     value={this.state.name}
                     onChange={this.setName}
+                    type='text'
                 />
                 <InputMask
                     className='input-mask'
@@ -196,6 +197,7 @@ class ContactForm extends Component {
                     placeholder='Telefone'
                     value={this.state.phone}
                     onChange={this.setPhone}
+                    type='tel'
                 />
                 <label>{this.state.emailError}</label>
                 <input
@@ -203,6 +205,7 @@ class ContactForm extends Component {
                     id='FormEmail'
                     value={this.state.email}
                     onChange={this.setEmail}
+                    type='email'
                 />
                 <label>{this.state.messageError}</label>
                 <textarea
@@ -210,6 +213,7 @@ class ContactForm extends Component {
                     id='FormMessage'
                     value={this.state.message}
                     onChange={this.setMessage}
+                    type='text'
                 />
                 <div id='form-button' className='fr button no-underline white lato form-button' onClick={this.submitForm}>
                     {this.state.isSending ?
