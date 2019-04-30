@@ -11,9 +11,9 @@ class ServiceCard extends Component {
 
         if (flip) {
             cardInner.classList.add('card-flip');
-            cardOuter.classList.add('card-container-bg');
         } else {
             cardOuter.classList.add('flex-row');
+            cardOuter.classList.add('card-container-bg');
         }
     }
 

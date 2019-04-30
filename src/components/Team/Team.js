@@ -6,7 +6,7 @@ const Team = () => {
     return (
         <div className='min-max-width top-page container-tpa center flex-column'>
             <h1 className='color-ecma-gold tc lato'>Nossa Equipe</h1>
-            <div className='hma flex justify-between flex-column flex-wrap'>
+            <div className='hma mt3 flex justify-between flex-column flex-wrap'>
                 <TeamCard
                     index={1}
                     name='RAYDEL MARQUES'
