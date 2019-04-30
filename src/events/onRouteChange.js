@@ -7,6 +7,9 @@ const onRouteChange = () => {
         navigation.classList.add('shadow-1');
     }
 
+    const dropdown = document.getElementById('dropdown-content');
+    dropdown.classList.remove('show-dropdown');
+    
     window.scrollTo(0, 0);
 }
 

@@ -194,7 +194,7 @@ class ContactForm extends Component {
                 <InputMask
                     className='input-mask'
                     mask="(99) 999999999"
-                    placeholder='Telefone'
+                    placeholder='Telefone (Opcional)'
                     value={this.state.phone}
                     onChange={this.setPhone}
                     type='tel'

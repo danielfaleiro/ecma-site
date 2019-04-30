@@ -8,7 +8,7 @@ import './ContactPage.css'
 const ContactPage = () => {
     return (
         <div className='center top-page flex-column flex-nowrap'>
-            <div className='tc bg-moon-gray section-container'>
+            <div className='tc bg-moon-gray container-tpa'>
                 <h1 className='lato color-ecma-gold'>Contato</h1>
                 <p className='contact-subtitle lato'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
