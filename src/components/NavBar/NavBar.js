@@ -23,16 +23,28 @@ const NavBar = () => {
     contato: "Contato",
   }
 
+  const doShowMobileMenu = (isShow, navigation, mobileNavigation) => {
+    if (isShow) {
+      mobileNavigation.classList.add('show-mobile-menu');
+      navigation.classList.remove('shadow-1');
+    } else {
+      mobileNavigation.classList.remove('show-mobile-menu');
+      navigation.classList.add('shadow-1');
+    }
+  }
+
   const showMobileMenu = (isShow) => {
     const mobileNavigation = document.getElementById('mobileNavigation');
     const navigation = document.getElementById('navigation');
 
-    if (mobileNavigation.classList.contains('show-mobile-menu')) { // hide mobile menu
-      mobileNavigation.classList.remove('show-mobile-menu');
-      navigation.classList.add('shadow-1');
-    } else { // show mobile menu
-      mobileNavigation.classList.add('show-mobile-menu');
-      navigation.classList.remove('shadow-1');
+    if (isShow === true || isShow === false) {
+      doShowMobileMenu(isShow, navigation, mobileNavigation);
+    } else {
+      if (mobileNavigation.classList.contains('show-mobile-menu')) {
+        doShowMobileMenu(false, navigation, mobileNavigation);
+      } else {
+        doShowMobileMenu(true, navigation, mobileNavigation);
+      }
     }
   }
 
