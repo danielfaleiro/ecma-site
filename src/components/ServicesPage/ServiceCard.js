@@ -24,7 +24,7 @@ class ServiceCard extends Component {
                 <div id={`cardInner${title}`} className='card-inner center min-max-width'>
                     <img className='card-img' src={img} alt={title} />
                     <div className='card-info start flex-column flex-nowrap'>
-                        <h2>{title}</h2>
+                        <h3>{title}</h3>
                         <p className='text' style={{flexGrow: 1}}>{text}</p>
                         <Link to={route} className='start'>
                             <div onClick={onRouteChange} className='button white card-button self-center'>

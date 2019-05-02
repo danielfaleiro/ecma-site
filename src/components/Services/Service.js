@@ -34,13 +34,15 @@ const Service = ({name, image, others}) => {
                 </div>
                 <div className='start flex-row flex-wrap'>
                     <div className='service-column-1'>
-                        <h1>{name} - O que é?</h1>
+                        <h3>{name.toUpperCase()} - O QUE É?</h3>
                         <p>Texto</p>
-                        <h1>Como funciona</h1>
+                        <h3>COMO FUNCIONA</h3>
                         <p>Texto</p>
                     </div>
                     <div className='service-column-2'>
-                        <h1>Para quem é indicado</h1>
+                        <h3>PARA QUEM É INDICADO</h3>
+                        <p>Texto</p>
+                        <h3>CONTATO</h3>
                         <p>Texto</p>
                     </div>
                 </div>
@@ -50,7 +52,6 @@ const Service = ({name, image, others}) => {
                 <div className='center flex-row flex-wrap'>
                     {otherServices()}
                 </div>
-                
             </div>
         </div>
     );
