@@ -1,10 +1,10 @@
 .contact-info {
     display: grid;
     grid-template-columns: 40px auto;
-    grid-template-rows: auto-fit auto-fit auto-fit;
+    grid-template-rows: auto-fit;
     align-items: center;
     justify-content: center;
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
     grid-column-gap: 5px;
     margin-bottom: 60px;
 }
@@ -15,32 +15,6 @@
     margin-top: 60px;
 }
 
-#icon1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-#icon2 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-#icon3 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-
-#text1 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-
-#text2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-}
-
-#text3 {
-    grid-row-start: 3;
-    grid-column-start: 2;
+.grid-gap{
+    padding-bottom: 10px;
 }

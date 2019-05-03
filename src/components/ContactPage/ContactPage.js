@@ -12,9 +12,18 @@ const ContactPage = () => {
                 <h1 className='lato color-ecma-gold'>Contato</h1>
                 <p className='contact-subtitle lato'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
-                    <IoIosTelephone id='icon1' size='30'/><div id='text1'>Telefone: (62) 99105-0615</div>
-                    <IoIosEmail id='icon2' size='30'/><div id='text2'>E-mail: contato@espacoecma.com.br</div>
-                    <IoIosLocation id='icon3' size='30' /><div id='text3'>Endereço: Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
+                    <IoIosTelephone id='icon1' size='25'/>
+                    <div><strong>Telefone</strong></div>
+                    <span></span>
+                    <div className='grid-gap'>(62) 3926-1118 / (62) 9 9105-0615</div>
+                    <IoIosEmail id='icon2' size='25'/>
+                    <div><strong>E-mail</strong></div>
+                    <span></span>
+                    <div className='grid-gap'>contato@espacoecma.com.br</div>
+                    <IoIosLocation id='icon3' size='25' />
+                    <div><strong>Endereço</strong></div>
+                    <span></span>
+                    <div className='grid-gap'>Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
                 </div>
             </div>
             <Map />
