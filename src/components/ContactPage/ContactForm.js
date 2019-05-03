@@ -183,7 +183,6 @@ class ContactForm extends Component {
     render() {
         return (
             <form className='roboto'>
-                <ReactNotification ref={this.notificationDOMRef} />
                 <label>{this.state.nameError}</label>
                 <input
                     placeholder='Nome'
@@ -228,6 +227,7 @@ class ContactForm extends Component {
                         "Enviar"
                     }
                 </div>
+                <ReactNotification ref={this.notificationDOMRef} />
             </form>
         );
     }

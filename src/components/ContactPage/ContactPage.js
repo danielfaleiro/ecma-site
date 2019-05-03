@@ -7,10 +7,10 @@ import './ContactPage.css'
 
 const ContactPage = () => {
     return (
-        <div className='center top-page flex-column flex-nowrap'>
-            <div className='tc bg-moon-gray container-tpa'>
-                <h1 className='lato color-ecma-gold'>Contato</h1>
-                <p className='contact-subtitle lato'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
+        <div className='center top-page flex-column flex-nowrap lato'>
+            <div className='roboto tc bg-moon-gray container-tpa'>
+                <h1 className='color-ecma-gold'>Contato</h1>
+                <p className='section-subtitle'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
                     <IoIosTelephone id='icon1' size='25'/>
                     <div><strong>Telefone</strong></div>
@@ -29,7 +29,7 @@ const ContactPage = () => {
             <Map />
             <div className='center flex-nowrap flex-column'>
                 <div className='hma section-container'>
-                    <h1 className='lato tc color-ecma-gold'>Deixe sua mensagem</h1>
+                    <h1 className='tc color-ecma-gold'>Deixe sua mensagem</h1>
                     <ContactForm />
                 </div>
             </div>
