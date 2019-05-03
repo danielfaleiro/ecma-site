@@ -27,30 +27,37 @@ const Service = ({name, image, others}) => {
     };
 
     return (
-        <div className='hma top-page container-tpa'>
-            <div className='min-max-width center flex-column section-container lato'>
-                <div className='service-title' style={{backgroundImage: `url(${image})`}}>
-                    <h1 className='white roboto tc'>{name}</h1>
-                </div>
-                <div className='start flex-row flex-wrap'>
-                    <div className='service-column-1'>
-                        <h3>{name.toUpperCase()} - O QUE É?</h3>
-                        <p>Texto</p>
-                        <h3>COMO FUNCIONA</h3>
-                        <p>Texto</p>
-                    </div>
-                    <div className='service-column-2'>
-                        <h3>PARA QUEM É INDICADO</h3>
-                        <p>Texto</p>
-                        <h3>CONTATO</h3>
-                        <p>Texto</p>
+        <div className='top-page container-tpa'>
+            <div className='hma min-max-width center flex-column section-container lato'>
+                <h1 className='color-ecma-gold tc'>{name}</h1>
+                <div className='start flex-column flex-wrap'>
+                    <div className='start flex-wrap'>
+                        <div className='service-text service-0'>
+                            <h3>O QUE É?</h3>
+                            <p>Texto</p>
+                        </div>
+                        <img src={`${image}`} alt='Fisioterapia' className='service-image' />
+                        <div className='service-1 service-text'>
+                            <h3>COMO FUNCIONA</h3>
+                            <p>Texto</p>
+                        </div>
+                        <div className='service-2 service-text'>
+                            <h3>PARA QUEM É INDICADO</h3>
+                            <p>Texto</p>
+                        </div>
+                        <div className='service-3 service-text'>
+                            <h3>CONTATO</h3>
+                            <p>Texto</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className='min-max-width other-services section-container center flex-column items-center'>
-                <h1 className='tc lato color-ecma-gold'>Conheça Também</h1>
-                <div className='center flex-row flex-wrap'>
-                    {otherServices()}
+            <div className='bg-ecma-gray other-services section-container'>
+                <div className='min-max-width center flex-column items-center'>
+                    <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
+                    <div className='center flex-row flex-wrap'>
+                        {otherServices()}
+                    </div>
                 </div>
             </div>
         </div>

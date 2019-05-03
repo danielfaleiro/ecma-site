@@ -1,12 +1,6 @@
-.service-title {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-blend-mode: overlay;
+.service-image {
+    width: 60%;
+    height: 400px;
 }
 
 .other-services p {
@@ -22,16 +16,38 @@
     margin: 20px;
 }
 
-.service-column-1 {
-    width: 60%;
-}
-
-.service-column-2 {
+.service-0 {
+    background-color: var(--ecma-blue);
+    color: white;
     width: 40%;
 }
 
+.service-0, .service-1, .service-2 {
+    width: 40%;
+}
+
+.service-2 {
+    background-color: rgb(219, 219, 219);
+}
+
+.service-text {
+    padding: 30px;
+    height: 400px;
+    min-width: 300px;
+}
+
+.service-3 {
+    min-width: 100px;
+    width: 20%;
+}
+
 @media screen and (max-width: 900px) {
-    .service-column-1,  .service-column-2 {
+    .service-text {
         width: 100%;
+    }
+
+    .service-image {
+        width: 100%;
+        order: -1;
     }
 }
