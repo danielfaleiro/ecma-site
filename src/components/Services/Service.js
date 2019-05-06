@@ -2,6 +2,8 @@ import React from 'react';
 import './Service.css';
 import { Link } from 'react-router-dom';
 import onRouteChange from '../../events/onRouteChange';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Service = ({name, image, others}) => {
     const otherServices = () => {
@@ -32,32 +34,36 @@ const Service = ({name, image, others}) => {
                 <h1 className='color-ecma-gold tc'>{name}</h1>
                 <div className='start flex-column flex-wrap'>
                     <div className='start flex-wrap'>
-                        <div className='service-text service-0'>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-text service-0'>
                             <h3>O QUE É?</h3>
                             <p>Texto</p>
-                        </div>
-                        <img src={`${image}`} alt='Fisioterapia' className='service-image' />
-                        <div className='service-1 service-text'>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='fadeInRight' animateOnce={true} className='service-image'>
+                            <img src={`${image}`} alt='Fisioterapia' height='400px' width='100%'/>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-1 service-text'>
                             <h3>COMO FUNCIONA</h3>
                             <p>Texto</p>
-                        </div>
-                        <div className='service-2 service-text'>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-2 service-text'>
                             <h3>PARA QUEM É INDICADO</h3>
                             <p>Texto</p>
-                        </div>
-                        <div className='service-3 service-text'>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-3 service-text'>
                             <h3>CONTATO</h3>
                             <p>Texto</p>
-                        </div>
+                        </ScrollAnimation>
                     </div>
                 </div>
             </div>
             <div className='bg-ecma-gray other-services section-container'>
                 <div className='min-max-width center flex-column items-center'>
-                    <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
-                    <div className='center flex-row flex-wrap'>
+                    <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                        <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='fadeInUp' animateOnce={true} className='center flex-row flex-wrap'>
                         {otherServices()}
-                    </div>
+                    </ScrollAnimation>
                 </div>
             </div>
         </div>

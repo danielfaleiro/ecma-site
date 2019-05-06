@@ -3,6 +3,8 @@ import './Clinic.css';
 import IconCard from './IconCard';
 import { Link } from 'react-router-dom';
 import links from '../../links';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Clinic = () => {
     const vision = 'Atendimento humanizado com foco na tríade do ser humano.';
@@ -19,9 +21,9 @@ const Clinic = () => {
                 reequilíbrio da saúde de forma humanizada. 
                 </p>
                 <div className='center flex-row flex-wrap container-vpa'>
-                    <div className='clinic-panel clinic-img'>
-                    </div>
-                    <div className='clinic-panel'>
+                    <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img'>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
                         <h3 className='lato'>FILOSOFIA</h3>
                         <p className='text'>
                             Sua saúde estará nas mãos de ótimos profissionais. O que estes tem em comum 
@@ -36,8 +38,8 @@ const Clinic = () => {
                             “Clássicos são admirados não porque são antigos; em vez disso, são clássicos porque continuam 
                             a ser verdadeiros com pessoas de muitas épocas, culturas e idiomas”. 
                         </p>
-                    </div>
-                    <div className='clinic-panel'>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
                         <h3 className='lato'>METODOLOGIA DE TRABALHO</h3>
                         <p className='text'>
                             Somos um <strong>espaço de saúde clássica</strong>.  
@@ -63,15 +65,15 @@ const Clinic = () => {
                             A saúde, vista por este ângulo, nos faz perceber o ser humano como um todo e proporciona as duas partes 
                             uma experiencia de humanização e empatia. 
                         </p>
-                    </div>
-                    <div className='clinic-panel clinic-img'>
-                    </div>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel clinic-img'>
+                    </ScrollAnimation>
                 </div>
-                <div className='center flex-row flex-wrap container-vpa'>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='center flex-row flex-wrap container-vpa'>
                     <IconCard icon='eye' size='4em' title='Visão' text={vision} />
                     <IconCard icon='star' size='4em' title='Missão' text={mission} />
                     <IconCard icon='heart' size='4em' title='Valores' text={values} />
-                </div>
+                </ScrollAnimation>
             </div>
         </div>
     );

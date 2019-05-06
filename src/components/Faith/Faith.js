@@ -1,5 +1,7 @@
 import React from 'react';
 import pdf from './DECLARAÇÃO DE FÉ ECMA.pdf';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Faith = () => {
     return (
