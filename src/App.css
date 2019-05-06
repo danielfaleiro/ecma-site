@@ -21,11 +21,12 @@ h1 {
 
 a {
   text-decoration: none;
-  color: var(--ecma-blue);
+  color: rgb(58, 135, 187);
 }
 
 a:hover {
-  color: var(--ecma-gold);
+  color: rgb(27, 98, 145);
+  transition: color 0.9s;
 }
 
 .App {
