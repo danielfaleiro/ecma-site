@@ -15,11 +15,15 @@ const ContactPage = () => {
                     <IoIosTelephone id='icon1' size='25'/>
                     <div><strong>Telefone</strong></div>
                     <span></span>
-                    <div className='grid-gap'>(62) 3926-1118 / (62) 9 9105-0615</div>
+                    <div className='grid-gap'>
+                        <a href='tel:06239261118'>(62) 3926-1118</a>
+                        <span> / </span>
+                        <a href='tel:062991050615'>(62) 9 9105-0615</a>
+                    </div>
                     <IoIosEmail id='icon2' size='25'/>
                     <div><strong>E-mail</strong></div>
                     <span></span>
-                    <div className='grid-gap'>contato@espacoecma.com.br</div>
+                    <a href='mailto:contato@espacoecma.com.br' className='grid-gap'>contato@espacoecma.com.br</a>
                     <IoIosLocation id='icon3' size='25' />
                     <div><strong>Endereço</strong></div>
                     <span></span>

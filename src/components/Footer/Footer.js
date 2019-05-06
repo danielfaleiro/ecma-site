@@ -24,10 +24,12 @@ const Footer = () => {
                     <div className='start flex-row items-center'>
                         <IoIosTelephone className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
-                            (62) 3926-1118 / (62) 9 9105-0615
+                            <a className='footer-link' href='tel:06239261118'>(62) 3926-1118</a>
+                            <span> / </span>
+                            <a  className='footer-link' href='tel:062991050615'>(62) 9 9105-0615</a>
                         </p>
                     </div>
-                    <a className='start items-center flex-row footer-link no-underline' href='mailto:raydelmm@gmail.com'>
+                    <a className='start items-center flex-row footer-link' href='mailto:raydelmm@gmail.com'>
                         <IoEmail className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
                             raydelmm@gmail.com

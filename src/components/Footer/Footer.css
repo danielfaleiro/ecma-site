@@ -22,6 +22,10 @@
     flex-direction: column;
 }
 
+.footer-link {
+    text-decoration: none;
+}
+
 .footer-link:visited, .footer-link:link {
     color: white;
 }
