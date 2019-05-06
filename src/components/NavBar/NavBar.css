@@ -1,3 +1,11 @@
+nav a {
+    color: var(--ecma-blue);
+}
+
+nav a:hover {
+    color: var(--ecma-gold);
+}
+
 .navigation {
     padding: 0 2vh 0 2vh;
     position: fixed;
@@ -85,11 +93,6 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    cursor: pointer;
-}
-
-.dropdown-content p:hover {
-    color: var(--ecma-gold);
 }
 
 .nav-active {
