@@ -8,11 +8,11 @@ class TeamCard extends Component {
         const memberInfo = document.getElementById(`memberInfo${index}`);
 
         if (index % 2 === 0) {
-            memberCard.classList.add("flex-row-reverse");
-            memberInfo.classList.add("flex-row-reverse");
+            memberCard.classList.add("team-left");
+            memberInfo.classList.add("team-left");
         } else {
-            memberCard.classList.add("flex-row");
-            memberInfo.classList.add("flex-row");
+            memberCard.classList.add("team-right");
+            memberInfo.classList.add("team-right");
         }
     }
 
@@ -22,6 +22,7 @@ class TeamCard extends Component {
             <div id={`member${index}`} className='min-max-width start flex-wrap member-container lato'>
                 <div className='member-photo center'>Foto</div>
                 <div id={`memberInfo${index}`} className='member-info center flex-wrap'>
+                    <span className={index % 2 === 0? 'triangle-right' : 'triangle-left'}></span>
                     <div className='member-info-1'>
                         <h2>{name}</h2>
                         <div>
