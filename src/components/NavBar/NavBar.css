@@ -44,13 +44,14 @@ nav a:hover {
     height: 12vh;
     padding: 0 20px;
     margin: 2px 0 0 0;
+    border-bottom: 5px solid white;
 }
 
-.mobile-menu-item a {
+.mobile-menu-item {
     display: block;
-    line-height: 6vh;
-    padding: 0 30px;
-
+    line-height: 2.5em;
+    padding: 0 25px;
+    border-left: 5px solid white;
 }
 
 .menuItems p {
@@ -89,10 +90,11 @@ nav a:hover {
 .dropdown-content a {
     float: none;
     font-size: 16px;
-    padding: 2vh 16px;
+    padding: 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    border-left: 5px solid white;
 }
 
 .nav-active {
@@ -100,7 +102,7 @@ nav a:hover {
 }
 
 .dropdown-active {
-    border-left: 5px solid var(--ecma-gold);
+    border-left: 5px solid var(--ecma-gold) !important;
 }
 
 @media screen and (max-width: 960px) {

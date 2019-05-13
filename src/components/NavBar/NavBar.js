@@ -120,33 +120,23 @@ const NavBar = () => {
       </nav>
       <nav id='mobileNavigation' className='mobile-navigation'>
         <div id='mobileMenu' className='menu-mobile'>
-          <div className='mobile-menu-item'>
-            <NavLink exact to={links.home} onClick={onRouteChange} activeClassName='dropdown-active'>
+            <NavLink exact to={links.home} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
               {menu.home}
             </NavLink>
-          </div>
-          <div className='mobile-menu-item'>
-            <NavLink to={links.clinic} onClick={onRouteChange} activeClassName='dropdown-active'>
+            <NavLink to={links.clinic} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
               {menu.clinica}
             </NavLink>
-          </div>
-          <div className='mobile-menu-item'>
-            <NavLink to={links.faith} onClick={onRouteChange} activeClassName='dropdown-active'>
+            <NavLink to={links.faith} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
               {menu.confessionalidade}
             </NavLink>
-          </div>
-          <div className='mobile-menu-item'>
-            <NavLink to={links.team} onClick={onRouteChange} activeClassName='dropdown-active'>
+            <NavLink to={links.team} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
               {menu.equipe}
             </NavLink>
-          </div>
           <div className='dropdown'>
-            <div className='mobile-menu-item'>
-              <NavLink exact to={links.services.self} onClick={onRouteChange} activeClassName='dropdown-active'>
+              <NavLink exact to={links.services.self} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
                 {menu.servicos.self}
                 <MdArrowDropDown className='self-center' size='25' />
               </NavLink>
-            </div>
             <div className='dropdown-content color-ecma-blue lato hma'>
               <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.fisioterapia}
@@ -162,11 +152,9 @@ const NavBar = () => {
               </NavLink>
             </div>
           </div>
-          <div className='mobile-menu-item'>
-            <NavLink to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} activeClassName='dropdown-active'>
+            <NavLink to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item'  activeClassName='dropdown-active'>
               {menu.contato}
             </NavLink>
-          </div>
         </div>
       </nav>
     </>
