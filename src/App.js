@@ -12,9 +12,10 @@ import Service from './components/Services/Service';
 import Team from './components/Team/Team';
 import Clinic from './components/Clinic/Clinic';
 import Faith from './components/Faith/Faith';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './components/Home/Home';
 import links from './links'
+import NotFoundPage from './components/404/404';
 
 class App extends Component {
   render() {
@@ -22,20 +23,22 @@ class App extends Component {
       <Router>
         <div className='color-default'>
           <NavBar/>
-          <Route exact path={links.home} component={Home}/>
-          <Route path={links.clinic} component={Clinic} />
-          <Route path={links.faith} component={Faith} />
-          <Route path={links.team} component={Team} />
-          <Route exact path={links.services.self} component={ServicesPage} />
-          <Route path={links.services.fisio} component={Fisio}/>
-          <Route path={links.services.osteo} component={Osteo}/>
-          <Route path={links.services.pilates} component={Pilates}/>
-          <Route path={links.services.training} component={Training}/>
-          <Route path={links.contact} component={ContactPage} />
+          <Switch>
+            <Route exact path={links.home} component={Home}/>
+            <Route path={links.clinic} component={Clinic} />
+            <Route path={links.faith} component={Faith} />
+            <Route path={links.team} component={Team} />
+            <Route exact path={links.services.self} component={ServicesPage} />
+            <Route path={links.services.fisio} component={Fisio}/>
+            <Route path={links.services.osteo} component={Osteo}/>
+            <Route path={links.services.pilates} component={Pilates}/>
+            <Route path={links.services.training} component={Training}/>
+            <Route path={links.contact} component={ContactPage} />
+            <Route component={NotFoundPage} />
+          </Switch>
           <Footer />
         </div>
       </Router>
-      
     );
   }
 }

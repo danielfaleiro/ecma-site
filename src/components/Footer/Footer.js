@@ -7,7 +7,7 @@ const Footer = () => {
     const iconSize = 40;
 
     return (
-        <div className='center bg-ecma-blue pt4 pb4 white roboto'>
+        <div className='footer center bg-ecma-blue pt4 pb4 white roboto'>
             <div className='min-max-width hma flex justify-between footer-inner'>
                 <div className='center flex-column'>
                     <img  className='footer-logo' src={logo} alt='Logo' />

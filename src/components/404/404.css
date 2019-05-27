@@ -1,0 +1,14 @@
+.notFound-container {
+    position: relative;
+    min-height: 88vh;
+}
+  
+.notFound-h1 {
+    font-size: 10vh;
+    padding: 0;
+    margin: 0;
+}
+
+.notFound-h2 {
+    font-size: 2vh;
+}
