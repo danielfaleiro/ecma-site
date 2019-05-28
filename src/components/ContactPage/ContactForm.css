@@ -1,3 +1,8 @@
+form {
+    min-width: 200px;
+    max-width: 900px;
+}
+
 form input, form textarea, .input-mask {
     width: 100%;
     padding: 12px;
@@ -5,21 +10,20 @@ form input, form textarea, .input-mask {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     resize: vertical;
-}
-
-form {
-    max-width: 900px;
-    min-width: 200px;
 }
 
 form textarea {
     height: 200px;
 }
 
-form label {
+.error-msg {
     color: red;
+}
+
+#formTel, .error-msg {
+    margin-bottom: 16px;
 }
 
 .form-error {
@@ -28,7 +32,6 @@ form label {
 
 .success-message {
     color: green;
-    
 }
 
 .form-button {

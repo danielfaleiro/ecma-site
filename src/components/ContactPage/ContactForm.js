@@ -183,38 +183,46 @@ class ContactForm extends Component {
     render() {
         return (
             <form className='roboto'>
-                <label>{this.state.nameError}</label>
+                <label>Nome:</label>
                 <input
-                    placeholder='Nome'
+                    placeholder='Ex.: João Silva'
                     id='FormName'
                     value={this.state.name}
                     onChange={this.setName}
                     type='text'
+                    maxLength='100'
                 />
+                <div className='error-msg'>{this.state.nameError}</div>
+                <label>Telefone (Opcional):</label>
                 <InputMask
                     className='input-mask'
+                    id='formTel'
                     mask="(99) 999999999"
-                    placeholder='Telefone (Opcional)'
+                    placeholder='Ex.: (62) 98765-4321'
                     value={this.state.phone}
                     onChange={this.setPhone}
                     type='tel'
                 />
-                <label>{this.state.emailError}</label>
+                <label>E-mail:</label>
                 <input
-                    placeholder='E-mail'
+                    placeholder='Ex.: joaosilva@email.com'
                     id='FormEmail'
                     value={this.state.email}
                     onChange={this.setEmail}
                     type='email'
+                    maxLength='200'
                 />
-                <label>{this.state.messageError}</label>
+                <div className='error-msg'>{this.state.emailError}</div>
+                <label>Mensagem:</label>
                 <textarea
-                    placeholder='Mensagem'
+                    placeholder='Digite sua mensagem aqui.'
                     id='FormMessage'
                     value={this.state.message}
                     onChange={this.setMessage}
                     type='text'
+                    maxLength='3000'
                 />
+                <div className='error-msg'>{this.state.messageError}</div>
                 <div id='form-button' className='fr button no-underline white lato form-button' onClick={this.submitForm}>
                     {this.state.isSending ?
                         <Loader
