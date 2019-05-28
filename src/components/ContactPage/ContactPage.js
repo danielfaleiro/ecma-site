@@ -10,7 +10,7 @@ const ContactPage = () => {
         <div className='center top-page flex-column flex-nowrap lato'>
             <div className='roboto tc bg-moon-gray container-tpa'>
                 <h1 className='color-ecma-gold'>Contato</h1>
-                <p className='section-subtitle'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
+                <p className='section-subtitle hma'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
                     <IoIosTelephone id='icon1' size='25'/>
                     <div><strong>Telefone</strong></div>
