@@ -4,9 +4,9 @@
 
 :root {
   --ecma-gold: #957E51; 
+  --ecma-light-gold: rgb(182, 155, 100); 
   --ecma-dark-gold: rgb(112, 93, 54);
-  --ecma-very-dark-gold: rgb(87, 69, 34);
-  --ecma-light-gold: rgb(199, 176, 131);
+  --ecma-disabled-gold: rgb(199, 176, 131);
   --ecma-blue: #2F3742;
 }
 
@@ -150,16 +150,16 @@ a:hover {
 }
 
 .button:hover {
-  background-color: var(--ecma-dark-gold);
+  background-color: var(--ecma-light-gold);
   color: white;
 }
 
 .button:active {
-  background-color: var(--ecma-very-dark-gold);
+  background-color: var(--ecma-dark-gold);
 }
 
 .disabled, .disabled:hover, .disabled:active  {
-  background-color: var(--ecma-light-gold);
+  background-color: var(--ecma-disabled-gold);
   cursor: auto;
 }
 
