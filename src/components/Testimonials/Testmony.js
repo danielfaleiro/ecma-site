@@ -6,8 +6,8 @@ const Testmony = (props) => {
     const id = props.id;
     return (
         <div className='testmony tl'>
-            <h5 className='color-ecma-gold lato hma'>{data[id].name}</h5>
-            <p className='roboto hma'>{data[id].testmony}</p>
+            <h5 className='color-ecma-gold lato'>{data[id].name}</h5>
+            <p className='roboto'>{data[id].testmony}</p>
         </div>
     );
 }

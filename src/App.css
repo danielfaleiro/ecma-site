@@ -87,6 +87,12 @@ a:hover {
   margin-left: 10vw;
   margin-right: 10vw;
 }
+
+.hm30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .min-max-width {
   max-width: 1080px;
   min-width: 300px;

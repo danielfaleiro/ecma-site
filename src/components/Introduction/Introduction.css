@@ -5,8 +5,18 @@
     font-size: 5em;
 }
 
+.intro-title-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
 .intro-text-container {
     width: 40%;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .intro-text {
@@ -14,19 +24,20 @@
 }
 
 @media screen and (max-width: 900px) {
-    .intro-text-container {
+    .intro-text-container{
         width: 100%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .intro-title {
-        font-size: 12vw;
+    .intro-title-container {
+        width: auto;
     }
-}
 
-@media screen and (max-width: 460px) {
-    .intro-title {
-        font-size: 12vw;
+    .intro-container {
+        flex-wrap: wrap;
     }
+
+    .intro-title {
+        font-size: 12vmin;
+    }
+
 }
