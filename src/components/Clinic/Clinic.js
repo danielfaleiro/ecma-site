@@ -1,10 +1,10 @@
 import React from 'react';
 import './Clinic.css';
 import IconCard from './IconCard';
-import { Link } from 'react-router-dom';
 import links from '../../links';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Anchor from '../Anchor/Anchor';
 
 const Clinic = () => {
     const vision = 'Atendimento humanizado com foco na tríade do ser humano.';
@@ -46,7 +46,7 @@ const Clinic = () => {
                         </p>
                         <p className='text'>
                             Ser um espaço de saúde é buscar e apresentar meios de gerar equilíbrio para o corpo. Portanto, 
-                            a <Link to={links.faith}>nossa confessionalidade</Link> se expressa diretamente em nossas ações e elo entre terapeuta e cliente. 
+                            a <Anchor to={links.faith}>nossa confessionalidade</Anchor> se expressa diretamente em nossas ações e elo entre terapeuta e cliente. 
                             Assim, buscamos identificar os campos a serem trabalhados em nossos clientes, respeitando e 
                             incentivando esses aspectos, mas também respeitando sua fé.
                         </p>

@@ -135,11 +135,11 @@ a:hover {
 
 .button {
   display: inline-block;
-  max-width: 16em;
+  max-width: 18em;
   padding: 0.35em 1.2em;
   background-color: var(--ecma-gold);
   box-sizing: border-box;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   text-align: center;

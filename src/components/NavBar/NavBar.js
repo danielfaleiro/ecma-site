@@ -3,8 +3,9 @@ import './NavBar.css'
 import logo from './headerlogo.png';
 import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
 import links from '../../links';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import onRouteChange from '../../events/onRouteChange';
+import Anchor from '../Anchor/Anchor';
 
 
 const NavBar = () => {
@@ -61,9 +62,9 @@ const NavBar = () => {
     <>
       <nav id='navigation' className='flex justify-between navigation shadow-1'>
         <div className='logoContainer'>
-          <Link to={links.home} onClick={onRouteChange}>
+          <Anchor to={links.home}>
             <img className='headerLogo' src={logo} alt='Logo' />
-          </Link>
+          </Anchor>
         </div>
         <div className='menuItems'>
           <NavLink exact to={links.home} className='center items-center menu-item' activeClassName='nav-active'>

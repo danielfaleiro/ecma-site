@@ -1,6 +1,7 @@
 import React from 'react';
 import pdf from './DECLARAÇÃO DE FÉ ECMA.pdf';
 import "animate.css/animate.min.css";
+import AnchorButton from '../AnchorButton/AnchorButton';
 
 const Faith = () => {
     return (
@@ -27,7 +28,7 @@ const Faith = () => {
                     toma o lugar central, respeitando as individualidades e buscando o centro das 
                     necessidades de cada um a quem se dispõe a fazer parte do nosso trabalho. 
                 </p>
-                <a href={pdf} className='button white center'>Leia Nossa Confissão de Fé</a>
+                <AnchorButton className='hma' to={pdf} className='center' text={"Leia Nossa Confissão de Fé"}/>
             </div>
         </div>
     );

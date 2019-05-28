@@ -1,7 +1,7 @@
 import React from 'react';
 import './404.css';
 import links from '../../links';
-import { Link } from 'react-router-dom';
+import AnchorButton from '../AnchorButton/AnchorButton';
 
 const NotFoundPage = () => {
 
@@ -10,7 +10,7 @@ const NotFoundPage = () => {
             <h1 className='tc color-ecma-gold notFound-h1'>404</h1>
             <h2 className='tc color-ecma-gold notFound-h2'>Página não encontrada.</h2>
             <div className='center'>
-                <Link to={links.home} className='button'>Ir Para Página Inicial</Link>
+                <AnchorButton className='hma' to={links.home} text={"Ir Para Página Inicial"} />
             </div>
             
         </div>

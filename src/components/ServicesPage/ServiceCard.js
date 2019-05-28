@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './ServiceCard.css';
-import { Link } from 'react-router-dom';
-import onRouteChange from '../../events/onRouteChange';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import AnchorButton from '../AnchorButton/AnchorButton';
 
 class ServiceCard extends Component {
     componentDidMount() {
@@ -29,11 +28,7 @@ class ServiceCard extends Component {
                         <div className='card-info start flex-column flex-nowrap'>
                             <h3>{title}</h3>
                             <p className='text' style={{flexGrow: 1}}>{text}</p>
-                            <Link to={route} className='start'>
-                                <div onClick={onRouteChange} className='button white card-button self-center'>
-                                    Saiba mais
-                                </div>
-                            </Link>
+                            <AnchorButton to={route} className='self-start card-button' text={'Saiba mais'} />
                         </div>
                     </div>
                 </ScrollAnimation>

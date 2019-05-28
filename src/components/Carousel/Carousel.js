@@ -1,8 +1,8 @@
 import React from 'react';
-import FirstButton from './FirstButton';
 import './Carousel.css';
 import links from '../../links';
 import Slider from "react-slick";
+import AnchorButton from '../AnchorButton/AnchorButton';
 
 const Carousel = () => {
     var settings = {
@@ -44,7 +44,7 @@ const Carousel = () => {
                         <p className='carousel-subtitle hpa white lato'>
                             Temos a solução completa para sua saúde e bem-estar.
                         </p>
-                        <FirstButton destination={links.services.self} text={'Conheça Nossas Especialidades'}/>
+                        <AnchorButton className='hma' to={links.services.self} text={'Conheça Nossas Especialidades'}/>
                     </div>
                 </div>
             </Slider>
