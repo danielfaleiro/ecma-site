@@ -9,10 +9,10 @@ const Footer = () => {
     return (
         <div className='footer center bg-ecma-blue pt4 pb4 white roboto'>
             <div className='min-max-width hma flex justify-between footer-inner'>
-                <div className='center flex-column'>
+                <div className='center items-center flex-column footer-logo-container'>
                     <img  className='footer-logo' src={logo} alt='Logo' />
                 </div>
-                <div className='center flex-column footer-info'>
+                <div className='center items-center flex-column footer-info'>
                     <div className='start flex-row items-center footer-info-left'>
                         <IoLocation className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
