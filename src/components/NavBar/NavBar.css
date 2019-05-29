@@ -7,7 +7,7 @@ nav a:hover {
 }
 
 .navigation {
-    padding: 0 2vh 0 2vh;
+    padding: 0 1vw;
     position: fixed;
     top: 0;
     background-color: white;
@@ -26,6 +26,7 @@ nav a:hover {
 
 .logoContainer {
     align-self: flex-start;
+    max-width: 20%;
 }
 
 .headerLogo {
@@ -38,6 +39,7 @@ nav a:hover {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+    max-width: 75%;
 }
 
 .menu-item {
