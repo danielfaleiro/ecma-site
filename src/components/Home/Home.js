@@ -6,12 +6,12 @@ import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
     return (
-        <>
+        <div className='page-min-height'>
             <Carousel />
             <Introduction />
             <ServicesList/>
             <Testimonials />
-        </>
+        </div>
     );
 }
 

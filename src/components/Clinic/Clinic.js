@@ -11,7 +11,7 @@ const Clinic = () => {
     const mission = 'Ser um espaço modelo para promoção da saúde reequilíbrio do corpo da alma e do espirito.';
     const values = 'Exposição da fé nas ações, exercer empatia e demonstrar ações de humanização.';
     return (
-        <div id='clinicPage' className='hma top-page container-tpa'>
+        <div id='clinicPage' className='hma top-page container-tpa page-min-height'>
             <div className='center min-max-width clinic-container center flex-column lato'>
                 <h1 className='tc color-ecma-gold'>Bem-vindo ao ECMA</h1>
                 <p className='section-subtitle tc'>

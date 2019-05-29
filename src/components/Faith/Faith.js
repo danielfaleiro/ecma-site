@@ -5,7 +5,7 @@ import AnchorButton from '../AnchorButton/AnchorButton';
 
 const Faith = () => {
     return (
-        <div className='hma lato top-page'>
+        <div className='hma lato top-page page-min-height'>
             <div className='min-max-width center flex-column container-tpa'>
                 <h1 className='tc lato color-ecma-gold'>Nossa Confessionalidade</h1>
                 <p className='text'>

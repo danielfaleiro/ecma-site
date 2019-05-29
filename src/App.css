@@ -139,6 +139,11 @@ a:hover {
   color: rgba(61, 86, 107, 0.6);
 }
 
+.page-min-height {
+  position: relative;
+  min-height: calc(88vh - 270px);
+}
+
 .button {
   display: inline-block;
   max-width: 18em;

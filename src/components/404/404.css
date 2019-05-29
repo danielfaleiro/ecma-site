@@ -1,8 +1,7 @@
 .notFound-container {
-    position: relative;
     min-height: 88vh;
 }
-  
+
 .notFound-h1 {
     font-size: 10vh;
     padding: 0;

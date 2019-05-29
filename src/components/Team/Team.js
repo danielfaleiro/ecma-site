@@ -4,7 +4,7 @@ import TeamCard from './TeamCard';
 
 const Team = () => {
     return (
-        <div className='min-max-width top-page container-tpa center flex-column'>
+        <div className='min-max-width top-page container-tpa center flex-column page-min-height'>
             <h1 className='color-ecma-gold tc lato'>Nossa Equipe</h1>
             <div className='hma mt3 flex justify-between flex-column flex-wrap'>
                 <TeamCard

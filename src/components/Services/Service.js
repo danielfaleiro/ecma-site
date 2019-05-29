@@ -29,7 +29,7 @@ const Service = ({name, image, others}) => {
     };
 
     return (
-        <div className='top-page container-tpa'>
+        <div className='top-page container-tpa page-min-height'>
             <div className='hma min-max-width center flex-column section-container lato'>
                 <h1 className='color-ecma-gold tc'>{name}</h1>
                 <div className='start flex-column flex-wrap'>
