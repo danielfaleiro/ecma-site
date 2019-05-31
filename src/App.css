@@ -8,6 +8,7 @@
   --ecma-dark-gold: rgb(112, 93, 54);
   --ecma-disabled-gold: rgb(199, 176, 131);
   --ecma-blue: #2F3742;
+  --color-default: #413E3E;
 }
 
 body, html {
@@ -105,6 +106,11 @@ a:hover {
   margin-right: 30px;
 }
 
+.hm-default {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .min-max-width {
   max-width: 1080px;
   min-width: 300px;
@@ -120,7 +126,7 @@ a:hover {
 
 .text {
   line-height: 1.8em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .overpass-mono {
@@ -144,7 +150,7 @@ a:hover {
 }
 
 .color-default {
-  color: #413E3E;
+  color: var(--color-default);
 }
 
 .color-ecma-gray {
