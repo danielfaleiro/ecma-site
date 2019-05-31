@@ -1,9 +1,20 @@
 .clinic-panel {
     width: 55%;
     height: auto;
+}
+
+.clinic-hidden {
+    display: none;
+}
+
+.clinic-history, .clinic-panel {
     padding: 1em 2em 1em 2em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.clinic-history {
+    background-color: rgb(240, 240, 240);
 }
 
 .clinic-img {
@@ -20,5 +31,4 @@
     .clinic-img {
         height: 20em;
     }
-
 }
