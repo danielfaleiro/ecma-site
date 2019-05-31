@@ -1,10 +1,37 @@
-.service-image {
-    width: 60%;
-    height: 400px;
+.service-main {
+    width: 65%;
+}
+
+.service-img-side {
+    margin-left: 2%;
+    width: calc(60% - 20px);
+}
+
+.service-side {
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+}
+
+.service-img-container {
+    flex-direction: row;
+}
+
+.service-side div {
+    margin-bottom: 20px;
+    background-color: rgb(240, 240, 240);
 }
 
 .other-services p {
     font-size: 3em;
+}
+
+.service-text {
+    padding: 0 20px;
+}
+
+.service-image {
+    margin-left: 20px;
 }
 
 .other-img {
@@ -16,29 +43,10 @@
     margin: 20px;
 }
 
-.service-0 {
-    background-color: var(--ecma-blue);
-    color: white;
-    width: 40%;
-}
-
-.service-0, .service-1, .service-2 {
-    width: 40%;
-}
-
-.service-2 {
-    background-color: rgb(219, 219, 219);
-}
-
-.service-text {
-    padding: 30px;
-    height: 400px;
-    min-width: 300px;
-}
-
-.service-3 {
-    min-width: 100px;
-    width: 20%;
+.service-panel {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 900px) {
@@ -48,6 +56,34 @@
 
     .service-image {
         width: 100%;
+        margin-left: 0;
+    }
+
+    .service-side {
+        width: 100%;
+    }
+
+    .service-img-side {
+        margin-left: 2%;
+        width: 100%;
         order: -1;
+    }
+
+    .service-img-container {
+        flex-direction: column;
+    }
+
+    .service-panel {
+        flex-direction: column;
+    }
+
+    .service-main {
+        height: auto;
+        width: 100%;
+    }
+
+    .service-side div {
+        margin-bottom: 0;
+        background-color: white;
     }
 }

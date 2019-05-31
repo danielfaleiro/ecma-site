@@ -5,7 +5,16 @@ import onRouteChange from '../../events/onRouteChange';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const Service = ({name, image, others}) => {
+const HowItWorks = ({text}) => {
+    return (
+        <div className='service-text'>
+            <h3>COMO FUNCIONA</h3>
+            <span className='text'>{text}</span>
+        </div>
+    );
+}
+
+const Service = ({name, image, texts, others, adjustContent}) => {
     const otherServices = () => {
         const res = others.services.map( function(elem, index) {
             return (
@@ -27,40 +36,59 @@ const Service = ({name, image, others}) => {
         });
         return res;
     };
-
     return (
         <div className='top-page container-tpa page-min-height'>
             <div className='hma min-max-width center flex-column section-container lato'>
                 <h1 className='color-ecma-gold tc'>{name}</h1>
-                <div className='start flex-column flex-wrap'>
-                    <div className='start flex-wrap'>
-                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-text service-0'>
-                            <h3>O QUE É?</h3>
-                            <p>Texto</p>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn='fadeInRight' animateOnce={true} className='service-image'>
-                            <img src={`${image}`} alt='Fisioterapia' height='400px' width='100%'/>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-1 service-text'>
-                            <h3>COMO FUNCIONA</h3>
-                            <p>Texto</p>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-2 service-text'>
+                <div className='service-img-container flex'>
+                    <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} >
+                        <img src={`${image}`} alt='Fisioterapia' className='service-image' height='400px' width='auto'/>
+                    </ScrollAnimation>
+                    <div className='service-img-side service-text'>
+                        <h3>O QUE É</h3>
+                        <span className='text'>{texts.about}</span>
+                    </div>     
+                </div>
+                {texts.disfunctions === undefined ? <></> :
+                    <div className='service-text'>
+                        <h3>TIPOS DE DISFUNÇÕES</h3>
+                        <span className='text'>{texts.disfunctions}</span>
+                    </div>
+                }
+                {adjustContent? <HowItWorks text={texts.howItWorks}/> : <></>}
+                <div className='service-panel flex'>
+                    <div className='start flex-column service-main'>
+                        {adjustContent? <></> : <HowItWorks text={texts.howItWorks}/>}
+                        <div className='service-text'>
+                            <h3>TEMPO DE ACOMPANHAMENTO</h3>
+                            <span className='text'>{texts.time}</span>
+                        </div>
+                        <div className='service-text'>
+                            <h3>NOSSO ESPAÇO ATUA COM</h3>
+                            <span className='text'>{texts.procedure}</span>
+                        </div>  
+                    </div>
+                    <div className='service-side'>
+                        <div className='service-text'>
                             <h3>PARA QUEM É INDICADO</h3>
-                            <p>Texto</p>
-                        </ScrollAnimation>
-                        <ScrollAnimation animateIn='fadeIn' animateOnce={true} className='service-3 service-text'>
-                            <h3>CONTATO</h3>
-                            <p>Texto</p>
-                        </ScrollAnimation>
+                            <span className='text'>{texts.indication}</span>
+                        </div> 
+                        <div className='service-text'>
+                            <h3>HORÁRIO DE ATENDIMENTO</h3>
+                            <span className='text'>{texts.schedule}</span>
+                        </div>
+                        <div className='service-text'>
+                            <h3>PROFISSIONAL RESPONSÁVEL</h3>
+                            <span className='text'>{texts.contact}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>   
             <div className='bg-ecma-gray other-services section-container'>
                 <div className='min-max-width center flex-column items-center'>
-                    <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                    <div>
                         <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
-                    </ScrollAnimation>
+                    </div>
                     <ScrollAnimation animateIn='fadeInUp' animateOnce={true} className='center flex-row flex-wrap'>
                         {otherServices()}
                     </ScrollAnimation>
