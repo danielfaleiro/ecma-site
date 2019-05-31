@@ -15,14 +15,14 @@ const ServicesPage = () => {
                     img={FisioImg}
                     title='FISIOTERAPIA'
                     route={links.services.fisio}
-                    text='Texto'
+                    text=' Área de atuação profissional e ciência que estuda, diagnostica, previne e restabelece as disfunções dos sistemas do corpo humano.'
                     flip={false}
                 />
                 <ServiceCard
                     img={OsteoImg}
                     title='OSTEOPATIA'
                     route={links.services.osteo}
-                    text='Texto'
+                    text='É uma filosofia autônoma de cuidados de saúde primária, que usa métodos manuais para avaliar, diagnosticar e tratar disfunções dos sistemas corporais. Uma área de atuação profissional exclusiva para Fisioterapeutas.'
                     flip={true}
                 />
                 <ServiceCard

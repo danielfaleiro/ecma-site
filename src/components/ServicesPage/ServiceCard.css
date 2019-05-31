@@ -1,8 +1,15 @@
-.card-container {
+.card-outer {
+    background-color: rgb(240, 240, 240);
+    margin: 20px;
     width: 100%;
-    padding: 20px;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.card-inner {
+    display: flex;
+    flex-flow: row;
 }
 
 .card-container-bg {
@@ -10,48 +17,58 @@
 }
 
 .card-img {
-    width: 45%;
+    width: 440px;
     height: 300px;
 }
 
 .card-info {
     width: 55%;
-    padding: 0 2em; 
+    padding: 1em;
+    flex-grow: 1;
 }
 
-.card-flip {
-    flex-direction: row-reverse;
+.card-button {
+    align-self: end;
+    margin-top: auto;
 }
 
-@media screen and (max-width: 900px) {
-    .card-container {
-        justify-content: center;
+@media screen and (max-width: 840px) {
+    .card-outer {
+        width: 43%;
     }
 
     .card-inner {
         flex-direction: column;
-        max-width: 500px;
     }
 
     .card-img {
         width: 100%;
-        height: 300px;
+        height: 200px;
     }
 
     .card-info {
         width: 100%;
-        padding: 0;
+        height: auto;
     }
 
     .card-button {
-        float: none;
         width: 100%;
     }
 }
 
+@media screen and (max-width: 700px) {
+    .card-outer {
+        width: 80%;
+    }
+
+    .card-img {
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .card-inner {
-        max-width: 300px;
+    .card-outer {
+        width: 100%;
     }
 
     .card-img {
