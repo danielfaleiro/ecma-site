@@ -7,63 +7,56 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Anchor from '../Anchor/Anchor';
 
 const Clinic = () => {
-    const vision = 'Atendimento humanizado com foco na tríade do ser humano.';
-    const mission = 'Ser um espaço modelo para promoção da saúde reequilíbrio do corpo da alma e do espirito.';
-    const values = 'Exposição da fé nas ações, exercer empatia e demonstrar ações de humanização.';
+    const vision = <span>Atendimento <strong>humanizado</strong> com foco na <strong>tríade</strong> (corpo, mente e espírito) do ser humano.</span>;
+    const mission = <span>Ser um espaço modelo para <strong>promoção</strong> da saúde e <strong>reequilíbrio</strong> do corpo, mente e espírito.</span>;
+    const values = <span>Expressão da <strong>fé</strong> nas ações, exercendo a <strong>empatia</strong> e propiciando a <strong>humanização</strong> nas interações.</span>;
+
     return (
-        <div id='clinicPage' className='hma top-page container-tpa page-min-height'>
+        <div id='clinicPage' className='top-page container-tpa page-min-height'>
             <div className='center min-max-width clinic-container center flex-column lato'>
                 <h1 className='tc color-ecma-gold'>Bem-vindo ao ECMA</h1>
-                <p className='section-subtitle tc'>
-                Pensando em você, nosso cliente, buscamos um meio de oferecer serviços de saúde e qualidade de vida, 
-                mas com um contexto voltado para a tríade do ser humano. Assim nasce o ECMA – <strong></strong>Espaço Clínico Raydel 
-                Marques, que busca não somente oferecer serviços, mas também propor uma experiencia em busca do 
-                reequilíbrio da saúde de forma humanizada. 
+                <p className='hm-default section-subtitle tc'>
+                Pensando em você, nosso cliente, oferecemos serviços de saúde e qualidade de vida, mas com foco na tríade 
+                (corpo, mente e espírito) do ser humano. Assim nasce o ECMA – <strong>Espaço Clínico Raydel Marques</strong>, que busca não 
+                somente oferecer serviços, mas também propor uma experiência em busca do reequilíbrio da saúde de forma humanizada.  
                 </p>
                 <div className='center flex-row flex-wrap container-vpa'>
-                    <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img'>
-                    </ScrollAnimation>
+                    <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img' />
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
                         <h3 className='lato'>FILOSOFIA</h3>
+                        <p className='text'><em>
+                            Sua saúde estará nas mãos de ótimos profissionais, que têm em comum é uma visão clássica de saúde.
+                        </em></p>
                         <p className='text'>
-                            Sua saúde estará nas mãos de ótimos profissionais. O que estes tem em comum 
-                            é uma visão clássica de saúde.
-                        </p>
-                        <p className='text'>
-                            A Filosofia de saúde do ECMA considera que a qualidade de vida está firmemente enraizada na 
-                            busca de um equilíbrio da saúde do <strong>corpo</strong>, da <strong>mente</strong> e do <strong>espírito</strong>. 
-                            O enriquecimento da vida social, emocional com a conservação da 
-                            riqueza teológica e moral, nos faz olhar para o corpo como uma só <strong>unidade</strong>, 
-                            onde a saúde é influenciada pelos fatores internos e externos podendo gerar um desequilíbrio.
-                            “Clássicos são admirados não porque são antigos; em vez disso, são clássicos porque continuam 
-                            a ser verdadeiros com pessoas de muitas épocas, culturas e idiomas”. 
+                            A Filosofia do ECMA considera que a qualidade de vida está firmemente enraizada na busca de um equilíbrio 
+                            da <strong>saúde</strong> do corpo, da mente e do espírito. O desenvolvimento da vida social e emocional com a conservação 
+                            da riqueza teológica e moral, nos faz olhar para o corpo como uma só <strong>unidade</strong>, onde a saúde é influenciada 
+                            pelos fatores internos e externos, podendo sofrer desequilíbrios. “<strong>Clássicos</strong> são admirados não porque são 
+                            antigos, mas porque continuam sendo verdadeiros com pessoas de muitas épocas, culturas e idiomas”.  
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
                         <h3 className='lato'>METODOLOGIA DE TRABALHO</h3>
+                        <p className='text'><em>
+                            Somos um <strong>Espaço de Saúde Clássica</strong>.  
+                        </em></p>
                         <p className='text'>
-                            Somos um <strong>espaço de saúde clássica</strong>.  
+                            Buscamos e apresentamos meios de gerar equilíbrio para o corpo. Portanto, a <Anchor to={links.faith}>nossa confessionalidade</Anchor> é expressada diretamente 
+                            em nossas ações e no elo entre terapeuta e cliente. Assim, identificamos os campos a serem trabalhados em nossos clientes, 
+                            respeitando e incentivando esses aspectos e também sua fé.
                         </p>
                         <p className='text'>
-                            Ser um espaço de saúde é buscar e apresentar meios de gerar equilíbrio para o corpo. Portanto, 
-                            a <Anchor to={links.faith}>nossa confessionalidade</Anchor> se expressa diretamente em nossas ações e elo entre terapeuta e cliente. 
-                            Assim, buscamos identificar os campos a serem trabalhados em nossos clientes, respeitando e 
-                            incentivando esses aspectos, mas também respeitando sua fé.
+                            Ser um Espaço com bases cristãs é olhar para a tríade (corpo, mente e espírito) do ser humano e utilizar os instrumentos necessários para identificar aquilo que 
+                            possa estar interferindo no equilíbrio da saúde e bem-estar dos nossos clientes. O Espaço ECMA apresenta em suas ações o que é um ser cristão, com <strong>amor</strong> ao próximo, 
+                            <strong> compaixão</strong> e <strong>servir</strong>. 
                         </p>
                         <p className='text'>
-                            Ser um espaço com bases cristãs é olhar para a tríade do ser humano e usá-las com os instrumentos 
-                            necessários para identificar aquilo que possa estar interferindo no equilíbrio da saúde e bem-estar 
-                            dos nossos clientes. O espaço ECMA apresenta em suas ações o que é um ser cristão, com amor ao próximo, 
-                            compaixão, servir e demonstrando empatia. 
+                            Enquanto metodologia nos identificamos com a <strong>saúde clássica</strong>, o que significa que nossa abordagem considera os métodos das medicinas 
+                            tradicionais e recursos da saúde humanizada e natural, com ênfase nos aspectos de atenção ao próximo. 
                         </p>
                         <p className='text'>
-                            Enquanto metodologia nos identificamos com a <strong>saúde clássica</strong>, isso significa que nossa 
-                            abordagem se dá pelos métodos das medicinas tradicionais e recursos da saúde humanizada e natural. Com 
-                            ênfase nos aspectos de atenção ao próximo. 
-                        </p>
-                        <p className='text'>
-                            A saúde, vista por este ângulo, nos faz perceber o ser humano como um todo e proporciona as duas partes 
-                            uma experiencia de humanização e empatia. 
+                            A saúde, vista por esse ângulo, nos faz perceber o ser humano como um todo e proporciona as duas partes (profissional e cliente) uma <strong>experiência</strong> de 
+                            humanização e <strong>empatia</strong>. 
                         </p>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel clinic-img'>
