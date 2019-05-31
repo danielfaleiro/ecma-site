@@ -11,7 +11,7 @@ import Anchor from '../Anchor/Anchor';
 const NavBar = () => {
   const menu = {
     home: "Home",
-    clinica: "A Clínica",
+    clinica: "O Espaço",
     confessionalidade: "Nossa Confessionalidade",
     equipe: "Equipe",
     servicos: {
