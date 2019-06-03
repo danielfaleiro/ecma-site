@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab85d73b676e484fe55dc80746cf942c",
+    "revision": "2e07eddbffd357f8800205acb9be5381",
     "url": "/ecma-site/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ecma-site/static/css/2.6f0228c2.chunk.css"
   },
   {
-    "revision": "db969df026d956e12a84",
-    "url": "/ecma-site/static/css/main.7415fdc2.chunk.css"
+    "revision": "f62070bdb741a3490439",
+    "url": "/ecma-site/static/css/main.9d81b9f4.chunk.css"
   },
   {
     "revision": "405667b97994e816aec6",
     "url": "/ecma-site/static/js/2.c346e168.chunk.js"
   },
   {
-    "revision": "db969df026d956e12a84",
-    "url": "/ecma-site/static/js/main.fb13b6d5.chunk.js"
+    "revision": "f62070bdb741a3490439",
+    "url": "/ecma-site/static/js/main.7937c7ae.chunk.js"
   },
   {
     "revision": "bc08c112c7ffa4f421ee",
