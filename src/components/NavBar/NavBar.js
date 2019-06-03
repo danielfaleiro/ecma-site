@@ -138,7 +138,7 @@ const NavBar = () => {
                 {menu.servicos.self}
                 <MdArrowDropDown className='self-center' size='25' />
               </NavLink>
-            <div className='dropdown-content color-ecma-blue lato hma'>
+            <div className='dropdown-content color-ecma-blue lato'>
               <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.fisioterapia}
               </NavLink>

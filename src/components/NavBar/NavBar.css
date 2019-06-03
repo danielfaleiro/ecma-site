@@ -83,6 +83,7 @@ nav a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: 50px;
 }
 
 .dropdown:hover .dropdown-content, .show-dropdown {
@@ -127,5 +128,17 @@ nav a:hover {
     .dropdown-content {
         position: relative;
         box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    .menu-mobile a {
+        font-size: 5vh;
+        line-height: 7.5vh;
+    }
+    .dropdown-content a {
+        font-size: 4vh;
+        line-height: 4.5vh;
+        padding: 5px;
     }
 }
