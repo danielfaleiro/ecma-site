@@ -18,7 +18,7 @@ const NavBar = () => {
       self: "Serviços",
       fisioterapia: "Fisioterapia",
       osteopatia: "Osteopatia",
-      pilates: "Pilates",
+      pilates: "Pilates Clássico",
       treinamento: "Treinamento Físico",
     },
     contato: "Contato",

@@ -27,7 +27,7 @@ const ServicesPage = () => {
                 />
                 <ServiceCard
                     img={PilatesImg}
-                    title='PILATES'
+                    title='PILATES CLÁSSICO'
                     route={links.services.pilates}
                     text='Texto'
                     flip={false}

@@ -74,7 +74,7 @@ const Fisio = () => {
     </>
   }
   const others = {
-    services: ['Osteopatia', 'Pilates', 'Treinamento Físico'],
+    services: ['Osteopatia', 'Pilates Clássico', 'Treinamento Físico'],
     images: [osteoImg, pilatesImg, treinoImg],
     route: [links.services.osteo, links.services.pilates, links.services.training],
     
@@ -109,7 +109,7 @@ const Osteo = () => {
     </>
   }
   const others = {
-      services: ['Fisioterapia', 'Pilates', 'Treinamento Físico'],
+      services: ['Fisioterapia', 'Pilates Clássico', 'Treinamento Físico'],
       images: [fisioImg, pilatesImg, treinoImg],
       route: [links.services.fisio, links.services.pilates, links.services.training],
   };
@@ -154,7 +154,7 @@ const Pilates = () => {
   }
   return (
       <Service
-          name='Pilates'
+          name='Pilates Clássico'
           image={pilatesImg}
           others={others}
           texts={texts}
@@ -175,7 +175,7 @@ const Training = () => {
     contact: undefined
   }
   const others = {
-      services: ['Fisioterapia', 'Osteopatia', 'Pilates'],
+      services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico'],
       images: [fisioImg, osteoImg, pilatesImg],
       route: [links.services.fisio, links.services.osteo, links.services.pilates],
   }

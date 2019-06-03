@@ -23,7 +23,7 @@ const ServicesList = () => {
                         <span className='services-bt-text'>OSTEOPATIA</span>
                     </Link>
                     <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hma services-bt white lato b'>
-                        <span className='services-bt-text'>PILATES</span>
+                        <span className='services-bt-text'>PILATES CLÁSSICO</span>
                     </Link>
                     <Link id='treinamento-bt' to={links.services.training} onClick={onRouteChange} className='hma services-bt white lato b'>
                         <span className='services-bt-text'>TREINAMENTO FÍSICO</span>
