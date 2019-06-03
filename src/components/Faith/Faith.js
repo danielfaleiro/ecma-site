@@ -5,7 +5,7 @@ import AnchorButton from '../AnchorButton/AnchorButton';
 
 const Faith = () => {
     return (
-        <div className='hma lato top-page page-min-height'>
+        <div className='hm-default lato top-page page-min-height'>
             <div className='min-max-width center flex-column container-tpa'>
                 <h1 className='tc lato color-ecma-gold'>Nossa Confessionalidade</h1>
                 <p className='text'>
@@ -26,7 +26,7 @@ const Faith = () => {
                     obra do mal e do mundo em que vivemos. Em nossa abordagem Deus toma o lugar central, respeitando 
                     as individualidades e buscando o centro das necessidades de cada um, que se dispõe a fazer parte do nosso trabalho.  
                 </p>
-                <AnchorButton className='hma center' to={pdf} text={"Leia Nossa Confissão de Fé"}/>
+                <AnchorButton className='hm-default center' to={pdf} text={"Leia Nossa Confissão de Fé"}/>
             </div>
         </div>
     );

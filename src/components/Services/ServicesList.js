@@ -11,21 +11,21 @@ const ServicesList = () => {
         <div className='section-container section-vpa services-container'>
             <div className='min-max-width center flex-column tc'>
                 <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                    <h1 className='hma services-title lato'>
+                    <h1 className='hm-default services-title lato'>
                         Nossos Serviços
                     </h1>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeInUp" animateOnce={true} className='hma center flex-row flex-wrap'>
-                    <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hma services-bt white lato b'>
+                <ScrollAnimation animateIn="fadeInUp" animateOnce={true} className='hm-default center flex-row flex-wrap'>
+                    <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hm-default services-bt white lato b'>
                         <span className='services-bt-text'>FISIOTERAPIA</span>
                     </Link>
-                    <Link id='osteopatia-bt' to={links.services.osteo} onClick={onRouteChange} className='hma services-bt white lato b'>
+                    <Link id='osteopatia-bt' to={links.services.osteo} onClick={onRouteChange} className='hm-default services-bt white lato b'>
                         <span className='services-bt-text'>OSTEOPATIA</span>
                     </Link>
-                    <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hma services-bt white lato b'>
+                    <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hm-default services-bt white lato b'>
                         <span className='services-bt-text'>PILATES CLÁSSICO</span>
                     </Link>
-                    <Link id='treinamento-bt' to={links.services.training} onClick={onRouteChange} className='hma services-bt white lato b'>
+                    <Link id='treinamento-bt' to={links.services.training} onClick={onRouteChange} className='hm-default services-bt white lato b'>
                         <span className='services-bt-text'>TREINAMENTO FÍSICO</span>
                     </Link>
                 </ScrollAnimation>
