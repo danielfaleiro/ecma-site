@@ -30,7 +30,7 @@ nav a:hover {
 }
 
 .headerLogo {
-    height: 12vh;
+    height: 75px;
 }
 
 .menuItems {
@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 .menu-item {
-    height: 12vh;
+    height: 75px;
     padding: 0 20px;
     margin: 2px 0 0 0;
     border-bottom: 5px solid white;

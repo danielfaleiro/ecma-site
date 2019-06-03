@@ -71,7 +71,7 @@ a:hover {
 }
 
 .top-page {
-  margin-top: 12vh;
+  margin-top: 75px;
 }
 
 .start {
@@ -159,7 +159,7 @@ a:hover {
 
 .page-min-height {
   position: relative;
-  min-height: calc(88vh - 270px);
+  min-height: calc(100vh - 15px - 270px);
 }
 
 .button {
