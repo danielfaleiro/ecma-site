@@ -32,7 +32,7 @@ class App extends Component {
             <Route path={links.services.fisio} component={Fisio}/>
             <Route path={links.services.osteo} component={Osteo}/>
             <Route path={links.services.pilates} component={Pilates}/>
-            <Route path={links.services.training} component={Training}/>
+            <Route path={links.services.training} component={Personal}/>
             <Route path={links.contact} component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
@@ -74,7 +74,7 @@ const Fisio = () => {
     </>
   }
   const others = {
-    services: ['Osteopatia', 'Pilates Clássico', 'Treinamento Físico'],
+    services: ['Osteopatia', 'Pilates Clássico', 'Personal Trainer'],
     images: [osteoImg, pilatesImg, treinoImg],
     route: [links.services.osteo, links.services.pilates, links.services.training],
     
@@ -109,7 +109,7 @@ const Osteo = () => {
     </>
   }
   const others = {
-      services: ['Fisioterapia', 'Pilates Clássico', 'Treinamento Físico'],
+      services: ['Fisioterapia', 'Pilates Clássico', 'Personal Trainer'],
       images: [fisioImg, pilatesImg, treinoImg],
       route: [links.services.fisio, links.services.pilates, links.services.training],
   };
@@ -148,7 +148,7 @@ const Pilates = () => {
     </>
   }
   const others = {
-      services: ['Fisioterapia', 'Osteopatia', 'Treinamento Físico'],
+      services: ['Fisioterapia', 'Osteopatia', 'Personal Trainer'],
       images: [fisioImg, osteoImg, treinoImg],
       route: [links.services.fisio, links.services.osteo, links.services.training],
   }
@@ -163,16 +163,39 @@ const Pilates = () => {
   );
 }
 
-const Training = () => {
+const Personal = () => {
   const texts = {
-    about: undefined,
-    howItWorks: undefined,
-    indication: undefined,
-    disfunctions: undefined,
-    time: undefined,
-    schedule: undefined,
-    procedure: undefined,
-    contact: undefined
+    about: <>
+      <p className="hm-default">Área de atuação do Profissional de Educação Física capacitado para elaborar, ministrar e supervisionar os treinamentos físicos, buscando seguir os objetivos de quem o contrata, respeitando os princípios básicos de treinamento.</p>
+      <p className="hm-default">O Treinador Pessoal precisa ser formado em Educação Física e estar registrado no CREF. Onde pode seguir diversas áreas, esportes coletivos, reabilitação musculoesquelética e cardíaca entre outras.</p>
+    </>,
+    howItWorks: <>
+      <p className="hm-default">Agende uma visita com nossos profissionais, na qual será apresentado nosso espaço, formas de trabalhos, agenda disponíveis e tabela de valores. Assim já iniciamos a fase de avaliação objetivas para que possa ser agendado aula experimental e <strong>Avaliação Física</strong> que engloba: Anamnese, Avaliação da Composição Corporal: Perimetria, Dobra Cutânea e Diâmetro Ósseo. Todos dados necessários para serem comparados os resultados e ter informações como circunferência do corpo e somatotipo físico.</p>
+      <p className="hm-default">Assim o Personal irá elaborar seu treino e agendar o início do acompanhamento.</p>
+    </>,
+    indication: <p className="hm-default">O Treinamento com Personal Trainer é indicado para crianças a partir de 7 anos, jovens, adultos e 3° idade, buscando sempre respeitar a individualidade das pessoas.</p>,
+    disfunctions: <>
+      <p className="hm-default">Fortalecimento muscular, melhora de performance, aptidão física, ganho de resistência e capacidade funcional, preparação para Testes de Aptidão Física, perca de peso, ganho de massa muscular, melhora da resposta cardiopulmonar, treinamento de atletas amador e esportistas, acompanhamento de grupo especiais: hipertensos, diabéticos, obesos e gestantes.</p>
+      <p className="hm-default">Desenvolvemos uma abordagem personalizada com pacientes em fase final do tratamento com treinamento direcionado para a total recuperação física e retorno ao esporte. Fazemos uma proposta de Integração Multiprofissional (Fisioterapia, Pilates e Funcional) onde o objetivo é conquistar resultados de forma eficaz e com segurança para os clientes.</p>
+      <p className="hm-default">O Personal atua acompanhando o aluno/paciente, avaliando e identificando suas necessidades físicas e objetivos. Assim elabora seu plano de treinamento onde a execução é toda supervisionada e acompanhada por um profissional. A execução do treinamento é feita em nossa unidade Espaço Personal ECMA, sem custos adicionais.</p>
+      </>,
+    time: <p className="hm-default">A durabilidade do acompanhamento a quantidade de execução dependerá dos objetivos apresentados na Avaliação Física e do interesse do aluno. Não sendo estipulado por parte do profissional tempo de acompanhamento.</p>,
+    schedule: <p className="hm-default">das 7h15min às 19h de acordo com a disponibilidade de horário.</p>,
+    procedure:<ul className="hm-default">
+      <li>Musculação direcionada;</li>
+      <li>Pilates aparelho solo e bola;</li>
+      <li>Pilates e Treinamento funcional combinado;</li>
+      <li>Alongamento;</li>
+      <li>Fitness;</li>
+      <li>Treinamento Físico;</li>
+      <li>Perda de peso;</li>
+      <li>Ganho de massa muscular;</li>
+      <li>Preparação Física;</li>
+      <li>Melhora das Respostas Cardiorrespiratórias e pulmonares.</li>
+    </ul>,
+    contact: <p className="hm-default"><strong>Luana Faleiro Santos</strong><br />
+    Telefone: <a href='tel:062991050615'>(62) 9 9105-0615</a><br />
+    E-mail: <a href='mailto:personal@espacoecma.com.br'>personal@espacoecma.com.br</a></p>
   }
   const others = {
       services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico'],
@@ -181,7 +204,7 @@ const Training = () => {
   }
   return (
       <Service
-          name='Treinamento Físico'
+          name='Personal Trainer'
           image={treinoImg}
           others={others}
           texts={texts}

@@ -19,7 +19,7 @@ const NavBar = () => {
       fisioterapia: "Fisioterapia",
       osteopatia: "Osteopatia",
       pilates: "Pilates Clássico",
-      treinamento: "Treinamento Físico",
+      personal: "Personal Trainer",
     },
     contato: "Contato",
   }
@@ -105,7 +105,7 @@ const NavBar = () => {
                 {menu.servicos.pilates}
               </NavLink>
               <NavLink to={links.services.training} onClick={onRouteChange} onBlur={() => showDropdown(false, false)} activeClassName='dropdown-active'>
-                {menu.servicos.treinamento}
+                {menu.servicos.personal}
               </NavLink>
             </div>
           </div>
@@ -149,7 +149,7 @@ const NavBar = () => {
                 {menu.servicos.pilates}
               </NavLink>
               <NavLink to={links.services.training} onClick={onRouteChange} activeClassName='dropdown-active'>
-                {menu.servicos.treinamento}
+                {menu.servicos.personal}
               </NavLink>
             </div>
           </div>

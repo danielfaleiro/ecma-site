@@ -34,9 +34,9 @@ const ServicesPage = () => {
                 />
                 <ServiceCard
                     img={TreinoImg}
-                    title='TREINAMENTO FÍSICO'
+                    title='PERSONAL TRAINER'
                     route={links.services.training}
-                    text='Texto'
+                    text='Área de atuação do Profissional de Educação Física capacitado para elaborar, ministrar e supervisionar os treinamentos físicos, buscando seguir os objetivos de quem o contrata, respeitando os princípios básicos de treinamento.'
                     flip={true}
                 />
             </div>

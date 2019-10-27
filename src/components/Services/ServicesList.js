@@ -25,8 +25,8 @@ const ServicesList = () => {
                     <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hm-default services-bt white lato b'>
                         <span className='services-bt-text'>PILATES CLÁSSICO</span>
                     </Link>
-                    <Link id='treinamento-bt' to={links.services.training} onClick={onRouteChange} className='hm-default services-bt white lato b'>
-                        <span className='services-bt-text'>TREINAMENTO FÍSICO</span>
+                    <Link id='personal-bt' to={links.services.training} onClick={onRouteChange} className='hm-default services-bt white lato b'>
+                        <span className='services-bt-text'>PERSONAL TRAINER</span>
                     </Link>
                 </ScrollAnimation>
             </div>

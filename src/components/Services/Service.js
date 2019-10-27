@@ -36,6 +36,9 @@ const Service = ({name, image, texts, others, adjustContent}) => {
         });
         return res;
     };
+
+    const disfunctionTitle = name === 'Personal Trainer' ? 'ÁREAS ABORDADAS' : 'TIPOS DE DISFUNÇÕES';
+    
     return (
         <div className='top-page container-tpa page-min-height'>
             <div className='min-max-width center flex-column section-container lato'>
@@ -49,9 +52,10 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                         <span className='text'>{texts.about}</span>
                     </div>     
                 </div>
+                
                 {texts.disfunctions === undefined ? <></> :
                     <div className='service-text'>
-                        <h3 className="hm-default">TIPOS DE DISFUNÇÕES</h3>
+                        <h3 className="hm-default">{disfunctionTitle}</h3>
                         <span className='text'>{texts.disfunctions}</span>
                     </div>
                 }

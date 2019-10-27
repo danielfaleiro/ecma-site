@@ -25,7 +25,7 @@ const Introduction = () => {
                   Enquanto metodologia nos identificamos com a <strong>saúde clássica</strong>, o que significa que nossa abordagem considera os métodos das medicinas tradicionais e recursos da saúde humanizada e natural, com ênfase nos aspectos de atenção ao próximo.
                 </p>
                 <p className='intro-text roboto'>
-                  “<strong>Clássicos</strong> são admirados não porque são antigos, mas porque continuam sendo verdadeiros com pessoas de muitas épocas, culturas e idiomas”
+                  “<strong>Clássicos</strong> são admirados não porque são antigos, mas porque continuam sendo verdadeiros com pessoas de muitas épocas, culturas e idiomas”.
                 </p>
             </ScrollAnimation>
         </div>

@@ -21,7 +21,7 @@ const Team = () => {
                     job='Educadora Física'
                     credentials='CREF XXXXXXX'
                     phone='(62) XXXX-XXXX'
-                    email='treinamento@espacoecma.com.br'
+                    email='personal@espacoecma.com.br'
                     flip={true}
                 />
                 <TeamCard
