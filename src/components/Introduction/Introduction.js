@@ -19,10 +19,13 @@ const Introduction = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='intro-text-container flex flex-column flex-nowrap'>
                 <p className='intro-text roboto'>
-                    A <span className='color-ecma-gold'>ECMA</span> ... nunc in bibendum libero. Donec molestie non erat sed rutrum. Cras vulputate elementum posuere. Sed vel odio quis elit scelerisque tincidunt sit amet sed ipsum. Praesent sollicitudin quis sapien at mollis. Maecenas vel consequat mauris. Nam fermentum facilisis quam ut auctor.
+                  O ECMA – <strong>Espaço Clínico Raydel Marques</strong>, busca não somente oferecer serviços no cuidado a saúde, mas também propor umaexperiência em busca do reequilíbrio do corpo de forma humanizada.
                 </p>
                 <p className='intro-text roboto'>
-                    Mauris lacinia erat ac orci molestie pellentesque. In quis malesuada est. Sed ut velit vehicula, malesuada lorem et, hendrerit metus. Cras sodales gravida arcu facilisis aliquet. Nam sed faucibus ipsum. Aliquam blandit dui sed scelerisque cursus. Duis viverra, nulla id mattis semper, quam lacus iaculis tellus, nec ornare diam elit id nulla. Suspendisse at massa diam. Sed scelerisque feugiat dui nec mollis. Curabitur finibus laoreet tortor et imperdiet. Vestibulum accumsan sodales risus ac sollicitudin.
+                  Enquanto metodologia nos identificamos com a <strong>saúde clássica</strong>, o que significa que nossa abordagem considera os métodos das medicinas tradicionais e recursos da saúde humanizada e natural, com ênfase nos aspectos de atenção ao próximo.
+                </p>
+                <p className='intro-text roboto'>
+                  “<strong>Clássicos</strong> são admirados não porque são antigos, mas porque continuam sendo verdadeiros com pessoas de muitas épocas, culturas e idiomas”
                 </p>
             </ScrollAnimation>
         </div>
