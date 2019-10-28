@@ -19,11 +19,11 @@ class TeamCard extends Component {
     }
 
     render() {
-        const { index, name, job, credentials, phone, email } = this.props;
+        const { index, name, job, credentials, phone, email, photo, text } = this.props;
         return (
             <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <div id={`member${index}`} className='min-max-width start flex-wrap member-container lato'>
-                    <div className='member-photo center'>Foto</div>
+                    <img className='member-photo center' src={photo} alt={name} />
                     <div id={`memberInfo${index}`} className='member-info center flex-wrap'>
                         <span className={index % 2 === 0? 'triangle-right' : 'triangle-left'}></span>
                         <div className='member-info-1'>
@@ -40,7 +40,7 @@ class TeamCard extends Component {
                         <div className='member-info-2 ts start flex-column'>
                             <span>
                                 <p><strong>Telefone:</strong></p>
-                                <p>{phone}</p>
+                                <p><a href={phone[0]}>{phone[1]}</a></p>
                             </span>
                             <span>
                                 <p><strong>E-mail:</strong></p>
@@ -48,7 +48,7 @@ class TeamCard extends Component {
                             </span>
                         </div>
                         <div className='member-info-3'>
-                            Texto
+                            {text}
                         </div>
                     </div>
                 </div>
