@@ -2,13 +2,13 @@ import React from 'react';
 import {IoIosTelephone, IoIosEmail, IoIosLocation} from 'react-icons/lib/io/';
 import ContactForm from './ContactForm';
 import Map from './Map';
-import './ContactPage.css'
+import './ContactPage.css';
 
 
 const ContactPage = () => {
     return (
         <div className='center top-page flex-column flex-nowrap lato page-min-height'>
-            <div className='roboto tc bg-moon-gray container-tpa'>
+            <div className='roboto tc contact-container container-tpa'>
                 <h1 className='color-ecma-gold hm-default'>Contato</h1>
                 <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>

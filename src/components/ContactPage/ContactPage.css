@@ -1,3 +1,17 @@
+.contact-container {
+  background: url('./cover.png');
+  background-size: cover;
+  color: white;
+}
+
+.contact-container a {
+  color: rgb(196, 196, 196);
+}
+
+.contact-container a:hover {
+  color: rgb(121, 173, 197);
+}
+
 .contact-info {
     display: grid;
     grid-template-columns: 40px auto;
