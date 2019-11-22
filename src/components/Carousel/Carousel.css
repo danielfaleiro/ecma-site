@@ -1,46 +1,66 @@
 .carousel {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .carousel-container {
-    display: flex !important;
-    background-image: url(./clinica.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(25, 40, 53, 0.61);
-    width: 100%;
-    height: calc(100vh - 75px);
-    background-blend-mode: overlay;
-    overflow: hidden;
-    padding-bottom: calc(60px + 0.67em);
+  display: flex !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(25, 40, 53, 0.61);
+  width: 100%;
+  height: calc(100vh - 75px);
+  background-blend-mode: overlay;
+  overflow: hidden;
+  padding-bottom: calc(60px + 0.67em);
+}
+
+.carousel-clinic {
+  background-image: url(./clinica.jpg);
+}
+
+.carousel-relax {
+  background-image: url(./CarrosselEspacoRelaxar.jpg);
+}
+
+.carousel-pilates {
+  background-image: url(./CarrosselPilates.jpg);
+}
+
+.carousel-personal {
+  background-image: url(./CarrosselPersonal.jpg);
+  background-position: top !important;
 }
 
 .carousel-title {
-    font-size: 4vh;
+  font-size: 4vh;
 }
 
 .carousel-subtitle {
-    font-weight: 300;
-    font-size: 4vh;
+  font-weight: 300;
+  font-size: 4vh;
 }
 
 .slick-dots li button:before {
-    font-size: 10px;
-    line-height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
 }
 
+.slick-dots li.slick-active button:before {
+  color: var(--ecma-gold);
+}
 
 @media (orientation: landscape) {
-    .carousel-title {
-        font-size: 7vh;
+  .carousel-title {
+      font-size: 7vh;
 
-    }
-    .carousel-subtitle {
-        font-size: 4vh;
-    }
+  }
+  .carousel-subtitle {
+      font-size: 4vh;
+  }
 }
 
