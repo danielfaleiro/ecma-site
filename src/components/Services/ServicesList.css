@@ -8,8 +8,6 @@
 
 .services-bt {
     display: table;
-    width: 225px;
-    height: 225px;
     border: 0px;
     margin: 15px;
     border-radius: 100%;
@@ -19,6 +17,16 @@
     font-size: 1.5em;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.services-bt-main {
+  width: 250px;
+  height: 250px;
+}
+
+.services-bt-others {
+  width: 225px;
+  height: 225px;
 }
 
 .services-bt:hover {
@@ -44,20 +52,25 @@
 
 #pilates-bt {
     background-image: url(./pilates.jpg);
-    background-size: 338px 225px;
+    background-size: 376px 250px;
 }
 
 #personal-bt {
     background-image: url(./treinamento.jpg);
-    background-size: 300px 225px;
+    background-size: 333px 250px;
 }
 
 #fisioterapia-bt {
     background-image: url(./fisioterapia.jpg);
-    background-size: 344px 225px;
+    background-size: 382px 250px;
 }
 
 #osteopatia-bt {
     background-image: url(./osteopatia.jpg);
-    background-size: 300px 225px;
+    background-size: 333px 250px;
+}
+
+#relaxar-bt {
+  background-image: url(./espacorelaxar.jpg);
+  background-size: 376px 250px;
 }

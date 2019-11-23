@@ -15,13 +15,22 @@ const HowItWorks = ({text}) => {
     );
 }
 
+const TextBlock = ({title, text}) => {
+  return (
+    <div className='service-text'>
+      <h3 className="hm-default">{title}</h3>
+      <span className='text'>{text}</span>
+    </div>
+  );
+}
+
 const Service = ({name, image, texts, others, adjustContent}) => {
     const otherServices = () => {
       let width = 225;
       const res = others.services.map( function(elem, index) {
         if (others.route[index] === links.services.training || others.route[index] === links.services.osteo)
           width = 300;
-        else if (others.route[index] === links.services.pilates)
+        else if (others.route[index] === links.services.pilates || others.route[index] === links.services.relax)
           width = 338;
         else if (others.route[index] === links.services.fisio)
           width = 344;
@@ -31,7 +40,7 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                 to={others.route[index]}
                 key={index}
                 onClick={onRouteChange}
-                className='services-bt white b lato'
+                className='services-bt services-bt-others white b lato'
                 style={{
                     backgroundImage: `url(${others.images[index]})`,
                     backgroundSize: `${width}px 225px`
@@ -46,7 +55,7 @@ const Service = ({name, image, texts, others, adjustContent}) => {
       return res;
     };
 
-    const disfunctionTitle = name === 'Personal Trainer' ? 'ÁREAS ABORDADAS' : 'TIPOS DE DISFUNÇÕES';
+    const disfunctionTitle = name === 'Personal Trainer' || name === 'Espaço Relaxar' ? 'ÁREAS ABORDADAS' : 'TIPOS DE DISFUNÇÕES';
     
     return (
         <div className='top-page container-tpa page-min-height'>
@@ -61,13 +70,8 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                         <span className='text'>{texts.about}</span>
                     </div>     
                 </div>
-                
-                {texts.disfunctions === undefined ? <></> :
-                    <div className='service-text'>
-                        <h3 className="hm-default">{disfunctionTitle}</h3>
-                        <span className='text'>{texts.disfunctions}</span>
-                    </div>
-                }
+                {texts.disfunctions ? <TextBlock title="TIPOS DE DISFUNÇÕES" text={texts.disfunctions} /> : <></>}
+                {texts.areas ? <TextBlock title="ÁREAS ABORDADAS" text={texts.areas} /> : <></>}
                 {adjustContent? <HowItWorks text={texts.howItWorks}/> : <></>}
                 <div className='service-panel flex'>
                     <div className='start flex-column service-main'>
@@ -85,15 +89,10 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                         <div className='service-text'>
                             <h3 className="hm-default">PARA QUEM É INDICADO</h3>
                             <span className='text'>{texts.indication}</span>
-                        </div> 
-                        <div className='service-text'>
-                            <h3 className="hm-default">HORÁRIO DE ATENDIMENTO</h3>
-                            <span className='text'>{texts.schedule}</span>
                         </div>
-                        <div className='service-text'>
-                            <h3 className="hm-default">PROFISSIONAL RESPONSÁVEL</h3>
-                            <span className='text'>{texts.contact}</span>
-                        </div>
+                        {texts.schedule ? <TextBlock title="HORÁRIO DE ATENDIMENTO" text={texts.schedule} /> : <></>}
+                        {texts.contact ? <TextBlock title="PROFISSIONAL RESPONSÁVEL" text={texts.contact} /> : <></>}
+                        {texts.budget ? <TextBlock title="SOLICITE UM ORÇAMENTO" text={texts.budget} /> : <></>}
                     </div>
                 </div>
             </div>   

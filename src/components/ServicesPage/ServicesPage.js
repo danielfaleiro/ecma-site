@@ -3,6 +3,7 @@ import FisioImg from '../Services/fisioterapia.jpg';
 import OsteoImg from '../Services/osteopatia.jpg';
 import PilatesImg from '../Services/pilates.jpg';
 import TreinoImg from '../Services/treinamento.jpg';
+import RelaxImg from '../Services/espacorelaxar.jpg';
 import ServiceCard from './ServiceCard';
 import links from '../../links';
 
@@ -37,6 +38,13 @@ const ServicesPage = () => {
                     title='PERSONAL TRAINER'
                     route={links.services.training}
                     text='Área de atuação do Profissional de Educação Física capacitado para elaborar, ministrar e supervisionar os treinamentos físicos, buscando seguir os objetivos de quem o contrata, respeitando os princípios básicos de treinamento.'
+                    flip={true}
+                />
+                <ServiceCard
+                    img={RelaxImg}
+                    title='ESPAÇO RELAXAR'
+                    route={links.services.relax}
+                    text='Prestação de serviço e ações em saudade e bem-estar em eventos diversos, proporcionando aos participantes um momento de relaxamento e um MIX de experiências.'
                     flip={true}
                 />
             </div>

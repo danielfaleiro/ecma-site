@@ -16,17 +16,20 @@ const ServicesList = () => {
                     </h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true} className='hm-default center flex-row flex-wrap'>
-                    <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hm-default services-bt white lato b'>
+                    <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>
                         <span className='services-bt-text'>FISIOTERAPIA</span>
                     </Link>
-                    <Link id='osteopatia-bt' to={links.services.osteo} onClick={onRouteChange} className='hm-default services-bt white lato b'>
+                    <Link id='osteopatia-bt' to={links.services.osteo} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>
                         <span className='services-bt-text'>OSTEOPATIA</span>
                     </Link>
-                    <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hm-default services-bt white lato b'>
+                    <Link id='pilates-bt' to={links.services.pilates} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>
                         <span className='services-bt-text'>PILATES CLÁSSICO</span>
                     </Link>
-                    <Link id='personal-bt' to={links.services.training} onClick={onRouteChange} className='hm-default services-bt white lato b'>
+                    <Link id='personal-bt' to={links.services.training} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>
                         <span className='services-bt-text'>PERSONAL TRAINER</span>
+                    </Link>
+                    <Link id='relaxar-bt' to={links.services.relax} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>
+                        <span className='services-bt-text'>ESPAÇO RELAXAR</span>
                     </Link>
                 </ScrollAnimation>
             </div>

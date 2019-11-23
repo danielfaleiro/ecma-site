@@ -9,6 +9,7 @@ const links = {
         osteo: '/ecma-site/servicos/osteopatia',
         pilates: '/ecma-site/servicos/pilates',
         training: '/ecma-site/servicos/treinamentofisico',
+        relax: '/ecma-site/servicos/espacorelaxar',
     },
     contact: '/ecma-site/contato',
 }
