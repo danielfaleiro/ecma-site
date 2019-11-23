@@ -55,8 +55,6 @@ const Service = ({name, image, texts, others, adjustContent}) => {
       return res;
     };
 
-    const disfunctionTitle = name === 'Personal Trainer' || name === 'Espaço Relaxar' ? 'ÁREAS ABORDADAS' : 'TIPOS DE DISFUNÇÕES';
-    
     return (
         <div className='top-page container-tpa page-min-height'>
             <div className='min-max-width center flex-column section-container lato'>
