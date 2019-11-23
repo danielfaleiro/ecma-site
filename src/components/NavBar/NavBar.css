@@ -29,7 +29,8 @@ nav a:hover {
 }
 
 .headerLogo {
-    height: 75px;
+    height: 68px;
+    margin-top: 7px;
 }
 
 .menuItems {
