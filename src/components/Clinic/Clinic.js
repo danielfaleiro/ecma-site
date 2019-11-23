@@ -5,6 +5,9 @@ import links from '../../links';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Anchor from '../Anchor/Anchor';
+import clinica1 from './clinica1.jpg';
+import clinica2 from './clinica2.jpg';
+import clinica3 from './clinica3.jpg';
 
 const Clinic = () => {
     const showMore = () => {
@@ -37,7 +40,9 @@ const Clinic = () => {
                 somente oferecer serviços, mas também propor uma experiência em busca do reequilíbrio da saúde de forma humanizada.  
                 </p>
                 <div className='center flex-row flex-wrap container-vpa'>
-                    <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img' />
+                    <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img'>
+                      <img src={clinica1} alt="Foto do Espaço Clínico Raydel Marques"></img>
+                    </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
                         <h3 className='lato'>FILOSOFIA</h3>
                         <p className='text'><em>
@@ -75,7 +80,10 @@ const Clinic = () => {
                             humanização e <strong>empatia</strong>. 
                         </p>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel clinic-img' />
+                    <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel clinic-img'>
+                      <img src={clinica2} alt="Foto do Espaço Clínico Raydel Marques"></img>
+                      <img src={clinica3} alt="Foto do Espaço Clínico Raydel Marques"></img>
+                    </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-history'>
                         <span>
                             <h3 className='lato'>NOSSA HISTÓRIA</h3>
