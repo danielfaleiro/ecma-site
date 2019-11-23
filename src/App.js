@@ -145,8 +145,8 @@ const Pilates = () => {
     </ul>,
     contact: <>
       <p className="hm-default"><strong>Nome Sobrenome</strong><br />
-      Telefone: <a href='tel:0000000000'>(62) X XXXX-XXXX</a><br />
-      E-mail: <a href='mailto:email'>email</a></p>
+      Telefone: <a href='tel:062981668650'>(62) 9 8166-8650</a><br />
+      E-mail: <a href='mailto:pilates@espacoecma.com.br'>pilates@espacoecma.com.br</a></p>
     </>
   }
   const others = {

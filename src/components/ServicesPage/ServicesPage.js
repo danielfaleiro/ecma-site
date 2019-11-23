@@ -30,7 +30,7 @@ const ServicesPage = () => {
                     img={PilatesImg}
                     title='PILATES CLÁSSICO'
                     route={links.services.pilates}
-                    text='Texto'
+                    text='Método de exercícios que faz o uso de molas e da gravidade do corpo que, em sua forma original, foi criado por Joseph Pilates, baseado nos princípios da respiração, concentração, centro, precisão, fluidez.'
                     flip={false}
                 />
                 <ServiceCard
