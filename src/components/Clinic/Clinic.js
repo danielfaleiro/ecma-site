@@ -8,6 +8,7 @@ import Anchor from '../Anchor/Anchor';
 import clinica1 from './clinica1.jpg';
 import clinica2 from './clinica2.jpg';
 import clinica3 from './clinica3.jpg';
+import historia from './historia-ecma-1.jpg';
 
 const Clinic = () => {
     const showMore = () => {
@@ -103,6 +104,7 @@ const Clinic = () => {
                                 uso dos espaços externos do clube como: academia, piscinas, quadras e campos sem custos adicionais para o meu negócio. Com serviços de reabilitação em traumatologia, 
                                 ortopedia e lesões desportivas, pude colocar em prática os conhecimentos adquiridos.  
                             </p>
+                            <img src={historia} style={{display: "block", margin: "auto"}} alt="Foto do Espaço Clínico Raydel Marques"></img>
                             <p className='text'>
                                 Ainda de forma tímida e simples com atendimentos individuais, busquei investir e me dedicar à profissão na qual me formei, criando minha rede de contatos e me aperfeiçoando 
                                 com cursos de qualificação no setor que prestava serviços. Após um ano de implantação do consultório a <strong>ideia</strong> estava dando certo e foi necessário ampliar os atendimentos, uma 
