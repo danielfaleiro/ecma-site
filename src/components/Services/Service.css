@@ -35,7 +35,8 @@
 }
 
 .service-image {
-    margin-left: 20px;
+    display:block;
+    margin:auto auto auto 40px;
 }
 
 .other-img {
