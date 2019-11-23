@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import onRouteChange from '../../events/onRouteChange';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import links from '../../links';
 
 const HowItWorks = ({text}) => {
     return (
@@ -16,25 +17,33 @@ const HowItWorks = ({text}) => {
 
 const Service = ({name, image, texts, others, adjustContent}) => {
     const otherServices = () => {
-        const res = others.services.map( function(elem, index) {
-            return (
-                <Link
-                    to={others.route[index]}
-                    key={index}
-                    onClick={onRouteChange}
-                    className='services-bt white b lato'
-                    style={{
-                        backgroundImage: `url(${others.images[index]})`,
-                        backgroundSize: '250px 250px'
-                    }}
-                >
-                    <span className='services-bt-text'>
-                        {elem.toUpperCase()}
-                    </span> 
-                </Link>
-            );
-        });
-        return res;
+      let width = 225;
+      const res = others.services.map( function(elem, index) {
+        if (others.route[index] === links.services.training || others.route[index] === links.services.osteo)
+          width = 300;
+        else if (others.route[index] === links.services.pilates)
+          width = 338;
+        else if (others.route[index] === links.services.fisio)
+          width = 344;
+        
+        return (
+            <Link
+                to={others.route[index]}
+                key={index}
+                onClick={onRouteChange}
+                className='services-bt white b lato'
+                style={{
+                    backgroundImage: `url(${others.images[index]})`,
+                    backgroundSize: `${width}px 225px`
+                }}
+            >
+                <span className='services-bt-text'>
+                    {elem.toUpperCase()}
+                </span> 
+            </Link>
+        );
+      });
+      return res;
     };
 
     const disfunctionTitle = name === 'Personal Trainer' ? 'ÁREAS ABORDADAS' : 'TIPOS DE DISFUNÇÕES';
