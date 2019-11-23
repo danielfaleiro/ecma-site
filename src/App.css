@@ -70,10 +70,6 @@ a:hover {
   justify-content: center;
 }
 
-.top-page {
-  margin-top: 75px;
-}
-
 .start {
   display: flex;
   justify-content: flex-start;
