@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from './footerlogo.png';
-import {IoIosTelephone, IoEmail, IoLocation, IoSocialFacebook, IoSocialInstagram} from 'react-icons/lib/io';
+import {IoSocialWhatsappOutline, IoIosTelephone, IoEmail, IoLocation, IoSocialFacebook, IoSocialInstagram} from 'react-icons/lib/io';
 
 const Footer = () => {
     const iconSize = 40;
@@ -10,17 +10,15 @@ const Footer = () => {
         <div className='footer center bg-ecma-blue pt4 pb4 white roboto'>
             <div className='min-max-width flex justify-between footer-inner'>
                 <div className='center items-center flex-column footer-logo-container'>
-                    <img  className='footer-logo' src={logo} alt='Logo' />
+                    <img src={logo} alt='Logo' />
                 </div>
                 <div className='center items-center flex-column footer-info'>
-                    <div className='start flex-row items-center footer-info-left'>
-                        <IoLocation className='footer-icon' size={iconSize}/>
+                    <a className='start items-center flex-row footer-link' href='https://wa.me/5562991050615'>
+                        <IoSocialWhatsappOutline className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
-                            Rua 85A - Qd. F-16, Lote 13 St. Sul<br/>
-                            Goiânia - GO<br/>
-                            CEP: 74080-020
+                            (62) 9 9105-0615
                         </p>
-                    </div>
+                    </a>
                     <div className='start flex-row items-center'>
                         <IoIosTelephone className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
@@ -29,12 +27,21 @@ const Footer = () => {
                             <a  className='footer-link' href='tel:062991050615'>(62) 9 9105-0615</a>
                         </p>
                     </div>
+                    
                     <a className='start items-center flex-row footer-link' href='mailto:raydelmm@gmail.com'>
                         <IoEmail className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
-                            raydelmm@gmail.com
+                            contato@espacoecma.com.br
                         </p>
                     </a>
+                    <div className='start flex-row items-center footer-info-left'>
+                        <IoLocation className='footer-icon' size={iconSize}/>
+                        <p className='footer-text'>
+                            Rua 85A - Qd. F-16, Lote 13 St. Sul<br/>
+                            Goiânia - GO<br/>
+                            CEP: 74080-020
+                        </p>
+                    </div>
                 </div>
                 <div className='center footer-social-media items-center'>
                     <a className='footer-link' href='https://www.facebook.com/espacoraydelmarques/'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {IoIosTelephone, IoIosEmail, IoIosLocation} from 'react-icons/lib/io/';
+import {IoIosTelephone, IoIosEmail, IoIosLocation, IoSocialWhatsappOutline} from 'react-icons/lib/io/';
 import ContactForm from './ContactForm';
 import Map from './Map';
 import './ContactPage.css';
@@ -12,7 +12,11 @@ const ContactPage = () => {
                 <h1 className='color-ecma-gold hm-default'>Contato</h1>
                 <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
-                    <IoIosTelephone id='icon1' size='25'/>
+                    <IoSocialWhatsappOutline size='25'/>
+                    <div><strong>WhatsApp</strong></div>
+                    <span></span>
+                    <a href='https://wa.me/5562991050615' className='grid-gap'>(62) 9 9105-0615</a>
+                    <IoIosTelephone size='25'/>
                     <div><strong>Telefone</strong></div>
                     <span></span>
                     <div className='grid-gap'>
@@ -20,11 +24,11 @@ const ContactPage = () => {
                         <span> / </span>
                         <a href='tel:062991050615'>(62) 9 9105-0615</a>
                     </div>
-                    <IoIosEmail id='icon2' size='25'/>
+                    <IoIosEmail size='25'/>
                     <div><strong>E-mail</strong></div>
                     <span></span>
                     <a href='mailto:contato@espacoecma.com.br' className='grid-gap'>contato@espacoecma.com.br</a>
-                    <IoIosLocation id='icon3' size='25' />
+                    <IoIosLocation size='25' />
                     <div><strong>Endereço</strong></div>
                     <span></span>
                     <div className='grid-gap'>Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
