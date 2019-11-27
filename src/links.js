@@ -1,6 +1,6 @@
 const links = {
     home: '/ecma-site',
-    clinic: '/ecma-site/clinica',
+    clinic: '/ecma-site/espaco',
     faith: '/ecma-site/nossaconfessionalidade',
     team: '/ecma-site/equipe',
     services: {
@@ -8,7 +8,7 @@ const links = {
         fisio: '/ecma-site/servicos/fisioterapia',
         osteo: '/ecma-site/servicos/osteopatia',
         pilates: '/ecma-site/servicos/pilates',
-        training: '/ecma-site/servicos/treinamentofisico',
+        training: '/ecma-site/servicos/personal',
         relax: '/ecma-site/servicos/espacorelaxar',
     },
     contact: '/ecma-site/contato',
