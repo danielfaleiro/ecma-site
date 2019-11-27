@@ -19,7 +19,7 @@ const Introduction = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='intro-text-container flex flex-column flex-nowrap'>
                 <p className='intro-text roboto'>
-                  O ECMA – <strong>Espaço Clínico Raydel Marques</strong>, busca não somente oferecer serviços no cuidado a saúde, mas também propor umaexperiência em busca do reequilíbrio do corpo de forma humanizada.
+                  O ECMA – <strong>Espaço Clínico Raydel Marques</strong>, busca não somente oferecer serviços no cuidado a saúde, mas também propor uma experiência em busca do reequilíbrio do corpo de forma humanizada.
                 </p>
                 <p className='intro-text roboto'>
                   Enquanto metodologia nos identificamos com a <strong>saúde clássica</strong>, o que significa que nossa abordagem considera os métodos das medicinas tradicionais e recursos da saúde humanizada e natural, com ênfase nos aspectos de atenção ao próximo.
