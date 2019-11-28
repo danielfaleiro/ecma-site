@@ -17,14 +17,55 @@
     background-color: rgb(240, 240, 240);
 }
 
-.clinic-img {
-    width: 50%;
-    align-self: center;
+.history-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#history-img1 {
+  width: 30%;
+}
+
+#history-img2 {
+  width: 68%;
+}
+
+#history-text3, #newecma-img1, #history-img3, #newecma-img2 {
+  width: 49%;
+}
+
+#history-text4 {
+  width: 65%;
+}
+
+#history-img4 {
+  width: 33%;
 }
 
 @media screen and (max-width: 900px) {
-    .clinic-panel {
-        width: 100%;
-        height: auto;
-    }
+  .clinic-panel {
+      width: 100%;
+      height: auto;
+  }
+
+  .history-panel {
+    margin-top: 0;
+    margin-bottom:0;
+  }
+
+  #history-img1, #history-img2, #history-img3, #history-text3, #history-img4, #history-text4, #newecma-img1, #newecma-img2 {
+    width: 100%;
+  }
+
+  #history-img1 {
+    margin-bottom: 10px;
+  }
+
+  #newecma-img2 {
+    margin-top: 10px;
+  }
 }

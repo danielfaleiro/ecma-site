@@ -9,6 +9,11 @@ import clinica1 from './clinica1.jpg';
 import clinica2 from './clinica2.jpg';
 import clinica3 from './clinica3.jpg';
 import historia from './historia-ecma-1.jpg';
+import historia2 from './historia-ecma-2.jpg';
+import historia3 from './historia-ecma-3.jpg';
+import historia4 from './historia-ecma-4.jpg';
+import novaecma from './nova-ecma-1.jpg';
+import novaecma2 from './nova-ecma-2.jpg';
 
 const Clinic = () => {
     const showMore = () => {
@@ -92,11 +97,16 @@ const Clinic = () => {
                                 Foi no Clube de Engenharia de Goiás (CENG), que percebi a <strong>oportunidade</strong> de negócio, vendo a necessidade de um <strong>consultório de fisioterapia</strong> que atendesse os sócios em seu 
                                 ambiente de lazer, uma ideia que surgiu antes da minha graduação. Sou Raydel Marques e a história do ECMA se iniciou em 2011, imediatamente após minha formação acadêmica.
                             </p>
+                            
                             <p className='text'>
                                 Vi um público que necessitava de um atendimento <strong>fisioterapêutico particular</strong> e em períodos especiais, após o horário comercial. Já no primeiro semestre de 2011, apresentei 
                                 à diretoria do Clube meu projeto, aproveitei um espaço já pronto e investi de forma tímida em meu negócio utilizando o valor da rescisão do contrato trabalhista com o CENG. 
                                 Iniciei os serviços de Fisioterapia no segundo semestre desse mesmo ano.
                             </p>
+                            <span className="history-panel center">
+                              <img src={historia} id="history-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                              <img src={historia2} id="history-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                            </span>
                         </span>
                         <span id='clinic-hidden' className='clinic-hidden'>
                             <p className='text'>
@@ -104,33 +114,46 @@ const Clinic = () => {
                                 uso dos espaços externos do clube como: academia, piscinas, quadras e campos sem custos adicionais para o meu negócio. Com serviços de reabilitação em traumatologia, 
                                 ortopedia e lesões desportivas, pude colocar em prática os conhecimentos adquiridos.  
                             </p>
-                            <img src={historia} style={{display: "block", margin: "auto"}} alt="Foto do Espaço Clínico Raydel Marques"></img>
-                            <p className='text'>
+                          <span className='history-panel center'>
+                            <span id="history-text3">
+                              <p className='text'>
                                 Ainda de forma tímida e simples com atendimentos individuais, busquei investir e me dedicar à profissão na qual me formei, criando minha rede de contatos e me aperfeiçoando 
                                 com cursos de qualificação no setor que prestava serviços. Após um ano de implantação do consultório a <strong>ideia</strong> estava dando certo e foi necessário ampliar os atendimentos, uma 
                                 vez que os pacientes, até então empresários do ramo de construção, tinham disponibilidade para receber os serviços em horários não comerciais. 
-                            </p>
-                            <p className='text'>
+                              </p>
+                              <p className='text'>
                                 Com recursos advindos do acerto trabalhista com a faculdade UNIVERSO, no mês de abril de 2012, investi nos equipamentos que faltavam, adquiri mais um leito e conquistei 
                                 um espaço maior, por meio dos antigos e novos pacientes. Passando a atender duas pessoas por sessão em um espaço mais amplo. 
-                            </p>
-                            <p className='text'>
-                                No ano de 2013, o desejo de crescimento e de uma oportunidade de ampliação me impulsionaram para a busca de <strong>renovação</strong>. A ideia era ampliar os serviços de fisioterapia com mais 
-                                equipamentos, mais leitos de atendimento, e implementar um espaço de Pilates nas dependências do Clube. E com esse objetivo, apresentei um Projeto (Proposta de Ampliação e Implantação) aos 
-                                Diretores do Clube, incluindo dados estatísticos de resultados conquistados e pesquisa de campo interno. Consegui a aprovação para uma segunda ampliação do meu espaço e também a criação de um 
-                                estúdio de Pilates – aparelhos, solo e bola. 
-                            </p>
-                            <p className='text'>
-                                O empreendimento passou a atender um maior fluxo de pessoas por horário, o Pilates começou a formar suas turmas e o espaço de reabilitação tornou-se <strong>referência</strong> para os sócios esportistas e frequentadores do clube. 
-                            </p>
-                            <p className='text'>
-                                Em 2017, o Clube iniciou um processo de mudança, incluindo nosso ambiente de atendimento. Buscamos um novo local para a clínica e passamos a atender no Setor Sul em 2018, bem próximo ao Clube. Com o desejo e a visão de mais <strong>resultados</strong>, 
-                                mais <strong>qualidade</strong> e menos modismo, temos hoje uma identidade própria. 
-                            </p>
-                            <p className='text'>
-                                Nasce a marca <strong>ECMA</strong> - Espaço Clínico Raydel Marque, suma revelação em nossas vidas, onde oferecemos a Clássica Medicina Alternativa por meio de uma base sólida de fé Cristã. Hoje somos uma clínica de saúde que visa o equilíbrio entre o 
-                                corpo, a mente e o espírito, aliado a qualidade de vida. 
-                            </p>
+                              </p>
+                            </span>
+                            <img src={historia3} id="history-img3" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                          </span>
+                          <p className='text'>
+                              No ano de 2013, o desejo de crescimento e de uma oportunidade de ampliação me impulsionaram para a busca de <strong>renovação</strong>. A ideia era ampliar os serviços de fisioterapia com mais 
+                              equipamentos, mais leitos de atendimento, e implementar um espaço de Pilates nas dependências do Clube. E com esse objetivo, apresentei um Projeto (Proposta de Ampliação e Implantação) aos 
+                              Diretores do Clube, incluindo dados estatísticos de resultados conquistados e pesquisa de campo interno. Consegui a aprovação para uma segunda ampliação do meu espaço e também a criação de um 
+                              estúdio de Pilates – aparelhos, solo e bola. 
+                          </p>
+                          <span className='history-panel center'>
+                            <img src={historia4} id="history-img4" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                            <span id="history-text4">
+                              <p className='text'>
+                                  O empreendimento passou a atender um maior fluxo de pessoas por horário, o Pilates começou a formar suas turmas e o espaço de reabilitação tornou-se <strong>referência</strong> para os sócios esportistas e frequentadores do clube. 
+                                </p>
+                              <p className='text'>
+                                  Em 2017, o Clube iniciou um processo de mudança, incluindo nosso ambiente de atendimento. Buscamos um novo local para a clínica e passamos a atender no Setor Sul em 2018, bem próximo ao Clube. Com o desejo e a visão de mais <strong>resultados</strong>, 
+                                  mais <strong>qualidade</strong> e menos modismo, temos hoje uma identidade própria. 
+                              </p>
+                            </span>
+                          </span>
+                          <p className='text'>
+                            Nasce a marca <strong>ECMA</strong> - Espaço Clínico Raydel Marque, suma revelação em nossas vidas, onde oferecemos a Clássica Medicina Alternativa por meio de uma base sólida de fé Cristã. Hoje somos uma clínica de saúde que visa o equilíbrio entre o 
+                            corpo, a mente e o espírito, aliado a qualidade de vida. 
+                          </p>
+                          <span className='history-panel center'>
+                            <img src={novaecma} id="newecma-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                            <img src={novaecma2} id="newecma-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                          </span>
                         </span>
                         <button id='clinic-button' onClick={showMore} className='button bn'>
                             Mostrar mais
