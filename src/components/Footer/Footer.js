@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from './footerlogo.png';
+import links from '../../links';
 import {IoSocialWhatsappOutline, IoIosTelephone, IoEmail, IoLocation, IoSocialFacebook, IoSocialInstagram} from 'react-icons/lib/io';
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
                     <img src={logo} alt='Logo' />
                 </div>
                 <div className='center items-center flex-column footer-info'>
-                    <a className='start items-center flex-row footer-link' href='https://wa.me/5562991050615'>
+                    <a className='start items-center flex-row footer-link' href={links.whatsapp}>
                         <IoSocialWhatsappOutline className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
                             (62) 9 9105-0615

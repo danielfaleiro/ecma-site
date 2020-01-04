@@ -2,6 +2,7 @@ import React from 'react';
 import {IoIosTelephone, IoIosEmail, IoIosLocation, IoSocialWhatsappOutline} from 'react-icons/lib/io/';
 import ContactForm from './ContactForm';
 import Map from './Map';
+import links from '../../links';
 import './ContactPage.css';
 
 
@@ -15,7 +16,7 @@ const ContactPage = () => {
                     <IoSocialWhatsappOutline size='25'/>
                     <div><strong>WhatsApp</strong></div>
                     <span></span>
-                    <a href='https://wa.me/5562991050615' className='grid-gap'>(62) 9 9105-0615</a>
+                    <a href={links.whatsapp} className='grid-gap'>(62) 9 9105-0615</a>
                     <IoIosTelephone size='25'/>
                     <div><strong>Telefone</strong></div>
                     <span></span>
