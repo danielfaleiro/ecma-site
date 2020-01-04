@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ecma-site/static/css/main.cf222bfe.chunk.css",
-    "main.js": "/ecma-site/static/js/main.ead586ac.chunk.js",
-    "main.js.map": "/ecma-site/static/js/main.ead586ac.chunk.js.map",
+    "main.js": "/ecma-site/static/js/main.f85355b6.chunk.js",
+    "main.js.map": "/ecma-site/static/js/main.f85355b6.chunk.js.map",
     "runtime-main.js": "/ecma-site/static/js/runtime-main.fc8002ec.js",
     "runtime-main.js.map": "/ecma-site/static/js/runtime-main.fc8002ec.js.map",
     "static/css/2.7441d664.chunk.css": "/ecma-site/static/css/2.7441d664.chunk.css",
     "static/js/2.0f539238.chunk.js": "/ecma-site/static/js/2.0f539238.chunk.js",
     "static/js/2.0f539238.chunk.js.map": "/ecma-site/static/js/2.0f539238.chunk.js.map",
     "index.html": "/ecma-site/index.html",
-    "precache-manifest.c20c1d7a5c8bc75f4c72390ff6a3a4fb.js": "/ecma-site/precache-manifest.c20c1d7a5c8bc75f4c72390ff6a3a4fb.js",
+    "precache-manifest.ba071fa0d1d250aa9d1395921f34884d.js": "/ecma-site/precache-manifest.ba071fa0d1d250aa9d1395921f34884d.js",
     "service-worker.js": "/ecma-site/service-worker.js",
     "static/css/2.7441d664.chunk.css.map": "/ecma-site/static/css/2.7441d664.chunk.css.map",
     "static/css/main.cf222bfe.chunk.css.map": "/ecma-site/static/css/main.cf222bfe.chunk.css.map",
@@ -37,6 +37,6 @@
     "static/css/2.7441d664.chunk.css",
     "static/js/2.0f539238.chunk.js",
     "static/css/main.cf222bfe.chunk.css",
-    "static/js/main.ead586ac.chunk.js"
+    "static/js/main.f85355b6.chunk.js"
   ]
 }
