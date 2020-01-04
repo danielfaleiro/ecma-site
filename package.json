@@ -1,6 +1,6 @@
 {
-  "name": "ecma-site",
-  "homepage": "https://danielfaleiro.github.io/ecma-site",
+  "name": "ECMA Website",
+  "homepage": "https://espacoecma.com.br/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
