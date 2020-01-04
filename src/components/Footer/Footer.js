@@ -28,7 +28,7 @@ const Footer = () => {
                         </p>
                     </div>
                     
-                    <a className='start items-center flex-row footer-link' href='mailto:raydelmm@gmail.com'>
+                    <a className='start items-center flex-row footer-link' href='mailto:contato@espacoecma.com.br'>
                         <IoEmail className='footer-icon' size={iconSize}/>
                         <p className='footer-text'>
                             contato@espacoecma.com.br

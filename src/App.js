@@ -72,7 +72,7 @@ const Fisio = () => {
     contact: <>
       <p className="hm-default"><strong>Raydel Marques</strong><br />
       Telefone: <a href='tel:062991050615'>(62) 9 99105-0615</a><br />
-      E-mail: <a href='mailto:raydelmm@gmail.com'>raydelmm@gmail.com</a></p>
+      E-mail: <a href='mailto:fisioterapia@espacoecma.com.br'>fisioterapia@espacoecma.com.br</a></p>
     </>
   }
   const others = {
@@ -107,7 +107,7 @@ const Osteo = () => {
     contact: <>
       <p className="hm-default"><strong>Raydel Marques</strong><br />
       Telefone: <a href='tel:062991050615'>(62) 9 99105-0615</a><br />
-      E-mail: <a href='mailto:raydelmm@gmail.com'>raydelmm@gmail.com</a></p>
+      E-mail: <a href='mailto:fisioterapia@espacoecma.com.br'>fisioterapia@espacoecma.com.br</a></p>
     </>
   }
   const others = {
