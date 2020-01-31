@@ -144,7 +144,7 @@ const Pilates = () => {
       <li>Sessões de 60 minutos</li>
     </ul>,
     contact: <>
-      <p className="hm-default"><strong>Nome Sobrenome</strong><br />
+      <p className="hm-default"><strong>Juliene Gonçalves</strong><br />
       Telefone: <a href='tel:062981668650'>(62) 9 8166-8650</a><br />
       E-mail: <a href='mailto:pilates@espacoecma.com.br'>pilates@espacoecma.com.br</a></p>
     </>
