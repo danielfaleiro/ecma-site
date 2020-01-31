@@ -26,7 +26,9 @@ const Faith = () => {
                     obra do mal e do mundo em que vivemos. Em nossa abordagem Deus toma o lugar central, respeitando 
                     as individualidades e buscando o centro das necessidades de cada um, que se dispõe a fazer parte do nosso trabalho.  
                 </p>
-                <AnchorButton className='hm-default center' to={pdf} toFile={true} text={"Leia Nossa Confissão de Fé"}/>
+                <span className='center'>
+                  <AnchorButton className='hm-default' to={pdf} toFile={true} text={"Leia Nossa Confissão de Fé"}/>
+                </span>
             </div>
         </div>
     );
