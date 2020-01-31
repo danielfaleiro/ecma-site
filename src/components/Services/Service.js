@@ -61,7 +61,7 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                 <h1 className='hm-default color-ecma-gold tc'>{name}</h1>
                 <div className='service-img-container flex'>
                     <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} >
-                        <img src={`${image}`} alt={name} className='service-image' height='400px' width='auto'/>
+                        <img src={`${image}`} alt={name} className='service-image'/>
                     </ScrollAnimation>
                     <div className='service-img-side service-text'>
                         <h3 className="hm-default">O QUE É</h3>

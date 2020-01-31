@@ -36,6 +36,7 @@
 
 .service-image {
     display:block;
+    height: 400px;
     margin:auto auto auto 40px;
 }
 
@@ -60,8 +61,9 @@
     }
 
     .service-image {
+        height: auto;
         width: 100%;
-        margin-left: 0;
+        margin: 0;
     }
 
     .service-side {
@@ -71,13 +73,14 @@
     }
 
     .service-img-side {
-        margin-left: 0;
+        margin: 0 -1em 0 -1em;
         width: 100%;
         order: -1;
     }
 
     .service-img-container {
         flex-direction: column;
+        margin: 0 1em 0 1em;
     }
 
     .service-panel {
