@@ -13,7 +13,7 @@ const Footer = () => {
                     <img src={logo} alt='Logo do ECMA'/>
                 </div>
                 <div className='center items-center flex-column footer-info'>
-                    <div className='contact-info ma2 tl'>
+                    <address className='contact-info ma2 t fs-normal'>
                       <IoSocialWhatsappOutline size='25'/>
                       <div><strong>WhatsApp</strong></div>
                       <span></span>
@@ -34,7 +34,7 @@ const Footer = () => {
                       <div><strong>Endereço</strong></div>
                       <span></span>
                       <div className='grid-gap'>Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
-                  </div>
+                  </address>
                 </div>
                 <div className='center footer-social-media items-center'>
                     <a className='footer-link' href='https://www.facebook.com/espacoraydelmarques/'>

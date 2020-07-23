@@ -6,20 +6,25 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import links from '../../links';
 
-const HowItWorks = ({text}) => {
-    return (
-        <div className='service-text'>
-            <h3 className="hm-default">COMO FUNCIONA</h3>
-            <span className='text'>{text}</span>
-        </div>
-    );
-}
-
-const TextBlock = ({title, text}) => {
-  return (
-    <div className='service-text'>
+const TextBlock = ({title, text, isContact}) => {
+  const content = 
+    <>
       <h3 className="hm-default">{title}</h3>
       <span className='text'>{text}</span>
+    </>;
+  
+  if (isContact) {
+    return (
+      <div className='service-text'>
+        <address className='fs-normal'>
+          {content}
+        </address>
+      </div>
+    )
+  }
+  return (
+    <div className='service-text'>
+      {content}
     </div>
   );
 }
@@ -68,12 +73,12 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                         <span className='text'>{texts.about}</span>
                     </div>     
                 </div>
-                {texts.disfunctions ? <TextBlock title="TIPOS DE DISFUNÇÕES" text={texts.disfunctions} /> : <></>}
-                {texts.areas ? <TextBlock title="ÁREAS ABORDADAS" text={texts.areas} /> : <></>}
-                {adjustContent? <HowItWorks text={texts.howItWorks}/> : <></>}
+                {texts.disfunctions && <TextBlock title="TIPOS DE DISFUNÇÕES" text={texts.disfunctions} />}
+                {texts.areas && <TextBlock title="ÁREAS ABORDADAS" text={texts.areas} />}
+                {adjustContent && <TextBlock title="COMO FUNCIONA" text={texts.howItWorks}/>}
                 <div className='service-panel flex'>
                     <div className='start flex-column service-main'>
-                        {adjustContent? <></> : <HowItWorks text={texts.howItWorks}/>}
+                        {!adjustContent && <TextBlock title="COMO FUNCIONA" text={texts.howItWorks}/>}
                         <div className='service-text'>
                             <h3 className="hm-default">TEMPO DE ACOMPANHAMENTO</h3>
                             <span className='text'>{texts.time}</span>
@@ -88,9 +93,9 @@ const Service = ({name, image, texts, others, adjustContent}) => {
                             <h3 className="hm-default">PARA QUEM É INDICADO</h3>
                             <span className='text'>{texts.indication}</span>
                         </div>
-                        {texts.schedule ? <TextBlock title="HORÁRIO DE ATENDIMENTO" text={texts.schedule} /> : <></>}
-                        {texts.contact ? <TextBlock title="PROFISSIONAL RESPONSÁVEL" text={texts.contact} /> : <></>}
-                        {texts.budget ? <TextBlock title="SOLICITE UM ORÇAMENTO" text={texts.budget} /> : <></>}
+                        {texts.schedule && <TextBlock title="HORÁRIO DE ATENDIMENTO" text={texts.schedule} />}
+                        {texts.contact && <TextBlock title="PROFISSIONAL RESPONSÁVEL" isContact text={texts.contact} />}
+                        {texts.budget && <TextBlock title="SOLICITE UM ORÇAMENTO" text={texts.budget} />}
                     </div>
                 </div>
             </div>   

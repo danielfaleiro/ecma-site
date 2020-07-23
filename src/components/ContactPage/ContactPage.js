@@ -9,7 +9,7 @@ import './ContactPage.css';
 const ContactPage = () => {
     return (
         <div className='center top-page flex-column flex-nowrap lato page-min-height'>
-            <div className='roboto tc contact-container container-tpa'>
+            <address className='roboto tc contact-container container-tpa fs-normal'>
                 <h1 className='color-ecma-gold hm-default'>Contato</h1>
                 <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
                 <div className='contact-info tl'>
@@ -34,7 +34,7 @@ const ContactPage = () => {
                     <span></span>
                     <div className='grid-gap'>Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
                 </div>
-            </div>
+            </address>
             <Map />
             <div className='center flex-nowrap flex-column min-max-width'>
                 <div className='hm-default section-container'>
