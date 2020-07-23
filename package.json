@@ -5,19 +5,19 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.2",
-    "gh-pages": "^2.1.1",
-    "react": "^16.8.6",
+    "gh-pages": "^2.2.0",
+    "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.13.1",
     "react-icons": "^2.2.7",
     "react-input-mask": "^2.0.4",
     "react-loader-spinner": "^2.3.0",
     "react-notifications-component": "^1.1.1",
-    "react-responsive-carousel": "^3.1.51",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.2.0",
+    "react-responsive-carousel": "^3.2.9",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
     "react-slick": "^0.24.0",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.12.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -25,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +36,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-standard": "^4.0.1"
+  }
 }
