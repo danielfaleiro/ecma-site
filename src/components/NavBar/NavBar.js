@@ -1,62 +1,62 @@
-import React from 'react';
+import React from 'react'
 import './NavBar.css'
-import logo from './headerlogo.png';
-import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/';
-import links from '../../links';
-import { NavLink } from "react-router-dom";
-import onRouteChange from '../../events/onRouteChange';
-import Anchor from '../Anchor/Anchor';
-
+import logo from './headerlogo.png'
+import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/'
+import links from '../../links'
+import { NavLink } from 'react-router-dom'
+import onRouteChange from '../../events/onRouteChange'
+import Anchor from '../Anchor/Anchor'
 
 const NavBar = () => {
   const menu = {
-    home: "Home",
-    clinica: "O Espaço",
-    confessionalidade: "Nossa Confessionalidade",
-    equipe: "Equipe",
+    home: 'Home',
+    clinica: 'O Espaço',
+    confessionalidade: 'Nossa Confessionalidade',
+    equipe: 'Equipe',
     servicos: {
-      self: "Serviços",
-      fisioterapia: "Fisioterapia",
-      osteopatia: "Osteopatia",
-      pilates: "Pilates Clássico",
-      personal: "Personal Trainer",
-      relax: "Espaço Relaxar",
+      self: 'Serviços',
+      fisioterapia: 'Fisioterapia',
+      osteopatia: 'Osteopatia',
+      pilates: 'Pilates Clássico',
+      personal: 'Personal Trainer',
+      relax: 'Espaço Relaxar'
     },
-    contato: "Contato",
+    contato: 'Contato'
   }
 
   const doShowMobileMenu = (isShow, navigation, mobileNavigation) => {
     if (isShow) {
-      mobileNavigation.classList.add('show-mobile-menu');
-      navigation.classList.remove('shadow-1');
+      mobileNavigation.classList.add('show-mobile-menu')
+      navigation.classList.remove('shadow-1')
     } else {
-      mobileNavigation.classList.remove('show-mobile-menu');
-      navigation.classList.add('shadow-1');
+      mobileNavigation.classList.remove('show-mobile-menu')
+      navigation.classList.add('shadow-1')
     }
   }
 
   const showMobileMenu = (isShow) => {
-    const mobileNavigation = document.getElementById('mobileNavigation');
-    const navigation = document.getElementById('navigation');
+    const mobileNavigation = document.getElementById('mobileNavigation')
+    const navigation = document.getElementById('navigation')
 
     if (isShow === true || isShow === false) {
-      doShowMobileMenu(isShow, navigation, mobileNavigation);
+      doShowMobileMenu(isShow, navigation, mobileNavigation)
     } else {
       if (mobileNavigation.classList.contains('show-mobile-menu')) {
-        doShowMobileMenu(false, navigation, mobileNavigation);
+        doShowMobileMenu(false, navigation, mobileNavigation)
       } else {
-        doShowMobileMenu(true, navigation, mobileNavigation);
+        doShowMobileMenu(true, navigation, mobileNavigation)
       }
     }
   }
 
   const showDropdown = (isShow) => {
-    const dropdown = document.getElementById('dropdown-content');
+    const dropdown = document.getElementById('dropdown-content')
 
-    if (isShow)
-      dropdown.classList.add('show-dropdown');
-    else
-      dropdown.classList.remove('show-dropdown');
+    if (isShow) {
+      dropdown.classList.add('show-dropdown')
+    } else {
+      dropdown.classList.remove('show-dropdown')
+    }
   }
 
   return (
@@ -125,23 +125,23 @@ const NavBar = () => {
       </nav>
       <nav id='mobileNavigation' className='mobile-navigation'>
         <div id='mobileMenu' className='menu-mobile'>
-            <NavLink exact to={links.home} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
-              {menu.home}
-            </NavLink>
-            <NavLink to={links.clinic} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
-              {menu.clinica}
-            </NavLink>
-            <NavLink to={links.faith} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
-              {menu.confessionalidade}
-            </NavLink>
-            <NavLink to={links.team} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
-              {menu.equipe}
-            </NavLink>
+          <NavLink exact to={links.home} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.home}
+          </NavLink>
+          <NavLink to={links.clinic} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.clinica}
+          </NavLink>
+          <NavLink to={links.faith} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.confessionalidade}
+          </NavLink>
+          <NavLink to={links.team} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.equipe}
+          </NavLink>
           <div className='dropdown'>
-              <NavLink exact to={links.services.self} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
-                {menu.servicos.self}
-                <MdArrowDropDown className='self-center' size='25' />
-              </NavLink>
+            <NavLink exact to={links.services.self} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+              {menu.servicos.self}
+              <MdArrowDropDown className='self-center' size='25' />
+            </NavLink>
             <div className='dropdown-content color-ecma-blue lato'>
               <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.fisioterapia}
@@ -160,13 +160,13 @@ const NavBar = () => {
               </NavLink>
             </div>
           </div>
-            <NavLink to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item'  activeClassName='dropdown-active'>
-              {menu.contato}
-            </NavLink>
+          <NavLink to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.contato}
+          </NavLink>
         </div>
       </nav>
     </>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

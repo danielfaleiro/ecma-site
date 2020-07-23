@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import './App.css';
-import fisioImg from './components/Services/fisioterapia.jpg';
-import osteoImg from './components/Services/osteopatia.jpg';
-import pilatesImg from './components/Services/pilates.jpg';
-import treinoImg from './components/Services/treinamento.jpg';
-import relaxarImg from './components/Services/espacorelaxar.jpg';
-import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
-import ContactPage from './components/ContactPage/ContactPage';
-import ServicesPage from './components/ServicesPage/ServicesPage';
-import Service from './components/Services/Service';
-import Team from './components/Team/Team';
-import Clinic from './components/Clinic/Clinic';
-import Faith from './components/Faith/Faith';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './components/Home/Home';
+import React, { Component } from 'react'
+import './App.css'
+import fisioImg from './components/Services/fisioterapia.jpg'
+import osteoImg from './components/Services/osteopatia.jpg'
+import pilatesImg from './components/Services/pilates.jpg'
+import treinoImg from './components/Services/treinamento.jpg'
+import relaxarImg from './components/Services/espacorelaxar.jpg'
+import NavBar from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer'
+import ContactPage from './components/ContactPage/ContactPage'
+import ServicesPage from './components/ServicesPage/ServicesPage'
+import Service from './components/Services/Service'
+import Team from './components/Team/Team'
+import Clinic from './components/Clinic/Clinic'
+import Faith from './components/Faith/Faith'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './components/Home/Home'
 import links from './links'
-import NotFoundPage from './components/404/404';
+import NotFoundPage from './components/404/404'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <Router>
         <div className='color-default'>
@@ -41,7 +41,7 @@ class App extends Component {
           <Footer />
         </div>
       </Router>
-    );
+    )
   }
 }
 
@@ -78,18 +78,18 @@ const Fisio = () => {
   const others = {
     services: ['Osteopatia', 'Pilates Clássico', 'Personal Trainer', 'Espaço Relaxar'],
     images: [osteoImg, pilatesImg, treinoImg, relaxarImg],
-    route: [links.services.osteo, links.services.pilates, links.services.training, links.services.relax],
-    
-  };
+    route: [links.services.osteo, links.services.pilates, links.services.training, links.services.relax]
+
+  }
   return (
     <Service
-        name='Fisioterapia'
-        image={fisioImg}
-        others={others}
-        texts={texts}
-        adjustContent={true}
+      name='Fisioterapia'
+      image={fisioImg}
+      others={others}
+      texts={texts}
+      adjustContent={true}
     />
-  );
+  )
 }
 
 const Osteo = () => {
@@ -111,19 +111,19 @@ const Osteo = () => {
     </>
   }
   const others = {
-      services: ['Fisioterapia', 'Pilates Clássico', 'Personal Trainer', 'Espaço Relaxar'],
-      images: [fisioImg, pilatesImg, treinoImg, relaxarImg],
-      route: [links.services.fisio, links.services.pilates, links.services.training, links.services.relax],
-  };
+    services: ['Fisioterapia', 'Pilates Clássico', 'Personal Trainer', 'Espaço Relaxar'],
+    images: [fisioImg, pilatesImg, treinoImg, relaxarImg],
+    route: [links.services.fisio, links.services.pilates, links.services.training, links.services.relax]
+  }
   return (
-      <Service
-          name='Osteopatia'
-          image={osteoImg}
-          others={others}
-          texts={texts}
-          adjustContent={false}
-      />
-  );
+    <Service
+      name='Osteopatia'
+      image={osteoImg}
+      others={others}
+      texts={texts}
+      adjustContent={false}
+    />
+  )
 }
 
 const Pilates = () => {
@@ -150,19 +150,19 @@ const Pilates = () => {
     </>
   }
   const others = {
-      services: ['Fisioterapia', 'Osteopatia', 'Personal Trainer', 'Espaço Relaxar'],
-      images: [fisioImg, osteoImg, treinoImg, relaxarImg],
-      route: [links.services.fisio, links.services.osteo, links.services.training, links.services.relax],
+    services: ['Fisioterapia', 'Osteopatia', 'Personal Trainer', 'Espaço Relaxar'],
+    images: [fisioImg, osteoImg, treinoImg, relaxarImg],
+    route: [links.services.fisio, links.services.osteo, links.services.training, links.services.relax]
   }
   return (
-      <Service
-          name='Pilates Clássico'
-          image={pilatesImg}
-          others={others}
-          texts={texts}
-          adjustContent={false}
-      />
-  );
+    <Service
+      name='Pilates Clássico'
+      image={pilatesImg}
+      others={others}
+      texts={texts}
+      adjustContent={false}
+    />
+  )
 }
 
 const Personal = () => {
@@ -180,10 +180,10 @@ const Personal = () => {
       <p className="hm-default">Fortalecimento muscular, melhora de performance, aptidão física, ganho de resistência e capacidade funcional, preparação para Testes de Aptidão Física, perca de peso, ganho de massa muscular, melhora da resposta cardiopulmonar, treinamento de atletas amador e esportistas, acompanhamento de grupo especiais: hipertensos, diabéticos, obesos e gestantes.</p>
       <p className="hm-default">Desenvolvemos uma abordagem personalizada com pacientes em fase final do tratamento com treinamento direcionado para a total recuperação física e retorno ao esporte. Fazemos uma proposta de Integração Multiprofissional (Fisioterapia, Pilates e Funcional) onde o objetivo é conquistar resultados de forma eficaz e com segurança para os clientes.</p>
       <p className="hm-default">O Personal atua acompanhando o aluno/paciente, avaliando e identificando suas necessidades físicas e objetivos. Assim elabora seu plano de treinamento onde a execução é toda supervisionada e acompanhada por um profissional. A execução do treinamento é feita em nossa unidade Espaço Personal ECMA, sem custos adicionais.</p>
-      </>,
+    </>,
     time: <p className="hm-default">A durabilidade do acompanhamento a quantidade de execução dependerá dos objetivos apresentados na Avaliação Física e do interesse do aluno. Não sendo estipulado por parte do profissional tempo de acompanhamento.</p>,
     schedule: <p className="hm-default">das 7h15min às 19h de acordo com a disponibilidade de horário.</p>,
-    procedure:<ul className="hm-default">
+    procedure: <ul className="hm-default">
       <li>Musculação direcionada;</li>
       <li>Pilates aparelho solo e bola;</li>
       <li>Pilates e Treinamento funcional combinado;</li>
@@ -200,19 +200,19 @@ const Personal = () => {
     E-mail: <a href='mailto:personal@espacoecma.com.br'>personal@espacoecma.com.br</a></p>
   }
   const others = {
-      services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico', 'Espaço Relaxar'],
-      images: [fisioImg, osteoImg, pilatesImg, relaxarImg],
-      route: [links.services.fisio, links.services.osteo, links.services.pilates, links.services.relax],
+    services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico', 'Espaço Relaxar'],
+    images: [fisioImg, osteoImg, pilatesImg, relaxarImg],
+    route: [links.services.fisio, links.services.osteo, links.services.pilates, links.services.relax]
   }
   return (
-      <Service
-          name='Personal Trainer'
-          image={treinoImg}
-          others={others}
-          texts={texts}
-          adjustContent={false}
-      />
-  );
+    <Service
+      name='Personal Trainer'
+      image={treinoImg}
+      others={others}
+      texts={texts}
+      adjustContent={false}
+    />
+  )
 }
 
 const Relax = () => {
@@ -229,9 +229,9 @@ const Relax = () => {
     areas: <>
       <p className="hm-default">A cadeira acomoda o cliente em postura sentada apoiando o rosto, o peito, os joelhos e os braços. Assim este recebe as terapias nas regiões da coluna vertebral e nos braços. </p>
       <p className="hm-default">A técnicas é realizada por profissionais treinados e qualificados, indicada para diversos tipos de pessoas, promovendo melhoras da circulação sanguínea e aumenta a disposição do indivíduo, em função do seu efeito revigorante. Tendo como vantagem da técnica que o cliente não precisa trocar ou tirar a roupa e os sapatos, aumentando a sua praticidade.</p>
-      </>,
+    </>,
     time: <p className="hm-default">A durabilidade do acompanhamento a quantidade de execução dependerá dos objetivos apresentados na Avaliação Física e do interesse do aluno. Não sendo estipulado por parte do profissional tempo de acompanhamento.</p>,
-    procedure:<ul className="hm-default">
+    procedure: <ul className="hm-default">
       <li>Relaxamento muscular;</li>
       <li>Diminuição da fadiga muscular;</li>
       <li>Remoção de toxinas do organismo;</li>
@@ -247,14 +247,14 @@ const Relax = () => {
       <li>Melhora do bem estar respiratório e diminuição de obstruções brônquicas;</li>
       <li>Melhora da consciência corporal.</li>
     </ul>,
-    budget: <p style={{display: "grid", gridTemplateColumns: "auto auto"}}className="hm-default">
-      <span style={{textAlign: "right", paddingRight: "10px"}}>
+    budget: <p style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}className="hm-default">
+      <span style={{ textAlign: 'right', paddingRight: '10px' }}>
         Telefone:
       </span>
       <>
         <a href='tel:06239261118'>(62) 3926-1118</a><br /><a href='tel:062991050615'>(62) 9 9105-0615</a>
       </>
-      <span style={{textAlign: "right", paddingRight: "10px"}}>
+      <span style={{ textAlign: 'right', paddingRight: '10px' }}>
         E-mail:
       </span>
       <>
@@ -263,19 +263,19 @@ const Relax = () => {
     </p>
   }
   const others = {
-      services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico', 'Personal Trainer'],
-      images: [fisioImg, osteoImg, pilatesImg, treinoImg],
-      route: [links.services.fisio, links.services.osteo, links.services.training],
+    services: ['Fisioterapia', 'Osteopatia', 'Pilates Clássico', 'Personal Trainer'],
+    images: [fisioImg, osteoImg, pilatesImg, treinoImg],
+    route: [links.services.fisio, links.services.osteo, links.services.training]
   }
   return (
-      <Service
-          name='Espaço Relaxar'
-          image={relaxarImg}
-          others={others}
-          texts={texts}
-          adjustContent={false}
-      />
-  );
+    <Service
+      name='Espaço Relaxar'
+      image={relaxarImg}
+      others={others}
+      texts={texts}
+      adjustContent={false}
+    />
+  )
 }
 
-export default App;
+export default App
