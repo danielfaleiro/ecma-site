@@ -17,12 +17,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home/Home'
 import links from './links'
 import NotFoundPage from './components/404/404'
+import WhatsappButton from './components/WhatsappButton/WhatsappButton'
 
 class App extends Component {
   render () {
     return (
       <Router>
         <div className='color-default'>
+          <WhatsappButton />
           <NavBar/>
           <Switch>
             <Route exact path={links.home} component={Home}/>
