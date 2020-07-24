@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import onRouteChange from '../../events/onRouteChange'
 
-const AnchorButton = ({ to, text, className, toFile }) => {
+const AnchorButton = ({ to, text, className, toOutside }) => {
   if (className === undefined) {
     className = 'button lato'
   } else {
     className = className + ' button lato'
   }
 
-  if (toFile) {
+  if (toOutside) {
     return (
       <a className={className} href={to}>
         {text}

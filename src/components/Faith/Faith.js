@@ -27,7 +27,7 @@ const Faith = () => {
           as individualidades e buscando o centro das necessidades de cada um, que se dispõe a fazer parte do nosso trabalho.
         </p>
         <span className='center'>
-          <AnchorButton className='hm-default' to={pdf} toFile={true} text={'Leia Nossa Confissão de Fé'}/>
+          <AnchorButton className='hm-default' to={pdf} toOutside text={'Leia Nossa Confissão de Fé'}/>
         </span>
       </div>
     </div>
