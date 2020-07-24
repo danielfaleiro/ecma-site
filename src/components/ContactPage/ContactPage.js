@@ -4,6 +4,7 @@ import ContactForm from './ContactForm'
 import Map from './Map'
 import links from '../../links'
 import './ContactPage.css'
+import WhatsappContact from './WhatsappContact'
 
 const ContactPage = () => {
   return (
@@ -35,6 +36,7 @@ const ContactPage = () => {
         </div>
       </address>
       <Map />
+      <WhatsappContact />
       <div className='center flex-nowrap flex-column min-max-width'>
         <div className='hm-default section-container'>
           <h1 className='tc color-ecma-gold'>Deixe sua mensagem</h1>
