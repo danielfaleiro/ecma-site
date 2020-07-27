@@ -6,7 +6,7 @@ import img3 from './juliene.jpg'
 
 const Team = () => {
   return (
-    <div className='min-max-width top-page container-tpa center flex-column page-min-height'>
+    <main className='min-max-width top-page container-tpa center flex-column page-min-height'>
       <h1 className='color-ecma-gold tc lato'>Nossa Equipe</h1>
       <div className='hm-default mt3 flex justify-between flex-column flex-wrap'>
         <TeamCard
@@ -73,7 +73,7 @@ const Team = () => {
           </>}
         />
       </div>
-    </div>
+    </main>
   )
 }
 

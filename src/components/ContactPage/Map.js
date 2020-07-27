@@ -16,7 +16,7 @@ class Map extends Component {
 
   render () {
     return (
-      <div id="map" />
+      <section id="map" />
     )
   }
 }

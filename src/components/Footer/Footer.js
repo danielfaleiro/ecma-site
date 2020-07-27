@@ -8,7 +8,7 @@ const Footer = () => {
   const iconSize = 40
   return (
     <div className='footer center bg-ecma-blue pt4 pb4 white roboto footer-text'>
-      <div className='min-max-width hm-default flex justify-between footer-inner'>
+      <footer className='min-max-width hm-default flex justify-between footer-inner'>
         <div className='center items-center flex-column footer-logo-container'>
           <img src={logo} alt='Logo do ECMA'/>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
             <IoSocialInstagram className='social-icon' size={iconSize * 1.5}/>
           </a>
         </div>
-      </div>
+      </footer>
     </div>
   )
 }

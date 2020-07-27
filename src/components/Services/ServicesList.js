@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const ServicesList = () => {
   return (
     <div className='section-container section-vpa services-container'>
-      <div className='min-max-width center flex-column tc'>
+      <section className='min-max-width center flex-column tc'>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
           <h1 className='hm-default services-title lato'>
             Nossos Serviços
@@ -32,7 +32,7 @@ const ServicesList = () => {
             <span className='services-bt-text'>ESPAÇO RELAXAR</span>
           </Link>
         </ScrollAnimation>
-      </div>
+      </section>
     </div>
   )
 }

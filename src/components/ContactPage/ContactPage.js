@@ -8,7 +8,7 @@ import WhatsappContact from './WhatsappContact'
 
 const ContactPage = () => {
   return (
-    <div className='center top-page flex-column flex-nowrap lato page-min-height'>
+    <main className='center top-page flex-column flex-nowrap lato page-min-height'>
       <address className='roboto tc contact-container container-tpa fs-normal'>
         <h1 className='color-ecma-gold hm-default'>Contato</h1>
         <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
@@ -38,12 +38,12 @@ const ContactPage = () => {
       <Map />
       <WhatsappContact />
       <div className='center flex-nowrap flex-column min-max-width'>
-        <div className='hm-default section-container'>
+        <section className='hm-default section-container'>
           <h1 className='tc color-ecma-gold'>Deixe sua mensagem</h1>
           <ContactForm />
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   )
 }
 

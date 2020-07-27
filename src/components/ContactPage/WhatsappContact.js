@@ -7,7 +7,7 @@ import links from '../../links'
 const WhatsappContact = () => {
   return (
     <div className='whatsapp-contact-container'>
-      <div className='center flex-wrap min-max-width'>
+      <section className='center flex-wrap min-max-width'>
         <FaWhatsapp className='whatsapp-contact-icon'/>
         <div className='whatsapp-contact-content flex-column'>
           <div className='whatsapp-contact-subtitle'>
@@ -20,7 +20,7 @@ const WhatsappContact = () => {
             toOutside
           />
         </div>
-      </div>
+      </section>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import links from '../../links'
 
 const ServicesPage = () => {
   return (
-    <div className='min-max-width top-page container-tpa center flex-nowrap flex-column lato page-min-height'>
+    <main className='min-max-width top-page container-tpa center flex-nowrap flex-column lato page-min-height'>
       <h1 className='center tc color-ecma-gold hm-default'>Nossos Serviços</h1>
       <div className='center flex-row flex-wrap'>
         <ServiceCard
@@ -48,7 +48,7 @@ const ServicesPage = () => {
           flip={true}
         />
       </div>
-    </div>
+    </main>
   )
 }
 

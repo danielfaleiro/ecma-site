@@ -49,7 +49,7 @@ const Carousel = () => {
   }
 
   return (
-    <div id='carousel' className='carousel top-page'>
+    <aside id='carousel' className='carousel top-page'>
       <Slider {...settings}>
         <div className='carousel-clinic carousel-container'>
           <CarouselSlide
@@ -84,8 +84,7 @@ const Carousel = () => {
           />
         </div>
       </Slider>
-
-    </div>
+    </aside>
   )
 }
 

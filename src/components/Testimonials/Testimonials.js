@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const Testimonials = () => {
   return (
-    <div className="section-container center flex-wrap section-vpa flex-column min-max-width tc">
+    <section className="section-container center flex-wrap section-vpa flex-column min-max-width tc">
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <h1 className='hm30 color-ecma-gold lato'>Depoimentos</h1>
       </ScrollAnimation>
@@ -14,7 +14,7 @@ const Testimonials = () => {
         <Testmony id='1' />
         <Testmony id='2' />
       </ScrollAnimation>
-    </div>
+    </section>
   )
 }
 

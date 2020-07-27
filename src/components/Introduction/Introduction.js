@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const Introduction = () => {
   return (
-    <div className='intro-container min-max-width section-vpa section-container center flex-row'>
+    <section className='intro-container min-max-width section-vpa section-container center flex-row'>
       <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='flex-column intro-title-container'>
         <p id='intro-1' className='color-ecma-gold roboto intro-title'>
           <span className='overpass-mono'>+</span> Resultados
@@ -28,7 +28,7 @@ const Introduction = () => {
           “<strong>Clássicos</strong> são admirados não porque são antigos, mas porque continuam sendo verdadeiros com pessoas de muitas épocas, culturas e idiomas”.
         </p>
       </ScrollAnimation>
-    </div>
+    </section>
   )
 }
 

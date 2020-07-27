@@ -57,7 +57,7 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
 
   return (
     <div className='top-page container-tpa page-min-height'>
-      <div className='min-max-width center flex-column section-container lato'>
+      <main className='min-max-width center flex-column section-container lato'>
         <h1 className='hm-default color-ecma-gold tc'>{name}</h1>
         <div className='service-img-container flex'>
           <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} >
@@ -93,8 +93,8 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
             {texts.budget && <TextBlock title="SOLICITE UM ORÇAMENTO" text={texts.budget} />}
           </div>
         </div>
-      </div>
-      <div className='bg-ecma-gray other-services section-container'>
+      </main>
+      <aside className='bg-ecma-gray other-services section-container'>
         <div className='min-max-width center flex-column items-center'>
           <div>
             <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
@@ -103,7 +103,7 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
             {otherServices()}
           </ScrollAnimation>
         </div>
-      </div>
+      </aside>
     </div>
   )
 }
