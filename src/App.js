@@ -18,12 +18,14 @@ import Home from './components/Home/Home'
 import links from './links'
 import NotFoundPage from './components/404/404'
 import WhatsappButton from './components/WhatsappButton/WhatsappButton'
+import ReactNotification from 'react-notifications-component'
 
 class App extends Component {
   render () {
     return (
       <Router>
         <div className='color-default'>
+          <ReactNotification />
           <WhatsappButton />
           <NavBar/>
           <Switch>
