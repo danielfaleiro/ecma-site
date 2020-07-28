@@ -11,7 +11,7 @@ const WhatsappContact = () => {
         <FaWhatsapp className='whatsapp-contact-icon'/>
         <div className='whatsapp-contact-content flex-column'>
           <div className='whatsapp-contact-subtitle'>
-            Tire sua dúvida e marque seu horário pelo WhatsApp.
+            Tire suas dúvidas e marque seu horário pelo WhatsApp.
           </div>
           <AnchorButton
             to={links.whatsapp}

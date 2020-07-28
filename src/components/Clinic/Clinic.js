@@ -53,7 +53,7 @@ const Clinic = () => {
             <section>
               <h3 className='lato'>FILOSOFIA</h3>
               <p className='text'><em>
-                Sua saúde estará nas mãos de ótimos profissionais, que têm em comum é uma visão clássica de saúde.
+                Sua saúde estará nas mãos de ótimos profissionais, que têm em comum uma visão clássica de saúde.
               </em></p>
               <p className='text'>
                 A Filosofia do ECMA considera que a qualidade de vida está firmemente enraizada na busca de um equilíbrio
