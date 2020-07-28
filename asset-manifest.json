@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f643db49.chunk.css",
-    "main.js": "/static/js/main.a79d3955.chunk.js",
-    "main.js.map": "/static/js/main.a79d3955.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7d07bc91.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7d07bc91.js.map",
-    "static/css/2.7441d664.chunk.css": "/static/css/2.7441d664.chunk.css",
-    "static/js/2.0f539238.chunk.js": "/static/js/2.0f539238.chunk.js",
-    "static/js/2.0f539238.chunk.js.map": "/static/js/2.0f539238.chunk.js.map",
+    "main.css": "/static/css/main.7811f9ac.chunk.css",
+    "main.js": "/static/js/main.1ce815a8.chunk.js",
+    "main.js.map": "/static/js/main.1ce815a8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.210a0329.js",
+    "runtime-main.js.map": "/static/js/runtime-main.210a0329.js.map",
+    "static/css/2.4e536510.chunk.css": "/static/css/2.4e536510.chunk.css",
+    "static/js/2.fd471185.chunk.js": "/static/js/2.fd471185.chunk.js",
+    "static/js/2.fd471185.chunk.js.map": "/static/js/2.fd471185.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4afa20522a8d89606bc05f9241517fc0.js": "/precache-manifest.4afa20522a8d89606bc05f9241517fc0.js",
+    "precache-manifest.0323415b7e944932bb13cc0d056204e6.js": "/precache-manifest.0323415b7e944932bb13cc0d056204e6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.7441d664.chunk.css.map": "/static/css/2.7441d664.chunk.css.map",
-    "static/css/main.f643db49.chunk.css.map": "/static/css/main.f643db49.chunk.css.map",
+    "static/css/2.4e536510.chunk.css.map": "/static/css/2.4e536510.chunk.css.map",
+    "static/css/main.7811f9ac.chunk.css.map": "/static/css/main.7811f9ac.chunk.css.map",
+    "static/js/2.fd471185.chunk.js.LICENSE.txt": "/static/js/2.fd471185.chunk.js.LICENSE.txt",
     "static/media/Carousel.css": "/static/media/clinica.f33ab4cb.jpg",
     "static/media/DECLARAÇÃO DE FÉ ECMA.pdf": "/static/media/DECLARAÇÃO DE FÉ ECMA.0fe4fb7d.pdf",
     "static/media/clinica1.jpg": "/static/media/clinica1.bb4de6a9.jpg",
@@ -33,10 +34,10 @@
     "static/media/raydel.jpg": "/static/media/raydel.bfa01cf7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d07bc91.js",
-    "static/css/2.7441d664.chunk.css",
-    "static/js/2.0f539238.chunk.js",
-    "static/css/main.f643db49.chunk.css",
-    "static/js/main.a79d3955.chunk.js"
+    "static/js/runtime-main.210a0329.js",
+    "static/css/2.4e536510.chunk.css",
+    "static/js/2.fd471185.chunk.js",
+    "static/css/main.7811f9ac.chunk.css",
+    "static/js/main.1ce815a8.chunk.js"
   ]
 }
