@@ -1,6 +1,6 @@
 import React from 'react'
 import './Service.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import onRouteChange from '../../events/onRouteChange'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import onRouteChange from '../../events/onRouteChange'
 
 const AnchorButton = ({ to, text, className, toOutside }) => {

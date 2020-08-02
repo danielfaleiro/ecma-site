@@ -192,8 +192,3 @@ a:hover {
   .button:hover { background-color: var(--ecma-gold); }
   .disabled:hover { background-color: var(--ecma-gold); }
 }
-
-#map {
-  height: 40vh;
-  width: 100%;
-}

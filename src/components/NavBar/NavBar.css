@@ -37,13 +37,16 @@ nav a:hover {
     margin-top: 7px;
 }
 
-.menuItems {
+.menuItems, .navItems {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    max-width: 75%;
+}
+
+.menuItems {
+  max-width: 75%;
 }
 
 .menu-item {
@@ -116,10 +119,6 @@ nav a:hover {
 }
 
 @media screen and (max-width: 960px) {
-    .menu-item {
-        display: none;
-    }
-
     .menu-icon,  .show-mobile-menu, .show-mobile-menu .dropdown-content {
         display: block;
     }
@@ -128,13 +127,13 @@ nav a:hover {
         width: 100%;
     }
 
-    .navigation .dropdown-content {
-        display: none;
-    }
-
     .dropdown-content {
         position: relative;
         box-shadow: none;
+    }
+
+    .navItems {
+      display: none;
     }
 }
 

@@ -3,7 +3,7 @@ import './NavBar.css'
 import logo from './headerlogo.png'
 import { MdMenu, MdArrowDropDown } from 'react-icons/lib/md/'
 import links from '../../links'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'gatsby'
 import onRouteChange from '../../events/onRouteChange'
 import Anchor from '../Anchor/Anchor'
 
@@ -68,101 +68,105 @@ const NavBar = () => {
           </Anchor>
         </div>
         <div className='menuItems'>
-          <NavLink exact to={links.home} className='center items-center menu-item' activeClassName='nav-active'>
-            <p onClick={onRouteChange} className='lato'>
-              {menu.home}
-            </p>
-          </NavLink>
-          <NavLink to={links.clinic} className='center items-center menu-item' activeClassName='nav-active'>
-            <p onClick={onRouteChange} className='lato'>
-              {menu.clinica}
-            </p>
-          </NavLink>
-          <NavLink to={links.faith} className='center items-center menu-item' activeClassName='nav-active'>
-            <p onClick={onRouteChange} className='lato'>
-              {menu.confessionalidade}
-            </p>
-          </NavLink>
-          <NavLink to={links.team} className='center items-center menu-item' activeClassName='nav-active'>
-            <p onClick={onRouteChange} className='lato'>
-              {menu.equipe}
-            </p>
-          </NavLink>
-          <div className='dropdown'>
-            <NavLink exact to={links.services.self} onFocus={() => showDropdown(true, false)} className='center items-center menu-item' activeClassName='nav-active'>
-              <p onClick={onRouteChange} className='lato flex'>
-                {menu.servicos.self}
-                <MdArrowDropDown className='self-center' size='25' />
+          <div className='navItems'>
+            <Link to={links.home} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.home}
               </p>
-            </NavLink>
-            <div id='dropdown-content' className='dropdown-content color-ecma-blue lato'>
-              <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
-                {menu.servicos.fisioterapia}
-              </NavLink>
-              <NavLink to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
-                {menu.servicos.osteopatia}
-              </NavLink>
-              <NavLink to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
-                {menu.servicos.pilates}
-              </NavLink>
-              <NavLink to={links.services.training} onClick={onRouteChange} onBlur={() => showDropdown(false, false)} activeClassName='dropdown-active'>
-                {menu.servicos.personal}
-              </NavLink>
-              <NavLink to={links.services.relax} onClick={onRouteChange} onBlur={() => showDropdown(false, false)} activeClassName='dropdown-active'>
-                {menu.servicos.relax}
-              </NavLink>
+            </Link>
+            <Link to={links.clinic} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.clinica}
+              </p>
+            </Link>
+            <Link to={links.faith} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.confessionalidade}
+              </p>
+            </Link>
+            <Link to={links.team} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.equipe}
+              </p>
+            </Link>
+            <div className='dropdown'>
+              <Link to={links.services.self} onFocus={() => showDropdown(true, false)} className='center items-center menu-item' activeClassName='nav-active'>
+                <p onClick={onRouteChange} className='lato flex'>
+                  {menu.servicos.self}
+                  <MdArrowDropDown className='self-center' size='25' />
+                </p>
+              </Link>
+              <div id='dropdown-content' className='dropdown-content color-ecma-blue lato'>
+                <Link to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
+                  {menu.servicos.fisioterapia}
+                </Link>
+                <Link to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
+                  {menu.servicos.osteopatia}
+                </Link>
+                <Link to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
+                  {menu.servicos.pilates}
+                </Link>
+                <Link to={links.services.training} onClick={onRouteChange} onBlur={() => showDropdown(false, false)} activeClassName='dropdown-active'>
+                  {menu.servicos.personal}
+                </Link>
+                <Link to={links.services.relax} onClick={onRouteChange} onBlur={() => showDropdown(false, false)} activeClassName='dropdown-active'>
+                  {menu.servicos.relax}
+                </Link>
+              </div>
             </div>
+            <Link to={links.contact} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.contato}
+              </p>
+            </Link>
           </div>
-          <NavLink to={links.contact} className='center items-center menu-item' activeClassName='nav-active'>
-            <p onClick={onRouteChange} className='lato'>
-              {menu.contato}
-            </p>
-          </NavLink>
-          <button id='menu-icon' onClick={showMobileMenu} className='menu-icon pointer'>
-            <MdMenu size='30' />
-          </button>
+          <div className='mobileItem'>
+            <button id='menu-icon' onClick={showMobileMenu} className='menu-icon pointer'>
+              <MdMenu size='30' />
+            </button>
+          </div>
         </div>
       </nav>
       <nav id='mobileNavigation' className='mobile-navigation'>
         <div id='mobileMenu' className='menu-mobile'>
-          <NavLink exact to={links.home} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+          <Link to={links.home} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.home}
-          </NavLink>
-          <NavLink to={links.clinic} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+          </Link>
+          <Link to={links.clinic} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.clinica}
-          </NavLink>
-          <NavLink to={links.faith} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+          </Link>
+          <Link to={links.faith} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.confessionalidade}
-          </NavLink>
-          <NavLink to={links.team} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+          </Link>
+          <Link to={links.team} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.equipe}
-          </NavLink>
+          </Link>
           <div className='dropdown'>
-            <NavLink exact to={links.services.self} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
+            <Link to={links.services.self} onClick={onRouteChange} className='mobile-menu-item' activeClassName='dropdown-active'>
               {menu.servicos.self}
               <MdArrowDropDown className='self-center' size='25' />
-            </NavLink>
+            </Link>
             <div className='dropdown-content color-ecma-blue lato'>
-              <NavLink to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
+              <Link to={links.services.fisio} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.fisioterapia}
-              </NavLink>
-              <NavLink to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
+              </Link>
+              <Link to={links.services.osteo} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.osteopatia}
-              </NavLink>
-              <NavLink to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
+              </Link>
+              <Link to={links.services.pilates} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.pilates}
-              </NavLink>
-              <NavLink to={links.services.training} onClick={onRouteChange} activeClassName='dropdown-active'>
+              </Link>
+              <Link to={links.services.training} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.personal}
-              </NavLink>
-              <NavLink to={links.services.relax} onClick={onRouteChange} activeClassName='dropdown-active'>
+              </Link>
+              <Link to={links.services.relax} onClick={onRouteChange} activeClassName='dropdown-active'>
                 {menu.servicos.relax}
-              </NavLink>
+              </Link>
             </div>
           </div>
-          <NavLink to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item' activeClassName='dropdown-active'>
+          <Link to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.contato}
-          </NavLink>
+          </Link>
         </div>
       </nav>
     </>

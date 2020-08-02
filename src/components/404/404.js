@@ -3,7 +3,7 @@ import './404.css'
 import links from '../../links'
 import AnchorButton from '../AnchorButton/AnchorButton'
 
-const NotFoundPage = () => {
+const NotFound404 = () => {
   return (
     <div className='top-page section-vpa center flex-column hm-default notFound-container'>
       <h1 className='tc color-ecma-gold notFound-h1'>404</h1>
@@ -16,4 +16,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFound404
