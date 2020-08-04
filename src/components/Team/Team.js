@@ -3,11 +3,12 @@ import TeamCard from './TeamCard'
 import img1 from './raydel.jpg'
 import img2 from './luana.jpg'
 import img3 from './juliene.jpg'
+import Title from '../PageElements/Title'
 
 const Team = () => {
   return (
     <main className='min-max-width top-page container-tpa center flex-column page-min-height'>
-      <h1 className='color-ecma-gold tc lato'>Nossa Equipe</h1>
+      <Title>Nossa Equipe</Title>
       <div className='hm-default mt3 flex justify-between flex-column flex-wrap'>
         <TeamCard
           index={1}

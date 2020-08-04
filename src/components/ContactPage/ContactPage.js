@@ -5,12 +5,13 @@ import Map from './Map'
 import links from '../../links'
 import './ContactPage.css'
 import WhatsappContact from './WhatsappContact'
+import Title from '../PageElements/Title'
 
 const ContactPage = () => {
   return (
     <main className='center top-page flex-column flex-nowrap lato page-min-height'>
       <address className='roboto tc contact-container container-tpa fs-normal'>
-        <h1 className='color-ecma-gold hm-default'>Contato</h1>
+        <Title>Contato</Title>
         <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
         <div className='contact-info tl'>
           <IoSocialWhatsappOutline size='25'/>
@@ -39,7 +40,7 @@ const ContactPage = () => {
       <WhatsappContact />
       <div className='center flex-nowrap flex-column min-max-width'>
         <section className='hm-default section-container'>
-          <h1 className='tc color-ecma-gold'>Deixe sua mensagem</h1>
+          <Title>Deixe sua mensagem</Title>
           <ContactForm />
         </section>
       </div>

@@ -6,11 +6,12 @@ import TreinoImg from '../Services/treinamento.jpg'
 import RelaxImg from '../Services/espacorelaxar.jpg'
 import ServiceCard from './ServiceCard'
 import links from '../../links'
+import Title from '../PageElements/Title'
 
 const ServicesPage = () => {
   return (
     <main className='min-max-width top-page container-tpa center flex-nowrap flex-column lato page-min-height'>
-      <h1 className='center tc color-ecma-gold hm-default'>Nossos Serviços</h1>
+      <Title>Nossos Serviços</Title>
       <div className='center flex-row flex-wrap'>
         <ServiceCard
           img={FisioImg}

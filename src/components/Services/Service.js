@@ -5,6 +5,7 @@ import onRouteChange from '../../events/onRouteChange'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import links from '../../links'
+import Title from '../PageElements/Title'
 
 const TextBlock = ({ title, text, isContact }) => {
   const content =
@@ -58,7 +59,7 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
   return (
     <div className='top-page container-tpa page-min-height'>
       <main className='min-max-width center flex-column section-container lato'>
-        <h1 className='hm-default color-ecma-gold tc'>{name}</h1>
+        <Title>{name}</Title>
         <div className='service-img-container flex'>
           <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} >
             <img src={`${image}`} alt={name} className='service-image'/>
@@ -97,7 +98,7 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
       <aside className='bg-ecma-gray other-services section-container'>
         <div className='min-max-width center flex-column items-center'>
           <div>
-            <h1 className='tc lato color-ecma-gray'>Conheça Também</h1>
+            <Title gray>Conheça Também</Title>
           </div>
           <ScrollAnimation animateIn='fadeInUp' animateOnce={true} className='center flex-row flex-wrap'>
             {otherServices()}

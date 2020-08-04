@@ -14,6 +14,7 @@ import historia3 from './historia-ecma-3.jpg'
 import historia4 from './historia-ecma-4.jpg'
 import novaecma from './nova-ecma-1.jpg'
 import novaecma2 from './nova-ecma-2.jpg'
+import Title from '../PageElements/Title'
 
 const Clinic = () => {
   const showMore = () => {
@@ -39,7 +40,7 @@ const Clinic = () => {
   return (
     <div id='clinicPage' className='top-page container-tpa page-min-height'>
       <main className='center min-max-width clinic-container center flex-column lato'>
-        <h1 className='tc color-ecma-gold'>Bem-vindo ao ECMA</h1>
+        <Title>Bem-vindo ao ECMA</Title>
         <p className='hm-default section-subtitle tc'>
           Pensando em você, nosso cliente, oferecemos serviços de saúde e qualidade de vida, mas com foco na tríade
           (corpo, mente e espírito) do ser humano. Assim nasce o ECMA – <strong>Espaço Clínico Raydel Marques</strong>, que busca não

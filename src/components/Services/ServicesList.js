@@ -5,15 +5,14 @@ import { Link } from 'gatsby'
 import onRouteChange from '../../events/onRouteChange'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Title from '../PageElements/Title'
 
 const ServicesList = () => {
   return (
     <div className='section-container section-vpa services-container'>
       <section className='min-max-width center flex-column tc'>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-          <h1 className='hm-default services-title lato'>
-            Nossos Serviços
-          </h1>
+          <Title gray>Nossos Serviços</Title>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} className='hm-default center flex-row flex-wrap'>
           <Link id='fisioterapia-bt' to={links.services.fisio} onClick={onRouteChange} className='hm-default services-bt services-bt-main white lato b'>

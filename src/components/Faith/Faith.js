@@ -2,12 +2,13 @@ import React from 'react'
 import pdf from './DECLARAÇÃO DE FÉ ECMA.pdf'
 import 'animate.css/animate.min.css'
 import AnchorButton from '../AnchorButton/AnchorButton'
+import Title from '../PageElements/Title'
 
 const Faith = () => {
   return (
     <main className='hm-default lato top-page page-min-height'>
       <section className='min-max-width center flex-column container-tpa'>
-        <h1 className='tc lato color-ecma-gold'>Nossa Confessionalidade</h1>
+        <Title>Nossa Confessionalidade</Title>
         <p className='text'>
           Temos a <strong>Teologia Reformada</strong>, como base de nossas vidas, que une a fé à prática e
           definições doutrinárias exemplificadas especialmente pela Bíblia, pelos críticos
@@ -20,7 +21,7 @@ const Faith = () => {
         </p>
       </section>
       <section className='min-max-width center flex-column container-bpa'>
-        <h1 className='tc color-ecma-gold lato'>Nossa Confissão de Fé</h1>
+        <Title>Nossa Confissão de Fé</Title>
         <p className='text'>
           Ser uma família cristã é ver o ser humano como uma criação <strong>divina</strong>, onde as enfermidades é
           obra do mal e do mundo em que vivemos. Em nossa abordagem Deus toma o lugar central, respeitando
