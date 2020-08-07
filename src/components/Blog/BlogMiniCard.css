@@ -1,0 +1,26 @@
+.blog-mini-card {
+  background-color: rgb(248, 248, 248);
+  padding-bottom: 10px;
+  color: var(--color-default);
+  margin-bottom: 20px
+}
+
+.blog-mini-card:hover {
+  color: var(--color-light-gold);
+}
+
+.blog-mini-card > p {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .blog-mini-card {
+    width: 48.5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .blog-mini-card {
+    width: 100%;
+  }
+}

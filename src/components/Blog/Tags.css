@@ -1,0 +1,12 @@
+.blog-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-tag {
+  padding: 5px 10px;
+  background-color: var(--ecma-gold);
+  border-radius: 15px;
+  color: white;
+  margin: 5px;
+}

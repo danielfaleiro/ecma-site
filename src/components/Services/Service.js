@@ -57,7 +57,7 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
   }
 
   return (
-    <div className='top-page container-tpa page-min-height'>
+    <div className='top-page container-tpa'>
       <main className='min-max-width center flex-column section-container lato'>
         <Title>{name}</Title>
         <div className='service-img-container flex'>

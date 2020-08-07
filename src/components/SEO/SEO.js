@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import logo from './logo.png'
 
 function SEO ({ description, title, url, ogTitle, ogDescription }) {
   const { site } = useStaticQuery(
@@ -18,7 +19,6 @@ function SEO ({ description, title, url, ogTitle, ogDescription }) {
 
   const metaDescription = description || site.siteMetadata.description
   const meta = []
-  const image = 'https://github.com/danielfaleiro/ecma-site/blob/source/public/logo.png?raw=true'
 
   return (
     <Helmet
@@ -50,7 +50,7 @@ function SEO ({ description, title, url, ogTitle, ogDescription }) {
         },
         {
           property: 'og:image',
-          content: image
+          content: logo
         },
         {
           property: 'og:image:alt',
@@ -74,7 +74,7 @@ function SEO ({ description, title, url, ogTitle, ogDescription }) {
         },
         {
           name: 'twitter:image',
-          content: image
+          content: logo
         }
       ].concat(meta)}
     />

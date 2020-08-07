@@ -7,7 +7,7 @@ import Title from '../PageElements/Title'
 
 const Team = () => {
   return (
-    <main className='min-max-width top-page container-tpa center flex-column page-min-height'>
+    <main className='min-max-width top-page container-tpa center flex-column'>
       <Title>Nossa Equipe</Title>
       <div className='hm-default mt3 flex justify-between flex-column flex-wrap'>
         <TeamCard

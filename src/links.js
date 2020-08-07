@@ -11,6 +11,7 @@ const links = {
     training: '/servicos/personal',
     relax: '/servicos/espacorelaxar'
   },
+  blog: '/blog',
   contact: '/contato',
   whatsapp: 'https://wa.me/5562991050615?text=Olá.%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20ECMA.'
 }

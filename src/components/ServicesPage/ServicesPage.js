@@ -10,7 +10,7 @@ import Title from '../PageElements/Title'
 
 const ServicesPage = () => {
   return (
-    <main className='min-max-width top-page container-tpa center flex-nowrap flex-column lato page-min-height'>
+    <main className='min-max-width top-page container-tpa center flex-nowrap flex-column lato'>
       <Title>Nossos Serviços</Title>
       <div className='center flex-row flex-wrap'>
         <ServiceCard

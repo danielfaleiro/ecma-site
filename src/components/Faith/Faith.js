@@ -6,7 +6,7 @@ import Title from '../PageElements/Title'
 
 const Faith = () => {
   return (
-    <main className='hm-default lato top-page page-min-height'>
+    <main className='hm-default lato top-page'>
       <section className='min-max-width center flex-column container-tpa'>
         <Title>Nossa Confessionalidade</Title>
         <p className='text'>

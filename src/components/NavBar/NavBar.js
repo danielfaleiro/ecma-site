@@ -21,6 +21,7 @@ const NavBar = () => {
       personal: 'Personal Trainer',
       relax: 'Espaço Relaxar'
     },
+    blog: 'Blog',
     contato: 'Contato'
   }
 
@@ -114,6 +115,11 @@ const NavBar = () => {
                 </Link>
               </div>
             </div>
+            <Link to={links.blog} className='center items-center menu-item' activeClassName='nav-active'>
+              <p onClick={onRouteChange} className='lato'>
+                {menu.blog}
+              </p>
+            </Link>
             <Link to={links.contact} className='center items-center menu-item' activeClassName='nav-active'>
               <p onClick={onRouteChange} className='lato'>
                 {menu.contato}
@@ -164,6 +170,9 @@ const NavBar = () => {
               </Link>
             </div>
           </div>
+          <Link to={links.blog} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item' activeClassName='dropdown-active'>
+            {menu.blog}
+          </Link>
           <Link to={links.contact} onClick={onRouteChange} onBlur={() => showMobileMenu(false)} className='mobile-menu-item' activeClassName='dropdown-active'>
             {menu.contato}
           </Link>

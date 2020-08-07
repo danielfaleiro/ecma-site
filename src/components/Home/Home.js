@@ -6,7 +6,7 @@ import Testimonials from '../Testimonials/Testimonials'
 
 const Home = () => {
   return (
-    <main className='page-min-height'>
+    <main>
       <Carousel />
       <Introduction />
       <ServicesList/>

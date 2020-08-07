@@ -38,7 +38,7 @@ const Clinic = () => {
   const values = <span>Expressão da <strong>fé</strong> nas ações, exercendo a <strong>empatia</strong> e propiciando a <strong>humanização</strong> nas interações.</span>
 
   return (
-    <div id='clinicPage' className='top-page container-tpa page-min-height'>
+    <div id='clinicPage' className='top-page container-tpa'>
       <main className='center min-max-width clinic-container center flex-column lato'>
         <Title>Bem-vindo ao ECMA</Title>
         <p className='hm-default section-subtitle tc'>

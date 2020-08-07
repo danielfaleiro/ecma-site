@@ -9,7 +9,7 @@ import Title from '../PageElements/Title'
 
 const ContactPage = () => {
   return (
-    <main className='center top-page flex-column flex-nowrap lato page-min-height'>
+    <main className='center top-page flex-column flex-nowrap lato'>
       <address className='roboto tc contact-container container-tpa fs-normal'>
         <Title>Contato</Title>
         <p className='section-subtitle hm-default'>Deseja marcar uma avaliação? Tem alguma dúvida? Pode contar conosco!</p>
