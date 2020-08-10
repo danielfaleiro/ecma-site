@@ -9,7 +9,7 @@ const BlogCard = ({ title, date, description, image, link, author }) => {
       <span className='blog-card-date'> {author} &nbsp;&bull; {date}</span>
       <img src={image} className="blog-card-image" alt='Arte da capa do artigo' />
       <p>{description}</p>
-      <AnchorButton text='Leia mais' to={link} />
+      <AnchorButton text='Leia mais' to={link} className='blog-button' />
     </div>
   )
 }

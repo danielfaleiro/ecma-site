@@ -1,8 +1,7 @@
 .blog-card {
-  width: calc(50% - 30px);
-  margin: 0 15px 30px 15px;
+  width: calc(50% - 40px);
+  margin: 0 20px 40px 20px;
   min-width: 300px;
-  padding: 0 30px 30px 30px;
   line-height: 1.5em;
 }
 
@@ -15,14 +14,21 @@
   font-size: 0.9em;
 }
 
-.blog-card-image {
-  object-fit: cover;
-  margin-top: 20px;
+.blog-button {
+  margin-top: 0;
 }
 
-@media screen and (max-width: 800px) {
+.blog-card-image {
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
   .blog-card {
     width: 100%;
-    margin: 0 10px 30px 10px;
+  }
+
+  .blog-button {
+    width: 100%;
   }
 }
