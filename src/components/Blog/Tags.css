@@ -10,3 +10,12 @@
   color: white;
   margin: 5px;
 }
+
+.blog-tag:hover {
+  color: white;
+  background-color: var(--ecma-light-gold);
+}
+
+.blog-tag:active {
+  background-color: var(--ecma-dark-gold);
+}

@@ -4,10 +4,12 @@ import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 
 const Page = (props) => (
-  <div className='color-default page-min-height'>
+  <div className='color-default'>
     <WhatsappButton />
     <NavBar />
-    {props.children}
+    <div className='page-min-height'>
+      {props.children}
+    </div>
     <Footer />
   </div>
 )
