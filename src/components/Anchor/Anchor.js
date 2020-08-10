@@ -4,7 +4,7 @@ import onRouteChange from '../../events/onRouteChange'
 
 const Anchor = (props) => {
   return (
-    <Link to={props.to} onClick={onRouteChange}>
+    <Link to={props.to} onClick={onRouteChange} className={props.className}>
       {props.children}
     </Link>
   )
