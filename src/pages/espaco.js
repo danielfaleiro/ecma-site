@@ -1,7 +1,12 @@
 import React from 'react'
-import Clinic from '../components/Clinic/Clinic'
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../components/Loading/Loading'
+
+const Clinic = loadable(() => import('../components/Clinic/Clinic'), {
+  fallback: <Loading />
+})
 
 const ClinicPage = () => (
   <Page>

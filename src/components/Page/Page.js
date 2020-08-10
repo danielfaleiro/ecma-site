@@ -2,14 +2,15 @@ import React from 'react'
 import WhatsappButton from '../WhatsappButton/WhatsappButton'
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 
 const Page = (props) => (
   <div className='color-default'>
     <WhatsappButton />
     <NavBar />
-    <div className='page-min-height'>
+    <ErrorBoundary className='page-min-height'>
       {props.children}
-    </div>
+    </ErrorBoundary>
     <Footer />
   </div>
 )

@@ -1,10 +1,15 @@
 import React from 'react'
-import ContactPage from '../components/ContactPage/ContactPage'
-import ReactNotification from 'react-notifications-component'
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../components/Loading/Loading'
 
-const ContactPage2 = () => (
+const ReactNotification = loadable(() => import('react-notifications-component'))
+const ContactPage = loadable(() => import('../components/ContactPage/ContactPage'), {
+  fallback: <Loading />
+})
+
+const FinalContactPage = () => (
   <Page>
     <SEO
       title="Contato"
@@ -18,4 +23,4 @@ const ContactPage2 = () => (
   </Page>
 )
 
-export default ContactPage2
+export default FinalContactPage

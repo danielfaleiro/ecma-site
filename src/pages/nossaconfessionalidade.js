@@ -1,7 +1,12 @@
 import React from 'react'
-import Faith from '../components/Faith/Faith'
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../components/Loading/Loading'
+
+const Faith = loadable(() => import('../components/Faith/Faith'), {
+  fallback: <Loading />
+})
 
 const FaithPage = () => (
   <Page>

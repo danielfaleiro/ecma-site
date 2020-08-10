@@ -1,5 +1,4 @@
 import React from 'react'
-import Service from '../../components/Services/Service'
 import fisioImg from '../../components/Services/fisioterapia.jpg'
 import osteoImg from '../../components/Services/osteopatia.jpg'
 import pilatesImg from '../../components/Services/pilates.jpg'
@@ -8,6 +7,12 @@ import relaxarImg from '../../components/Services/espacorelaxar.jpg'
 import links from '../../links'
 import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../../components/Loading/Loading'
+
+const Service = loadable(() => import('../../components/Services/Service'), {
+  fallback: <Loading />
+})
 
 const FisioPage = () => {
   const texts = {

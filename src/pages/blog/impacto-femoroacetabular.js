@@ -1,9 +1,16 @@
 import React from 'react'
 import SEO from '../../components/SEO/SEO'
-import BlogPost from '../../components/Blog/BlogPost'
-import Article from '../../data/blog/posts/impacto-femoroacetabular'
 import Page from '../../components/Page/Page'
 import findBlog from '../../utils/findBlog'
+import loadable from '@loadable/component'
+import Loading from '../../components/Loading/Loading'
+
+const BlogPost = loadable(() => import('../../components/Blog/BlogPost'), {
+  fallback: <Loading />
+})
+const Article = loadable(() => import('../../data/blog/posts/impacto-femoroacetabular'), {
+  fallback: <Loading />
+})
 
 const ImpactoFemoroacetabular = () => {
   const {

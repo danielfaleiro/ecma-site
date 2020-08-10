@@ -1,7 +1,12 @@
 import React from 'react'
-import Team from '../components/Team/Team'
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../components/Loading/Loading'
+
+const Team = loadable(() => import('../components/Team/Team'), {
+  fallback: <Loading />
+})
 
 const TeamPage = () => (
   <Page>

@@ -1,7 +1,12 @@
 import React from 'react'
-import ServicesPage from '../../components/ServicesPage/ServicesPage'
 import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
+import loadable from '@loadable/component'
+import Loading from '../../components/Loading/Loading'
+
+const ServicesPage = loadable(() => import('../../components/ServicesPage/ServicesPage'), {
+  fallback: <Loading />
+})
 
 const ActualServicesPage = () => (
   <Page>
