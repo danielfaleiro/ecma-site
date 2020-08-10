@@ -1,0 +1,19 @@
+.blog-search {
+  margin: 0 20px;
+}
+
+.blog-search input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 6px;
+  resize: vertical;
+}
+
+@media screen and (max-width: 700px) {
+  .blog-search input {
+    width: fill;
+    margin: 10px 0;
+  }
+}
