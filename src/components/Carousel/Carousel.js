@@ -5,6 +5,7 @@ import './Carousel.css'
 import links from '../../links'
 import Slider from 'react-slick'
 import AnchorButton from '../AnchorButton/AnchorButton'
+import BackgroundImage from 'gatsby-background-image'
 
 const CarouselSlide = ({ title, text, button, link }) => {
   return (
@@ -20,7 +21,7 @@ const CarouselSlide = ({ title, text, button, link }) => {
   )
 }
 
-const Carousel = () => {
+const Carousel = ({ images }) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -53,38 +54,58 @@ const Carousel = () => {
   return (
     <aside id='carousel' className='carousel top-page'>
       <Slider {...settings}>
-        <div className='carousel-clinic carousel-container'>
+        <BackgroundImage
+          Tag='div'
+          fluid={images[0]}
+          className='carousel-container'
+        >
           <CarouselSlide
             title="Fisioterapia, Pilates e Personal Trainer em um único lugar"
             text="Temos a solução completa para sua saúde e bem-estar."
             button="Conheça Nossas Especialidades"
             link={links.services.self}
           />
-        </div>
-        <div className='carousel-personal carousel-container'>
+        </BackgroundImage>
+        <BackgroundImage
+          Tag='div'
+          fluid={images[1]}
+          className='carousel-container'
+          style={{
+            backgroundColor: 'rgba(25, 40, 53, 0.61)',
+            backgroundBlendMode: 'overlay'
+          }}
+        >
           <CarouselSlide
             title="2 em 1: Personal Trainer + Espaço de Treinamento"
             text="Aqui você tem os dois serviços em um só. Com acompanhamento e motivação de treino a treino. Faça uma avaliação e assim te ajudaremos com seus objetivos!"
             button="Saiba Mais"
             link={links.services.training}
           />
-        </div>
-        <div className='carousel-pilates carousel-container'>
+        </BackgroundImage>
+        <BackgroundImage
+          Tag='div'
+          fluid={images[2]}
+          className='carousel-container'
+        >
           <CarouselSlide
             title="Pilates Clássico"
             text="O nosso Pilates respeita a filosofia do Pilates em sua essência. Experiencie com a gente o melhor do Pilates."
             button="Saiba Mais"
             link={links.services.pilates}
           />
-        </div>
-        <div className='carousel-relax carousel-container'>
+        </BackgroundImage>
+        <BackgroundImage
+          Tag='div'
+          fluid={images[3]}
+          className='carousel-container'
+        >
           <CarouselSlide
             title="Espaço Relaxar ECMA"
-            text="Contrate nossa equipe para seu evento. Experiencie esse momento de relaxamento com uma climatização do ambiente regado a massagem na cadeira Quick, terapias manuais e área de descanso com decorações."
+            text="Contrate nossa equipe para seu evento. Tenha um momento de relaxamento em um ambiente climatizado com massagem na cadeira Quick, terapias manuais e área de descanso."
             button="Saiba Mais"
             link={links.services.relax}
           />
-        </div>
+        </BackgroundImage>
       </Slider>
     </aside>
   )

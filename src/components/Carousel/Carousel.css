@@ -7,32 +7,10 @@
 
 .carousel-container {
   display: flex !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(25, 40, 53, 0.61);
   width: 100%;
   height: calc(100vh - 75px);
-  background-blend-mode: overlay;
   overflow: hidden;
   padding-bottom: calc(60px + 0.67em);
-}
-
-.carousel-clinic {
-  background-image: url(./clinica.jpg);
-}
-
-.carousel-relax {
-  background-image: url(./CarrosselEspacoRelaxar.jpg);
-}
-
-.carousel-pilates {
-  background-image: url(./CarrosselPilates.jpg);
-}
-
-.carousel-personal {
-  background-image: url(./CarrosselPersonal.jpg);
-  background-position: top !important;
 }
 
 .carousel-title {
