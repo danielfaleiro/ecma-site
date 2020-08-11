@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './TeamCard.css'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Image from 'gatsby-image'
 
 class TeamCard extends Component {
   componentDidMount () {
@@ -23,7 +24,7 @@ class TeamCard extends Component {
     return (
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <div id={`member${index}`} className='min-max-width start flex-wrap member-container lato'>
-          <img className='member-photo center' src={photo} alt={name} />
+          <Image className='member-photo center' fluid={photo} alt={name} />
           <div id={`memberInfo${index}`} className='member-info center flex-wrap'>
             <span className={index % 2 === 0 ? 'triangle-right' : 'triangle-left'}></span>
             <div className='member-info-1'>
