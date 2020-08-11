@@ -5,18 +5,10 @@ import links from '../../links'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Anchor from '../Anchor/Anchor'
-import clinica1 from './clinica1.jpg'
-import clinica2 from './clinica2.jpg'
-import clinica3 from './clinica3.jpg'
-import historia from './historia-ecma-1.jpg'
-import historia2 from './historia-ecma-2.jpg'
-import historia3 from './historia-ecma-3.jpg'
-import historia4 from './historia-ecma-4.jpg'
-import novaecma from './nova-ecma-1.jpg'
-import novaecma2 from './nova-ecma-2.jpg'
 import Title from '../PageElements/Title'
+import Image from 'gatsby-image'
 
-const Clinic = () => {
+const Clinic = ({ localeImages, historyImages }) => {
   const showMore = () => {
     const hidden = document.getElementById('clinic-hidden')
     const button = document.getElementById('clinic-button')
@@ -47,8 +39,8 @@ const Clinic = () => {
           somente oferecer serviços, mas também propor uma experiência em busca do reequilíbrio da saúde de forma humanizada.
         </p>
         <div className='center flex-row flex-wrap container-vpa'>
-          <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel clinic-img'>
-            <img src={clinica1} alt="Foto do Espaço Clínico Raydel Marques"></img>
+          <ScrollAnimation animateIn="slideInLeft" animateOnce={true} className='clinic-panel'>
+            <Image fluid={localeImages[0]} alt="Foto do Espaço Clínico Raydel Marques" />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='clinic-panel'>
             <section>
@@ -91,9 +83,9 @@ const Clinic = () => {
               </p>
             </section>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel clinic-img'>
-            <img src={clinica2} alt="Foto do Espaço Clínico Raydel Marques"></img>
-            <img src={clinica3} alt="Foto do Espaço Clínico Raydel Marques"></img>
+          <ScrollAnimation animateIn="slideInRight" animateOnce={true} className='clinic-panel'>
+            <Image fluid={localeImages[1]} alt="Foto do Espaço Clínico Raydel Marques" className='clinic-img' />
+            <Image fluid={localeImages[2]} alt="Foto do Espaço Clínico Raydel Marques" className='clinic-img' />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <section className='clinic-history'>
@@ -109,10 +101,10 @@ const Clinic = () => {
                   à diretoria do Clube meu projeto, aproveitei um espaço já pronto e investi de forma tímida em meu negócio utilizando o valor da rescisão do contrato trabalhista com o CENG.
                   Iniciei os serviços de Fisioterapia no segundo semestre desse mesmo ano.
                 </p>
-                <span className="history-panel center">
-                  <img src={historia} id="history-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
-                  <img src={historia2} id="history-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
-                </span>
+                <div className="history-panel center">
+                  <Image fluid={historyImages[0]} className="history-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
+                  <Image fluid={historyImages[1]} className="history-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
+                </div>
               </span>
               <span id='clinic-hidden' className='clinic-hidden'>
                 <p className='text'>
@@ -132,7 +124,7 @@ const Clinic = () => {
                       um espaço maior, por meio dos antigos e novos pacientes. Passando a atender duas pessoas por sessão em um espaço mais amplo.
                     </p>
                   </span>
-                  <img src={historia3} id="history-img3" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                  <Image fluid={historyImages[2]} className="history-img3" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
                 </span>
                 <p className='text'>
                   No ano de 2013, o desejo de crescimento e de uma oportunidade de ampliação me impulsionaram para a busca de <strong>renovação</strong>. A ideia era ampliar os serviços de fisioterapia com mais
@@ -141,7 +133,7 @@ const Clinic = () => {
                   estúdio de Pilates – aparelhos, solo e bola.
                 </p>
                 <span className='history-panel center'>
-                  <img src={historia4} id="history-img4" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                  <Image fluid={historyImages[3]} className="history-img4" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
                   <span id="history-text4">
                     <p className='text'>
                       O empreendimento passou a atender um maior fluxo de pessoas por horário, o Pilates começou a formar suas turmas e o espaço de reabilitação tornou-se <strong>referência</strong> para os sócios esportistas e frequentadores do clube.
@@ -157,8 +149,8 @@ const Clinic = () => {
                   corpo, a mente e o espírito, aliado a qualidade de vida.
                 </p>
                 <span className='history-panel center'>
-                  <img src={novaecma} id="newecma-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
-                  <img src={novaecma2} id="newecma-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques"></img>
+                  <Image fluid={historyImages[4]} className="newecma-img1" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
+                  <Image fluid={historyImages[5]} className="newecma-img2" alt="Foto Antiga do Espaço Clínico Raydel Marques" />
                 </span>
               </span>
               <button id='clinic-button' onClick={showMore} className='button bn'>

@@ -1,20 +1,24 @@
 .clinic-panel {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
 
 .clinic-hidden {
-    display: none;
+  display: none;
 }
 
 .clinic-history, .clinic-panel {
-    padding: 1em 1em 1em 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  padding: 1em 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .clinic-history {
-    background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
+}
+
+.clinic-img {
+  margin: 10px 0;
 }
 
 .history-panel {
@@ -22,19 +26,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
-#history-img1 {
+.history-img1 {
   width: 30%;
 }
 
-#history-img2 {
+.history-img2 {
   width: 68%;
 }
 
-#history-text3, #newecma-img1, #history-img3, #newecma-img2 {
+#history-text3, .newecma-img1, .history-img3, .newecma-img2 {
   width: 49%;
 }
 
@@ -42,7 +44,7 @@
   width: 65%;
 }
 
-#history-img4 {
+.history-img4 {
   width: 33%;
 }
 
@@ -58,15 +60,15 @@
     margin-bottom:0;
   }
 
-  #history-img1, #history-img2, #history-img3, #history-text3, #history-img4, #history-text4, #newecma-img1, #newecma-img2 {
+  .history-img1, .history-img2, .history-img3, #history-text3, .history-img4, #history-text4, .newecma-img1, .newecma-img2 {
     width: 100%;
   }
 
-  #history-img1 {
+  .history-img1 {
     margin-bottom: 10px;
   }
 
-  #newecma-img2 {
+  .newecma-img2 {
     margin-top: 10px;
   }
 }
