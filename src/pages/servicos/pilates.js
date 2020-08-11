@@ -1,7 +1,6 @@
 import React from 'react'
 import fisioImg from '../../components/Services/fisioterapia.jpg'
 import osteoImg from '../../components/Services/osteopatia.jpg'
-import pilatesImg from '../../components/Services/pilates.jpg'
 import treinoImg from '../../components/Services/treinamento.jpg'
 import relaxarImg from '../../components/Services/espacorelaxar.jpg'
 import links from '../../links'
@@ -9,12 +8,14 @@ import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
 import loadable from '@loadable/component'
 import Loading from '../../components/Loading/Loading'
+import { graphql } from 'gatsby'
 
 const Service = loadable(() => import('../../components/Services/Service'), {
   fallback: <Loading />
 })
 
-const PilatesPage = () => {
+const PilatesPage = ({ data }) => {
+  const pilatesImg = data.service3.childImageSharp.fluid
   const texts = {
     about: <>
       <p className="hm-default">Um método de <strong>exercícios</strong> que faz o uso de molas e da gravidade do corpo que, em sua forma original, foi criado por Joseph Pilates, baseado nos princípios da respiração, concentração, centro, precisão, fluidez.</p>
@@ -63,3 +64,15 @@ const PilatesPage = () => {
 }
 
 export default PilatesPage
+
+export const pageQuery = graphql`
+  query {
+    service3: file(relativePath: { eq: "pilates.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

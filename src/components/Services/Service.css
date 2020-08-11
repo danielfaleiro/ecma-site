@@ -3,8 +3,7 @@
 }
 
 .service-img-side {
-    margin-left: 2%;
-    width: calc(60% - 20px);
+    width: calc(65% - 20px);
 }
 
 .service-side {
@@ -14,7 +13,7 @@
 }
 
 .service-img-container {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .service-side div {
@@ -35,9 +34,8 @@
 }
 
 .service-image {
-    display:block;
-    height: 400px;
-    margin:auto auto auto 40px;
+  width: 45%;
+  margin: auto auto auto 40px;
 }
 
 .other-img {
@@ -61,7 +59,6 @@
     }
 
     .service-image {
-        height: auto;
         width: 100%;
         margin: 0;
     }

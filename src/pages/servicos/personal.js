@@ -2,19 +2,20 @@ import React from 'react'
 import fisioImg from '../../components/Services/fisioterapia.jpg'
 import osteoImg from '../../components/Services/osteopatia.jpg'
 import pilatesImg from '../../components/Services/pilates.jpg'
-import treinoImg from '../../components/Services/treinamento.jpg'
 import relaxarImg from '../../components/Services/espacorelaxar.jpg'
 import links from '../../links'
 import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
 import loadable from '@loadable/component'
 import Loading from '../../components/Loading/Loading'
+import { graphql } from 'gatsby'
 
 const Service = loadable(() => import('../../components/Services/Service'), {
   fallback: <Loading />
 })
 
-const PersonalPage = () => {
+const PersonalPage = ({ data }) => {
+  const treinoImg = data.service4.childImageSharp.fluid
   const texts = {
     about: <>
       <p className="hm-default">Área de atuação do Profissional de Educação Física capacitado para elaborar, ministrar e supervisionar os treinamentos físicos, buscando seguir os objetivos de quem o contrata, respeitando os princípios básicos de treinamento.</p>
@@ -74,3 +75,15 @@ const PersonalPage = () => {
 }
 
 export default PersonalPage
+
+export const pageQuery = graphql`
+  query {
+    service4: file(relativePath: { eq: "treinamento.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

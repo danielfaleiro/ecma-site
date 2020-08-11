@@ -6,6 +6,7 @@ import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import links from '../../links'
 import Title from '../PageElements/Title'
+import Image from 'gatsby-image'
 
 const TextBlock = ({ title, text, isContact }) => {
   const content =
@@ -60,9 +61,9 @@ const Service = ({ name, image, texts, others, adjustContent }) => {
     <div className='top-page container-tpa'>
       <main className='min-max-width center flex-column section-container lato'>
         <Title>{name}</Title>
-        <div className='service-img-container flex'>
-          <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} >
-            <img src={`${image}`} alt={name} className='service-image'/>
+        <div className='flex service-img-container'>
+          <ScrollAnimation animateIn='fadeInLeft' animateOnce={true} className='service-image' >
+            <Image fluid={image} alt={name} />
           </ScrollAnimation>
           <div className='service-img-side service-text'>
             <h3 className="hm-default">O QUE É</h3>

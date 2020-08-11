@@ -1,5 +1,4 @@
 import React from 'react'
-import fisioImg from '../../components/Services/fisioterapia.jpg'
 import osteoImg from '../../components/Services/osteopatia.jpg'
 import pilatesImg from '../../components/Services/pilates.jpg'
 import treinoImg from '../../components/Services/treinamento.jpg'
@@ -9,12 +8,14 @@ import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
 import loadable from '@loadable/component'
 import Loading from '../../components/Loading/Loading'
+import { graphql } from 'gatsby'
 
 const Service = loadable(() => import('../../components/Services/Service'), {
   fallback: <Loading />
 })
 
-const FisioPage = () => {
+const FisioPage = ({ data }) => {
+  const fisioImg = data.service1.childImageSharp.fluid
   const texts = {
     about: <>
       <p className="hm-default">Área de atuação profissional e ciência que estuda, diagnostica, previne e restabelece as disfunções dos sistemas do <strong>corpo humano</strong>. Com objetivo de preservar, manter, desenvolver ou restaurar a integridade dos sistemas osteomusculares.</p>
@@ -72,3 +73,15 @@ const FisioPage = () => {
 }
 
 export default FisioPage
+
+export const pageQuery = graphql`
+  query {
+    service1: file(relativePath: { eq: "fisioterapia.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

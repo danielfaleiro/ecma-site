@@ -1,6 +1,5 @@
 import React from 'react'
 import fisioImg from '../../components/Services/fisioterapia.jpg'
-import osteoImg from '../../components/Services/osteopatia.jpg'
 import pilatesImg from '../../components/Services/pilates.jpg'
 import treinoImg from '../../components/Services/treinamento.jpg'
 import relaxarImg from '../../components/Services/espacorelaxar.jpg'
@@ -9,12 +8,14 @@ import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
 import loadable from '@loadable/component'
 import Loading from '../../components/Loading/Loading'
+import { graphql } from 'gatsby'
 
 const Service = loadable(() => import('../../components/Services/Service'), {
   fallback: <Loading />
 })
 
-const OsteoPage = () => {
+const OsteoPage = ({ data }) => {
+  const osteoImg = data.service2.childImageSharp.fluid
   const texts = {
     about: <>
       <p className="hm-default">É uma <strong>filosofia autônoma</strong> de cuidados de saúde primária, que usa métodos manuais para avaliar, diagnosticar e tratar disfunções dos sistemas corporais, agindo por meio da intervenção nos tecidos (articulações, músculos, fáscias, ligamentos, cápsulas, vísceras, tecidos nervoso, vasculares e linfáticos).</p>
@@ -59,3 +60,15 @@ const OsteoPage = () => {
 }
 
 export default OsteoPage
+
+export const pageQuery = graphql`
+  query {
+    service2: file(relativePath: { eq: "osteopatia.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -3,6 +3,7 @@ import './ServiceCard.css'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import AnchorButton from '../AnchorButton/AnchorButton'
+import Image from 'gatsby-image'
 
 class ServiceCard extends Component {
   render () {
@@ -10,7 +11,7 @@ class ServiceCard extends Component {
     return (
       <ScrollAnimation animateIn="fadeIn" animateOnce={true} className='card-outer min-max-width'>
         <div id={`cardInner${title}`} className='card-inner start'>
-          <img className='card-img' src={img} alt={title} />
+          <Image className='card-img' fluid={img} alt={title} />
           <div className='card-info start flex-column flex-nowrap'>
             <h3>{title}</h3>
             <p className='text'>{text}</p>

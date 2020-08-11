@@ -3,18 +3,19 @@ import fisioImg from '../../components/Services/fisioterapia.jpg'
 import osteoImg from '../../components/Services/osteopatia.jpg'
 import pilatesImg from '../../components/Services/pilates.jpg'
 import treinoImg from '../../components/Services/treinamento.jpg'
-import relaxarImg from '../../components/Services/espacorelaxar.jpg'
 import links from '../../links'
 import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
 import loadable from '@loadable/component'
 import Loading from '../../components/Loading/Loading'
+import { graphql } from 'gatsby'
 
 const Service = loadable(() => import('../../components/Services/Service'), {
   fallback: <Loading />
 })
 
-const RelaxPage = () => {
+const RelaxPage = ({ data }) => {
+  const relaxarImg = data.service5.childImageSharp.fluid
   const texts = {
     about: <>
       <p className="hm-default">O excesso de compromissos das pessoas associados a uma vida com alto nível de estresse, fez com que muitas pessoas deixassem de cuidar da própria saúde e bem estar. A quick massagem é uma alternativa prática e rápida, que proporciona relaxamento muscular e redução das tensões globais, em uma técnica que dura em média 10 minutos.</p>
@@ -87,3 +88,15 @@ const RelaxPage = () => {
 }
 
 export default RelaxPage
+
+export const pageQuery = graphql`
+  query {
+    service5: file(relativePath: { eq: "espacorelaxar.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
