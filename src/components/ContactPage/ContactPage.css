@@ -1,9 +1,3 @@
-.contact-container {
-  background: url('./cover.png');
-  background-size: cover;
-  color: white;
-}
-
 .contact-container a {
   color: rgb(196, 196, 196);
 }
