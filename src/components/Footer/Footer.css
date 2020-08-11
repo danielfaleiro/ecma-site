@@ -4,8 +4,9 @@
     left: 0;
 }
 
-.footer-logo-container {
+.footer-logo {
     width: 35%;
+    align-self: center;
 }
 
 .footer-icon {
@@ -54,7 +55,11 @@
     margin: 5px 0px 5px 0px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
+    .footer {
+      padding: 40px 0;
+    }
+
     .footer-inner {
         flex-direction: column;
     }
@@ -70,8 +75,8 @@
         width: 100%;
     }
 
-    .footer-logo-container {
-        width: 100%;
+    .footer-logo {
+        width: 80%;
         margin-bottom: 40px;
     }
 
