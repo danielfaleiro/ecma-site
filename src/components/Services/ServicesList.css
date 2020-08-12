@@ -21,6 +21,7 @@
 }
 
 .services-bt-others {
+  background-size: 225px 225px;
   width: 225px;
   height: 225px;
 }
@@ -47,26 +48,21 @@
 }
 
 #pilates-bt {
-    background-image: url(./pilates.jpg);
-    background-size: 376px 250px;
+    background-image: url(/media/pilates250.jpg);
 }
 
 #personal-bt {
-    background-image: url(./treinamento.jpg);
-    background-size: 333px 250px;
+    background-image: url(/media/treinamento250.jpg);
 }
 
 #fisioterapia-bt {
-    background-image: url(./fisioterapia.jpg);
-    background-size: 382px 250px;
+    background-image: url(/media/fisioterapia250.jpg);
 }
 
 #osteopatia-bt {
-    background-image: url(./osteopatia.jpg);
-    background-size: 333px 250px;
+    background-image: url(/media/osteopatia250.jpg);
 }
 
 #relaxar-bt {
-  background-image: url(./espacorelaxar.jpg);
-  background-size: 376px 250px;
+  background-image: url(/media/espacorelaxar250.jpg);
 }

@@ -1,8 +1,4 @@
 import React from 'react'
-import osteoImg from '../../components/Services/osteopatia.jpg'
-import pilatesImg from '../../components/Services/pilates.jpg'
-import treinoImg from '../../components/Services/treinamento.jpg'
-import relaxarImg from '../../components/Services/espacorelaxar.jpg'
 import links from '../../links'
 import Page from '../../components/Page/Page'
 import SEO from '../../components/SEO/SEO'
@@ -47,7 +43,7 @@ const FisioPage = ({ data }) => {
   }
   const others = {
     services: ['Osteopatia', 'Pilates Clássico', 'Personal Trainer', 'Espaço Relaxar'],
-    images: [osteoImg, pilatesImg, treinoImg, relaxarImg],
+    images: ['/media/osteopatia225.jpg', '/media/pilates225.jpg', '/media/treinamento225.jpg', '/media/espacorelaxar225.jpg'],
     route: [links.services.osteo, links.services.pilates, links.services.training, links.services.relax]
 
   }

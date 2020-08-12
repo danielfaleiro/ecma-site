@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import onRouteChange from '../../events/onRouteChange'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
-import links from '../../links'
 import Title from '../PageElements/Title'
 import Image from 'gatsby-image'
 
@@ -33,27 +32,21 @@ const TextBlock = ({ title, text, isContact }) => {
 
 const Service = ({ name, image, texts, others, adjustContent }) => {
   const otherServices = () => {
-    let width = 225
-    const res = others.services.map(function (elem, index) {
-      if (others.route[index] === links.services.training || others.route[index] === links.services.osteo) { width = 300 } else if (others.route[index] === links.services.pilates || others.route[index] === links.services.relax) { width = 338 } else if (others.route[index] === links.services.fisio) { width = 344 }
-
-      return (
-        <Link
-          to={others.route[index]}
-          key={index}
-          onClick={onRouteChange}
-          className='services-bt services-bt-others white b lato'
-          style={{
-            backgroundImage: `url(${others.images[index]})`,
-            backgroundSize: `${width}px 225px`
-          }}
-        >
-          <span className='services-bt-text'>
-            {elem.toUpperCase()}
-          </span>
-        </Link>
-      )
-    })
+    const res = others.services.map((elem, index) => (
+      <Link
+        to={others.route[index]}
+        key={index}
+        onClick={onRouteChange}
+        className='services-bt services-bt-others white b lato'
+        style={{
+          backgroundImage: `url(${others.images[index]})`
+        }}
+      >
+        <span className='services-bt-text'>
+          {elem.toUpperCase()}
+        </span>
+      </Link>
+    ))
     return res
   }
 
