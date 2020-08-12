@@ -7,6 +7,21 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Espaço ECMA',
+        short_name: 'ECMA',
+        description: 'Fisioterapia, Osteopatia, Pilates Clássico e Personal Trainer em um único lugar. Conheça também nosso Espaço Relaxar.',
+        lang: 'pt_BR',
+        display: 'standalone',
+        icon: 'src/images/icon.png',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#fff'
+      }
+    },
+    'gatsby-plugin-offline',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
