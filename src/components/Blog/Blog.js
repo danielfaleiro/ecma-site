@@ -4,6 +4,7 @@ import BlogCard from './BlogCard'
 import posts from '../../data/blog/posts/posts.json'
 import WithLocation from '../WithLocation/WithLocation'
 import BlogSearch from './BlogSearch'
+import PageIndex from './PageIndex'
 
 const filterPosts = (filter) => {
   const filterLower = filter.toLowerCase()
@@ -15,17 +16,36 @@ const filterPosts = (filter) => {
   return filteredPosts
 }
 
+const getCurrentPosts = (page, totalPosts) => {
+  let first, last
+
+  if (totalPosts < 6) {
+    first = 0
+    last = totalPosts
+  } else if (!page || page === 1) {
+    first = 0
+    last = 6
+  } else {
+    first = 6 * (page - 1)
+    last = page * 6
+  }
+
+  return { first, last }
+}
+
 const Blog = ({ search }) => {
   const title = <Title>Blog</Title>
-  const { tag } = search
+  const { tag, page } = search
   const [filter, setFilter] = useState(tag || '')
-  const postsToShow = filter
+  const totalPostsToShow = filter
     ? filterPosts(filter)
     : posts
+  const { first, last } = getCurrentPosts(page, totalPostsToShow.length)
+  const currentPostsToShow = totalPostsToShow.slice(first, last)
 
-  const blogCardList = postsToShow.length === 0
+  const blogCardList = currentPostsToShow.length === 0
     ? <p style={{ margin: '20px' }}>Nenhum resultado encontrado.</p>
-    : postsToShow.map(post =>
+    : currentPostsToShow.map(post =>
       <BlogCard
         key={post.id}
         title={post.title.toUpperCase()}
@@ -44,6 +64,7 @@ const Blog = ({ search }) => {
       <div className='flex flex-wrap'>
         {blogCardList}
       </div>
+      <PageIndex currentPage={page} totalPosts={totalPostsToShow.length} />
     </div>
   )
 }
