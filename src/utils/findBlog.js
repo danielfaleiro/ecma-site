@@ -1,5 +1,5 @@
 import BlogPosts from '../data/blog/posts/posts.json'
 
-const findBlog = (title) => BlogPosts.find(post => post.title === title)
+const findBlog = (id) => BlogPosts.find(post => post.id === id)
 
 export default findBlog

@@ -2,7 +2,7 @@ import React from 'react'
 import findBlog from '../../../utils/findBlog'
 
 const Article = () => {
-  const { images } = findBlog('Impacto Femoroacetabular')
+  const { images } = findBlog(1)
   return (
     <article className='blog-article lato'>
       <img className='blog-img' src={images[0]} alt='Banner do Impacto Femoroacetabular' />

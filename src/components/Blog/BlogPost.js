@@ -4,10 +4,14 @@ import links from '../../links'
 import './BlogPost.css'
 import Tags from './Tags'
 import OtherPosts from './OtherPosts'
+import findBlog from '../../utils/findBlog'
 
 const BlogPost = ({ children, title, date, author, tags, id }) => {
+  const previous = findBlog(id - 1)
+  const next = findBlog(id + 1)
+
   return (
-    <div className='min-max-width center blog-post'>
+    <div className='min-max-width center flex-column blog-post'>
       <article>
         <p><Anchor to={links.blog}>&lt; Blog</Anchor></p>
         <h1 className='blog-title'>{title}</h1>
@@ -22,6 +26,25 @@ const BlogPost = ({ children, title, date, author, tags, id }) => {
           </aside>
         </div>
       </article>
+      {(previous || next) &&
+        <hr style={{ width: '100%', marginTop: '20px' }}/>
+      }
+      <ul className='flex flex-wrap justify-between list'>
+        <li>
+          {previous &&
+            <Anchor to={previous.link}>
+              &lt; {previous.title}
+            </Anchor>
+          }
+        </li>
+        <li>
+          {next &&
+            <Anchor to={next.link}>
+              {next.title} &gt;
+            </Anchor>
+          }
+        </li>
+      </ul>
     </div>
   )
 }

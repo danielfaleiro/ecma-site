@@ -22,7 +22,7 @@ const ImpactoFemoroacetabular = () => {
     author,
     tags,
     id
-  } = findBlog('Impacto Femoroacetabular')
+  } = findBlog(1)
   return (
     <Page>
       <SEO
