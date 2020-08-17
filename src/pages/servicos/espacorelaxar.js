@@ -43,14 +43,14 @@ const RelaxPage = ({ data }) => {
       <li>Melhora do bem estar respiratório e diminuição de obstruções brônquicas;</li>
       <li>Melhora da consciência corporal.</li>
     </ul>,
-    budget: <p style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}className="hm-default">
-      <span style={{ textAlign: 'right', paddingRight: '10px' }}>
+    budget: <p style={{ display: 'grid', gridTemplateColumns: '8ch auto' }}className="hm-default">
+      <span style={{ paddingRight: '10px' }}>
         Telefone:
       </span>
       <>
         <a href='tel:06239261118'>(62) 3926-1118</a><br /><a href='tel:062991050615'>(62) 9 9105-0615</a>
       </>
-      <span style={{ textAlign: 'right', paddingRight: '10px' }}>
+      <span>
         E-mail:
       </span>
       <>
