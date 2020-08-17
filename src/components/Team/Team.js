@@ -4,7 +4,7 @@ import Title from '../PageElements/Title'
 
 const Team = ({ images }) => {
   return (
-    <main className='min-max-width top-page container-tpa center flex-column'>
+    <main className='min-max-width top-page container-tpa container-bpa center flex-column'>
       <Title>Nossa Equipe</Title>
       <div className='hm-default mt3 flex justify-between flex-column flex-wrap'>
         <TeamCard
