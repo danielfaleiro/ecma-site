@@ -5,10 +5,6 @@
   margin-bottom: 20px
 }
 
-.blog-mini-card:hover {
-  color: var(--color-light-gold);
-}
-
 .blog-mini-card > p {
   padding: 0 10px;
 }
