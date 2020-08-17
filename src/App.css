@@ -26,8 +26,12 @@ a {
 }
 
 a:hover {
-  color: rgb(27, 98, 145);
+  color: rgb(92, 159, 204);
   transition: color 0.9s;
+}
+
+a:active {
+  color: rgb(27, 98, 145);
 }
 
 .App {
