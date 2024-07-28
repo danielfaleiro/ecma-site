@@ -35,4 +35,11 @@
   <url>
     <loc>https://espacoecma.com.br/contato/</loc>
   </url>
+  <url>
+    <loc>https://espacoecma.com.br/blog/</loc>
+  </url>
+  <url>
+    <loc>https://espacoecma.com.br/blog/impacto-femoroacetabular/</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
