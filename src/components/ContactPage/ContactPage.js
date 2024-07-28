@@ -27,8 +27,6 @@ const ContactPage = ({ cover }) => {
           <div><strong>Telefone</strong></div>
           <span></span>
           <div className='grid-gap'>
-            <a href='tel:06239261118'>(62) 3926-1118</a>
-            <span> / </span>
             <a href='tel:062991050615'>(62) 9 9105-0615</a>
           </div>
           <IoIosEmail size='25'/>
@@ -38,7 +36,7 @@ const ContactPage = ({ cover }) => {
           <IoIosLocation size='25' />
           <div><strong>Endereço</strong></div>
           <span></span>
-          <div className='grid-gap'>Rua 85A Qd. F-16, Lote 13 St. Sul<br />Goiânia - GO<br />CEP: 74080-020</div>
+          <div className='grid-gap'>Viela Praça Cura- 27 - St. Sul<br />Goiânia - GO<br />CEP: 74093-310</div>
         </div>
       </BackgroundImage>
       <Map />
