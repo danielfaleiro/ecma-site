@@ -36,7 +36,7 @@ const ContactPage = ({ cover }) => {
           <IoIosLocation size='25' />
           <div><strong>Endereço</strong></div>
           <span></span>
-          <div className='grid-gap'>Viela Praça Cura- 27 - St. Sul<br />Goiânia - GO<br />CEP: 74093-310</div>
+          <div className='grid-gap'>Viela Praça Cura 27 - St. Sul<br />Goiânia - GO<br />CEP: 74093-310</div>
         </div>
       </BackgroundImage>
       <Map />
